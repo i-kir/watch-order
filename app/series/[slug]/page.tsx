@@ -3,6 +3,8 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import WatchOrder from '@/components/WatchOrder';
 import { availableOrders, getAllSeries, getSeries, orderedFilms } from '@/lib/series';
+import { seriesPosters } from '@/lib/tmdb';
+import Poster from '@/components/Poster';
 import type { OrderKey } from '@/lib/types';
 
 type Params = { slug: string };
@@ -37,6 +39,7 @@ export default async function SeriesPage({ params }: { params: Promise<Params> }
   if (!series) notFound();
 
   const orders = availableOrders(series);
+  const posters = seriesPosters(series.slug, series.releaseOrder, 12);
   const entriesByOrder = Object.fromEntries(
     orders.map((key) => [key, orderedFilms(series, key as OrderKey)])
   );
@@ -66,6 +69,14 @@ export default async function SeriesPage({ params }: { params: Promise<Params> }
 
       <h1 className="mt-4 text-3xl font-bold tracking-tight">{series.name}を観る順番</h1>
       <p className="mt-3 leading-relaxed text-[var(--color-ink-soft)]">{series.description}</p>
+
+      {posters.length > 0 && (
+        <div className="mt-6 flex gap-2 overflow-x-auto pb-2">
+          {posters.map((url) => (
+            <Poster key={url} src={url} alt="" size="md" />
+          ))}
+        </div>
+      )}
 
       <div className="mt-8">
         <WatchOrder series={series} orders={orders} entriesByOrder={entriesByOrder} />

@@ -3,7 +3,8 @@
 import { useEffect, useMemo, useState } from 'react';
 import type { Film, OrderKey, Series } from '@/lib/types';
 import { ORDER_DESCRIPTIONS, ORDER_LABELS } from '@/lib/series';
-import { formatRuntime, totalRuntime } from '@/lib/tmdb';
+import { formatRuntime, posterOf, totalRuntime, tmdbOf } from '@/lib/tmdb';
+import Poster from './Poster';
 import ShareProgress from './ShareProgress';
 
 type Entry = { film: Film; reason?: string };
@@ -150,6 +151,7 @@ export default function WatchOrder({ series, orders, entriesByOrder }: Props) {
           total={entries.length}
           minutes={minutes}
           nextTitle={next?.film.title ?? null}
+          posterUrl={posterOf(series.slug, (next ?? entries[entries.length - 1])?.film.slug ?? '', 'w342')}
           orderLabel={ORDER_LABELS[order]}
         />
       )}
@@ -176,6 +178,13 @@ export default function WatchOrder({ series, orders, entriesByOrder }: Props) {
                   aria-label={`${entry.film.title} を視聴済みにする`}
                 />
 
+                <Poster
+                  src={posterOf(series.slug, entry.film.slug)}
+                  alt=""
+                  size="sm"
+                  className={isWatched ? 'opacity-70' : ''}
+                />
+
                 <div className="min-w-0 flex-1">
                   <div className="flex flex-wrap items-baseline gap-x-2">
                     <span className="text-sm font-bold tabular-nums text-[var(--color-accent)]">
@@ -185,6 +194,11 @@ export default function WatchOrder({ series, orders, entriesByOrder }: Props) {
                       {entry.film.title}
                     </h3>
                     <span className="text-xs text-[var(--color-ink-soft)]">{entry.film.year}年</span>
+                    {tmdbOf(series.slug, entry.film.slug)?.runtime ? (
+                      <span className="text-xs text-[var(--color-ink-soft)]">
+                        {formatRuntime(tmdbOf(series.slug, entry.film.slug)!.runtime!)}
+                      </span>
+                    ) : null}
                   </div>
 
                   <p className="mt-0.5 text-xs text-[var(--color-ink-soft)]">

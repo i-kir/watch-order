@@ -13,11 +13,20 @@ export type ShareCardData = {
   /** 視聴済みの合計時間（分）。不明なら null */
   minutes: number | null;
   nextTitle: string | null;
+  /** 次に観る作品のポスター。読み込めなければ文字だけで描く */
+  posterUrl?: string | null;
   orderLabel: string;
 };
 
 const W = 1200;
 const H = 630;
+const PAD = 72;
+
+// ポスターを置く領域（右側）
+const POSTER_W = 300;
+const POSTER_H = 450;
+const POSTER_X = W - PAD - POSTER_W;
+const POSTER_Y = 90;
 
 const INK = '#16161a';
 const ACCENT = '#5b8def';
@@ -26,7 +35,6 @@ const LINE = '#2c2c36';
 
 const FONT = '"Hiragino Sans", "Noto Sans JP", "Yu Gothic", system-ui, sans-serif';
 
-/** 指定幅に収まるまでフォントサイズを下げる */
 function fitText(ctx: CanvasRenderingContext2D, text: string, maxWidth: number, start: number, min: number): number {
   let size = start;
   while (size > min) {
@@ -46,92 +54,133 @@ function truncate(ctx: CanvasRenderingContext2D, text: string, maxWidth: number)
   return `${result}…`;
 }
 
-export function drawShareCard(canvas: HTMLCanvasElement, data: ShareCardData): void {
+/**
+ * TMDb の画像を canvas に描くには CORS 許可つきで読む必要がある。
+ * 許可されないと canvas が汚染され、toBlob が例外になる。
+ * 読めなければポスターなしで描くだけなので、失敗は握りつぶす。
+ */
+function loadImage(url: string): Promise<HTMLImageElement | null> {
+  return new Promise((resolve) => {
+    const img = new Image();
+    img.crossOrigin = 'anonymous';
+    img.onload = () => resolve(img);
+    img.onerror = () => resolve(null);
+    img.src = url;
+    // 読み込みが返ってこない場合に備える
+    setTimeout(() => resolve(img.complete && img.naturalWidth > 0 ? img : null), 4000);
+  });
+}
+
+export async function drawShareCard(canvas: HTMLCanvasElement, data: ShareCardData): Promise<void> {
   const ctx = canvas.getContext('2d');
   if (!ctx) return;
 
   canvas.width = W;
   canvas.height = H;
 
-  // 背景
   ctx.fillStyle = INK;
   ctx.fillRect(0, 0, W, H);
 
-  const padding = 72;
-  const percent = data.total === 0 ? 0 : Math.round((data.watched / data.total) * 100);
+  const poster = data.posterUrl ? await loadImage(data.posterUrl) : null;
+  const contentWidth = (poster ? POSTER_X - 40 : W - PAD) - PAD;
+
+  // ポスター（右）
+  if (poster) {
+    ctx.save();
+    roundRect(ctx, POSTER_X, POSTER_Y, POSTER_W, POSTER_H, 12);
+    ctx.clip();
+    drawCover(ctx, poster, POSTER_X, POSTER_Y, POSTER_W, POSTER_H);
+    ctx.restore();
+  }
+
+  ctx.textBaseline = 'top';
 
   // シリーズ名
-  const nameSize = fitText(ctx, data.seriesName, W - padding * 2, 44, 26);
+  const nameSize = fitText(ctx, data.seriesName, contentWidth, 44, 24);
   ctx.font = `bold ${nameSize}px ${FONT}`;
   ctx.fillStyle = '#ffffff';
-  ctx.textBaseline = 'top';
-  ctx.fillText(truncate(ctx, data.seriesName, W - padding * 2), padding, padding);
+  ctx.fillText(truncate(ctx, data.seriesName, contentWidth), PAD, PAD);
 
   // 順番の種類
   ctx.font = `500 24px ${FONT}`;
   ctx.fillStyle = MUTED;
-  ctx.fillText(data.orderLabel, padding, padding + nameSize + 16);
+  ctx.fillText(data.orderLabel, PAD, PAD + nameSize + 16);
 
-  // 制覇率（主役）
+  // 制覇率
+  const percent = data.total === 0 ? 0 : Math.round((data.watched / data.total) * 100);
+
   ctx.font = `500 26px ${FONT}`;
   ctx.fillStyle = MUTED;
-  ctx.fillText('制覇率', padding, 186);
+  ctx.fillText('制覇率', PAD, 186);
 
   const percentText = `${percent}`;
   const percentY = 218;
   ctx.font = `bold 190px ${FONT}`;
   ctx.fillStyle = '#ffffff';
-  ctx.fillText(percentText, padding, percentY);
+  ctx.fillText(percentText, PAD, percentY);
   const percentWidth = ctx.measureText(percentText).width;
 
-  // % は数字のベースライン側に揃える
   ctx.font = `bold 72px ${FONT}`;
   ctx.fillStyle = ACCENT;
-  ctx.fillText('%', padding + percentWidth + 14, percentY + 118);
+  ctx.fillText('%', PAD + percentWidth + 14, percentY + 118);
 
   // 本数と時間
   const stats = data.minutes !== null
     ? `${data.watched} / ${data.total}作　${formatHours(data.minutes)}`
     : `${data.watched} / ${data.total}作`;
-  ctx.font = `bold 40px ${FONT}`;
+  ctx.font = `bold 38px ${FONT}`;
   ctx.fillStyle = '#ffffff';
-  ctx.fillText(stats, padding, 432);
+  ctx.fillText(truncate(ctx, stats, contentWidth), PAD, 432);
 
   // 進捗バー
   const barY = 496;
-  const barW = W - padding * 2;
   ctx.fillStyle = LINE;
-  roundRect(ctx, padding, barY, barW, 12, 6);
+  roundRect(ctx, PAD, barY, contentWidth, 12, 6);
   ctx.fill();
   if (percent > 0) {
     ctx.fillStyle = ACCENT;
-    roundRect(ctx, padding, barY, Math.max(12, (barW * percent) / 100), 12, 6);
+    roundRect(ctx, PAD, barY, Math.max(12, (contentWidth * percent) / 100), 12, 6);
     ctx.fill();
   }
 
   // 次に観る作品
   if (data.nextTitle) {
-    ctx.font = `500 26px ${FONT}`;
+    ctx.font = `500 24px ${FONT}`;
     ctx.fillStyle = MUTED;
     const label = '次に観るのは ';
-    ctx.fillText(label, padding, 544);
+    ctx.fillText(label, PAD, 544);
     const labelWidth = ctx.measureText(label).width;
 
-    ctx.font = `bold 26px ${FONT}`;
+    ctx.font = `bold 24px ${FONT}`;
     ctx.fillStyle = '#ffffff';
-    ctx.fillText(truncate(ctx, data.nextTitle, barW - labelWidth - 200), padding + labelWidth, 544);
+    ctx.fillText(truncate(ctx, data.nextTitle, contentWidth - labelWidth), PAD + labelWidth, 544);
   } else if (percent === 100) {
     ctx.font = `bold 26px ${FONT}`;
     ctx.fillStyle = ACCENT;
-    ctx.fillText('全作制覇', padding, 544);
+    ctx.fillText('全作制覇', PAD, 544);
   }
 
   // サイト名
-  ctx.font = `500 24px ${FONT}`;
+  ctx.font = `500 22px ${FONT}`;
   ctx.fillStyle = MUTED;
   ctx.textAlign = 'right';
-  ctx.fillText('観る順ナビ', W - padding, 544);
+  ctx.fillText('観る順ナビ', W - PAD, H - PAD + 20);
   ctx.textAlign = 'left';
+}
+
+/** 縦横比を保ったまま領域いっぱいに描く（object-fit: cover 相当） */
+function drawCover(
+  ctx: CanvasRenderingContext2D,
+  img: HTMLImageElement,
+  x: number,
+  y: number,
+  w: number,
+  h: number
+): void {
+  const scale = Math.max(w / img.naturalWidth, h / img.naturalHeight);
+  const dw = img.naturalWidth * scale;
+  const dh = img.naturalHeight * scale;
+  ctx.drawImage(img, x + (w - dw) / 2, y + (h - dh) / 2, dw, dh);
 }
 
 function formatHours(minutes: number): string {

@@ -24,7 +24,8 @@ export default function ShareProgress({ seriesSlug, ...data }: Props) {
   }, []);
 
   useEffect(() => {
-    if (canvasRef.current) drawShareCard(canvasRef.current, data);
+    // ポスターの読み込みを待つので非同期。描き終わる前に条件が変われば後勝ちでよい
+    if (canvasRef.current) void drawShareCard(canvasRef.current, data);
   }, [data]);
 
   const withCanvas = async (action: (blob: Blob) => Promise<void> | void) => {

@@ -28,10 +28,17 @@ async function readFilms(file) {
   const text = await readFile(new URL(`../content/series/${file}`, import.meta.url), 'utf8');
   const seriesSlug = text.match(/slug:\s*'([^']+)'/)?.[1];
   const films = [];
-  const re = /\{\s*slug:\s*'([^']+)',\s*title:\s*'([^']*)',\s*originalTitle:\s*'([^']*)',\s*year:\s*(\d{4})/g;
+  // 原題にアポストロフィが含まれると二重引用符で書かれるため、両方を拾う
+  const re =
+    /\{\s*slug:\s*'([^']+)',\s*title:\s*'([^']*)',\s*originalTitle:\s*(?:'([^']*)'|"([^"]*)"),\s*year:\s*(\d{4})/g;
   let m;
   while ((m = re.exec(text)) !== null) {
-    films.push({ slug: m[1], title: m[2], originalTitle: m[3], year: Number(m[4]) });
+    films.push({
+      slug: m[1],
+      title: m[2],
+      originalTitle: m[3] ?? m[4],
+      year: Number(m[5]),
+    });
   }
   return { seriesSlug, films };
 }
