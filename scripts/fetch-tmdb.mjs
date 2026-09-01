@@ -44,6 +44,13 @@ async function search(originalTitle, year) {
   return json.results?.[0] ?? null;
 }
 
+/** 上映時間は検索結果に含まれないため、詳細を1件ずつ引く */
+async function detail(id) {
+  const res = await fetch(`${API}/movie/${id}?api_key=${KEY}&language=ja-JP`);
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  return res.json();
+}
+
 async function main() {
   const files = ['mcu.ts', 'star-wars.ts', 'wizarding-world.ts', 'x-men.ts', 'fast-furious.ts'];
   const outPath = new URL('../content/tmdb.json', import.meta.url);
@@ -60,7 +67,8 @@ async function main() {
 
     for (const film of films) {
       const key = `${seriesSlug}:${film.slug}`;
-      if (existing[key]) {
+      // 上映時間が入っていない古い形式は取り直す
+      if (existing[key] && existing[key].runtime !== undefined) {
         console.log(`  = ${film.title}（取得済み）`);
         continue;
       }
@@ -71,12 +79,16 @@ async function main() {
           console.log(`  ✗ ${film.title}（見つからず）`);
           missed++;
         } else {
+          await sleep(250);
+          const info = await detail(hit.id);
           existing[key] = {
             tmdbId: hit.id,
             posterPath: hit.poster_path ?? null,
             overview: hit.overview ?? '',
+            runtime: info.runtime ?? null,
           };
-          console.log(`  ✓ ${film.title} → TMDb #${hit.id}`);
+          const runtimeLabel = info.runtime ? `${info.runtime}分` : '上映時間不明';
+          console.log(`  ✓ ${film.title} → TMDb #${hit.id}（${runtimeLabel}）`);
           found++;
         }
       } catch (error) {

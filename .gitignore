@@ -8,3 +8,6 @@ out
 next-env.d.ts
 .DS_Store
 .vercel
+
+# 作業用（Claude が削除できないため一時退避）
+_to_delete/

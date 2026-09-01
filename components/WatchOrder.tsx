@@ -3,6 +3,8 @@
 import { useEffect, useMemo, useState } from 'react';
 import type { Film, OrderKey, Series } from '@/lib/types';
 import { ORDER_DESCRIPTIONS, ORDER_LABELS } from '@/lib/series';
+import { formatRuntime, totalRuntime } from '@/lib/tmdb';
+import ShareProgress from './ShareProgress';
 
 type Entry = { film: Film; reason?: string };
 
@@ -60,12 +62,19 @@ export default function WatchOrder({ series, orders, entriesByOrder }: Props) {
   const { watched, toggle, reset, loaded } = useWatched(series.slug);
 
   const entries = entriesByOrder[order] ?? [];
-  const watchedCount = useMemo(
-    () => entries.filter((e) => watched.has(e.film.slug)).length,
+  const watchedSlugs = useMemo(
+    () => entries.filter((e) => watched.has(e.film.slug)).map((e) => e.film.slug),
     [entries, watched]
   );
+  const watchedCount = watchedSlugs.length;
   const next = entries.find((e) => !watched.has(e.film.slug));
   const percent = entries.length === 0 ? 0 : Math.round((watchedCount / entries.length) * 100);
+
+  // 上映時間は TMDb から取り込んだときだけ出す（未取得なら本数だけ表示）
+  const minutes = useMemo(
+    () => totalRuntime(series.slug, watchedSlugs),
+    [series.slug, watchedSlugs]
+  );
 
   return (
     <div>
@@ -117,6 +126,12 @@ export default function WatchOrder({ series, orders, entriesByOrder }: Props) {
             />
           </div>
 
+          {minutes !== null && watchedCount > 0 && (
+            <p className="mt-2 text-sm text-[var(--color-ink-soft)]">
+              視聴時間の合計 {formatRuntime(minutes)}
+            </p>
+          )}
+
           {next ? (
             <p className="mt-3 text-sm">
               次に観るのは <span className="font-bold">{next.film.title}</span>
@@ -125,6 +140,18 @@ export default function WatchOrder({ series, orders, entriesByOrder }: Props) {
             watchedCount > 0 && <p className="mt-3 text-sm font-bold">この順番はすべて観終えました</p>
           )}
         </div>
+      )}
+
+      {loaded && (
+        <ShareProgress
+          seriesSlug={series.slug}
+          seriesName={series.name}
+          watched={watchedCount}
+          total={entries.length}
+          minutes={minutes}
+          nextTitle={next?.film.title ?? null}
+          orderLabel={ORDER_LABELS[order]}
+        />
       )}
 
       <ol className="mt-6 space-y-3">
