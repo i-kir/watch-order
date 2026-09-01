@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { SITE_URL } from '@/lib/site';
 import './globals.css';
 
 const SITE_NAME = '観る順ナビ';
@@ -8,7 +7,7 @@ const SITE_DESCRIPTION =
   '映画シリーズを観る順番を、公開順・時系列順・おすすめ順で比較できます。順番をめぐる論点や、公式設定の矛盾も出典つきで示します。';
 
 export const metadata: Metadata = {
-  metadataBase: new URL(SITE_URL),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000'),
   title: {
     default: `${SITE_NAME} | 映画シリーズを観る順番`,
     template: `%s | ${SITE_NAME}`,
