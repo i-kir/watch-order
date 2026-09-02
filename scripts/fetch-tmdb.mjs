@@ -7,10 +7,21 @@
 // 取得結果はコミットするので、ビルド時に API キーは不要になる。
 // TMDb の規約により、画面には次の表記が必要です（app/layout.tsx に記載済み）。
 //   This product uses the TMDB API but is not endorsed or certified by TMDB.
-import { readFile, writeFile } from 'node:fs/promises';
+import { readdir, readFile, writeFile } from 'node:fs/promises';
 
 const API = 'https://api.themoviedb.org/3';
-const KEY = process.env.TMDB_API_KEY;
+/** .env.local に TMDB_API_KEY を書いておけば、毎回渡さなくてよい */
+async function loadKey() {
+  if (process.env.TMDB_API_KEY) return process.env.TMDB_API_KEY;
+  try {
+    const text = await readFile(new URL('../.env.local', import.meta.url), 'utf8');
+    return text.match(/^TMDB_API_KEY=(.+)$/m)?.[1]?.trim() ?? null;
+  } catch {
+    return null;
+  }
+}
+
+const KEY = await loadKey();
 
 const args = process.argv.slice(2);
 const only = args.includes('--series') ? args[args.indexOf('--series') + 1] : null;
@@ -82,7 +93,9 @@ async function detail(id) {
 }
 
 async function main() {
-  const files = ['mcu.ts', 'star-wars.ts', 'wizarding-world.ts', 'x-men.ts', 'fast-furious.ts'];
+  // シリーズを足したときに書き足し忘れないよう、フォルダから拾う
+  const dir = new URL('../content/series/', import.meta.url);
+  const files = (await readdir(dir)).filter((f) => f.endsWith('.ts') && f !== 'index.ts').sort();
   const outPath = new URL('../content/tmdb.json', import.meta.url);
   const existing = JSON.parse(await readFile(outPath, 'utf8').catch(() => '{}'));
 
