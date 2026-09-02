@@ -25,12 +25,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="ja">
       <body className="flex min-h-screen flex-col">
-        <header className="border-b border-[var(--color-line)] bg-white">
-          <div className="mx-auto flex max-w-4xl items-center justify-between px-4 py-4">
-            <Link href="/" className="text-lg font-bold tracking-tight">
+        <header className="bg-[var(--color-night)] text-white">
+          <div className="mx-auto flex max-w-4xl items-center justify-between gap-3 px-4 py-3.5">
+            <Link href="/" className="flex items-center gap-2 text-base font-bold tracking-tight">
+              <span aria-hidden className="text-lg leading-none">🎬</span>
               観る順ナビ
             </Link>
-            <span className="text-xs text-[var(--color-ink-soft)]">映画シリーズの観る順番</span>
+            <span className="text-[11px] text-white/60">映画シリーズの観る順番</span>
           </div>
         </header>
 

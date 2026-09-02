@@ -2,11 +2,13 @@
 
 @theme {
   --color-ink: #16161a;
-  --color-ink-soft: #4a4a55;
-  --color-paper: #fbfbfd;
+  --color-ink-soft: #55555f;
+  --color-ink-faint: #8a8a95;
+  --color-paper: #f7f7fa;
   --color-line: #e4e4ec;
   --color-accent: #2f4b7c;
   --color-accent-soft: #eaeff7;
+  --color-night: #14161f;
   --font-sans: "Hiragino Sans", "Noto Sans JP", system-ui, -apple-system, sans-serif;
 }
 
@@ -19,4 +21,9 @@ body {
   color: var(--color-ink);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
+}
+
+/* 見出しの折り返しを、読みやすい位置で切る */
+.balance {
+  text-wrap: balance;
 }

@@ -77,10 +77,20 @@ export default function ShareProgress({ seriesSlug, ...data }: Props) {
 
   const xUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(pageUrl)}`;
 
-  if (data.watched === 0) return null;
+  // 0件のとき丸ごと消すと「シェア機能が無い」と誤解されるので、条件だけ伝える
+  if (data.watched === 0) {
+    return (
+      <section className="mt-6 rounded-2xl border border-dashed border-[var(--color-line)] bg-white/60 p-4 text-center">
+        <p className="text-sm font-bold text-[var(--color-ink-soft)]">記録を画像でシェア</p>
+        <p className="mt-1 text-xs text-[var(--color-ink-faint)]">
+          観た作品にチェックを入れると、制覇率の画像を作れます
+        </p>
+      </section>
+    );
+  }
 
   return (
-    <section className="mt-8 rounded-xl border border-[var(--color-line)] bg-white p-4">
+    <section className="mt-6 rounded-2xl border border-[var(--color-line)] bg-white p-4">
       <h2 className="text-sm font-bold">記録を画像でシェア</h2>
 
       <canvas

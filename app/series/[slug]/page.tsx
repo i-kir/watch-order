@@ -58,8 +58,8 @@ export default async function SeriesPage({ params }: { params: Promise<Params> }
   };
 
   return (
-    <div className="mx-auto max-w-3xl px-4 py-10">
-      <nav className="text-xs text-[var(--color-ink-soft)]">
+    <div className="mx-auto max-w-3xl px-4 pb-10 pt-5">
+      <nav className="text-xs text-[var(--color-ink-faint)]">
         <Link href="/" className="hover:underline">
           ホーム
         </Link>
@@ -67,29 +67,48 @@ export default async function SeriesPage({ params }: { params: Promise<Params> }
         <span>{series.name}</span>
       </nav>
 
-      <h1 className="mt-4 text-3xl font-bold tracking-tight">{series.name}を観る順番</h1>
-      <p className="mt-3 leading-relaxed text-[var(--color-ink-soft)]">{series.description}</p>
+      <h1 className="balance mt-2 text-[1.5rem] font-bold leading-tight tracking-tight sm:text-3xl">
+        {series.name}を観る順番
+      </h1>
+
+      <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-[var(--color-ink-soft)]">
+        <span className="rounded-full bg-[var(--color-accent-soft)] px-2.5 py-1 font-bold tabular-nums text-[var(--color-accent)]">
+          全{series.films.length}作
+        </span>
+        <span>{orders.length}通りの順番で比較</span>
+      </div>
+
+      {/* スマホでは3行までに抑えて、リストまでの距離を縮める */}
+      <p className="mt-3 line-clamp-3 text-sm leading-relaxed text-[var(--color-ink-soft)] sm:line-clamp-none">
+        {series.description}
+      </p>
 
       {posters.length > 0 && (
-        <div className="mt-6 flex gap-2 overflow-x-auto pb-2">
+        <div className="-mx-4 mt-4 flex gap-2 overflow-x-auto px-4 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           {posters.map((url) => (
-            <Poster key={url} src={url} alt="" size="md" />
+            <Poster
+              key={url}
+              src={url}
+              alt=""
+              size="md"
+              className="h-[78px] w-auto rounded-md ring-1 ring-black/5 sm:h-[132px]"
+            />
           ))}
         </div>
       )}
 
-      <div className="mt-8">
+      <div className="mt-5">
         <WatchOrder series={series} orders={orders} entriesByOrder={entriesByOrder} />
       </div>
 
       {series.caveats.length > 0 && (
-        <section className="mt-12">
-          <h2 className="text-xl font-bold">順番をめぐる論点</h2>
+        <section className="mt-10">
+          <h2 className="text-lg font-bold sm:text-xl">順番をめぐる論点</h2>
           <ul className="mt-4 space-y-3">
             {series.caveats.map((caveat) => (
               <li
                 key={caveat}
-                className="rounded-xl border border-[var(--color-line)] bg-white p-4 text-sm leading-relaxed"
+                className="rounded-2xl border border-[var(--color-line)] bg-white p-4 text-sm leading-relaxed"
               >
                 {caveat}
               </li>
@@ -98,8 +117,8 @@ export default async function SeriesPage({ params }: { params: Promise<Params> }
         </section>
       )}
 
-      <section className="mt-12">
-        <h2 className="text-xl font-bold">出典</h2>
+      <section className="mt-10">
+        <h2 className="text-lg font-bold sm:text-xl">出典</h2>
         <ul className="mt-3 space-y-1 text-sm">
           {series.sources.map((source) => (
             <li key={source.url}>
