@@ -23,23 +23,46 @@ if (!KEY) {
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-/** TS の定義ファイルから slug / 原題 / 公開年 だけを取り出す（実行せずに読む） */
+/**
+ * TS の定義ファイルから slug / 原題 / 公開年 / tmdbId を取り出す（実行せずに読む）。
+ * films 配列の範囲だけを見る。シリーズ自身の slug と同名の作品
+ * （x-men シリーズの『X-メン』など）を取りこぼさないため。
+ */
 async function readFilms(file) {
   const text = await readFile(new URL(`../content/series/${file}`, import.meta.url), 'utf8');
   const seriesSlug = text.match(/slug:\s*'([^']+)'/)?.[1];
+
+  const from = text.indexOf('films: [');
+  const to = text.indexOf('releaseOrder:');
+  if (from < 0 || to < 0) return { seriesSlug, films: [] };
+  const body = text.slice(from, to);
+
+  const starts = [...body.matchAll(/\{\s*slug:\s*'([^']+)'/g)];
   const films = [];
-  // 原題にアポストロフィが含まれると二重引用符で書かれるため、両方を拾う
-  const re =
-    /\{\s*slug:\s*'([^']+)',\s*title:\s*'([^']*)',\s*originalTitle:\s*(?:'([^']*)'|"([^"]*)"),\s*year:\s*(\d{4})/g;
-  let m;
-  while ((m = re.exec(text)) !== null) {
+
+  for (let i = 0; i < starts.length; i++) {
+    const s0 = starts[i].index;
+    const s1 = i + 1 < starts.length ? starts[i + 1].index : body.length;
+    const block = body.slice(s0, s1);
+
+    const title = block.match(/title:\s*'([^']*)'/)?.[1];
+    const originalTitle =
+      block.match(/originalTitle:\s*'([^']*)'/)?.[1] ??
+      block.match(/originalTitle:\s*"([^"]*)"/)?.[1];
+    const year = block.match(/year:\s*(\d{4})/)?.[1];
+    // 検索では取り違える作品は、定義側で ID を直接指定できる
+    const tmdbId = block.match(/tmdbId:\s*(\d+)/)?.[1];
+
+    if (!title || !originalTitle || !year) continue;
     films.push({
-      slug: m[1],
-      title: m[2],
-      originalTitle: m[3] ?? m[4],
-      year: Number(m[5]),
+      slug: starts[i][1],
+      title,
+      originalTitle,
+      year: Number(year),
+      tmdbId: tmdbId ? Number(tmdbId) : null,
     });
   }
+
   return { seriesSlug, films };
 }
 
@@ -81,7 +104,10 @@ async function main() {
       }
 
       try {
-        const hit = await search(film.originalTitle, film.year);
+        // ID が指定されていれば検索を飛ばす（同名・続編の取り違えを防ぐ）
+        const hit = film.tmdbId
+          ? { id: film.tmdbId, poster_path: null, overview: '' }
+          : await search(film.originalTitle, film.year);
         if (!hit) {
           console.log(`  ✗ ${film.title}（見つからず）`);
           missed++;
@@ -90,8 +116,9 @@ async function main() {
           const info = await detail(hit.id);
           existing[key] = {
             tmdbId: hit.id,
-            posterPath: hit.poster_path ?? null,
-            overview: hit.overview ?? '',
+            // ID 指定のときは検索結果がないので、詳細から埋める
+            posterPath: hit.poster_path ?? info.poster_path ?? null,
+            overview: hit.overview || info.overview || '',
             runtime: info.runtime ?? null,
           };
           const runtimeLabel = info.runtime ? `${info.runtime}分` : '上映時間不明';

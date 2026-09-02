@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from 'react';
 import type { Film, OrderKey, Series } from '@/lib/types';
-import { ORDER_DESCRIPTIONS, ORDER_LABELS } from '@/lib/series';
+import { ORDER_LABELS, descriptionOf, labelOf } from '@/lib/series';
 import { formatRuntime, posterOf, totalRuntime, tmdbOf } from '@/lib/tmdb';
 import Poster from './Poster';
 import ShareProgress from './ShareProgress';
@@ -93,13 +93,13 @@ export default function WatchOrder({ series, orders, entriesByOrder }: Props) {
                 : 'bg-white text-[var(--color-ink-soft)] ring-1 ring-[var(--color-line)] hover:ring-[var(--color-accent)]'
             }`}
           >
-            {ORDER_LABELS[key]}
+            {labelOf(series, key)}
           </button>
         ))}
       </div>
 
       <p className="mt-3 text-sm leading-relaxed text-[var(--color-ink-soft)]">
-        {ORDER_DESCRIPTIONS[order]}
+        {descriptionOf(series, order)}
       </p>
 
       {loaded && (
@@ -152,7 +152,7 @@ export default function WatchOrder({ series, orders, entriesByOrder }: Props) {
           minutes={minutes}
           nextTitle={next?.film.title ?? null}
           posterUrl={posterOf(series.slug, (next ?? entries[entries.length - 1])?.film.slug ?? '', 'w342')}
-          orderLabel={ORDER_LABELS[order]}
+          orderLabel={labelOf(series, order)}
         />
       )}
 

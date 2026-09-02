@@ -89,6 +89,17 @@ export function orderedFilms(series: Series, order: OrderKey): OrderedEntry[] {
   return entries;
 }
 
+/** 3つ目の順番の呼び名。シリーズ側で上書きできる */
+export function labelOf(series: Series, order: OrderKey): string {
+  if (order === 'recommended' && series.recommendedLabel) return series.recommendedLabel;
+  return ORDER_LABELS[order];
+}
+
+export function descriptionOf(series: Series, order: OrderKey): string {
+  if (order === 'recommended' && series.recommendedDescription) return series.recommendedDescription;
+  return ORDER_DESCRIPTIONS[order];
+}
+
 export function availableOrders(series: Series): OrderKey[] {
   const orders: OrderKey[] = ['release', 'chrono'];
   if (series.recommendedOrder && series.recommendedOrder.length > 0) orders.push('recommended');

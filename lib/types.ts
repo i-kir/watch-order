@@ -34,6 +34,9 @@ export type Series = {
   chronoOrder: string[];
   /** 初見の人におすすめする順。定義しない場合は省略 */
   recommendedOrder?: RecommendedStep[];
+  /** 3つ目の順番の呼び名。作品によって「おすすめ順」以外が適切なことがある */
+  recommendedLabel?: string;
+  recommendedDescription?: string;
   /** 順番をめぐる論点。ここが記事との差になる */
   caveats: string[];
   sources: { label: string; url: string }[];
