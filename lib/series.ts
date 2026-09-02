@@ -101,7 +101,12 @@ export function descriptionOf(series: Series, order: OrderKey): string {
 }
 
 export function availableOrders(series: Series): OrderKey[] {
-  const orders: OrderKey[] = ['release', 'chrono'];
+  const orders: OrderKey[] = ['release'];
+  // 公開順と時系列順が同じシリーズで、同じ内容のタブを2つ出さない
+  const sameAsRelease =
+    series.chronoOrder.length === series.releaseOrder.length &&
+    series.chronoOrder.every((slug, i) => slug === series.releaseOrder[i]);
+  if (!sameAsRelease) orders.push('chrono');
   if (series.recommendedOrder && series.recommendedOrder.length > 0) orders.push('recommended');
   return orders;
 }

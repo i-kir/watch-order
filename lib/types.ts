@@ -5,6 +5,10 @@ export type Film = {
   originalTitle: string;
   /** 公開年（米国基準。並べ替えの基準にする） */
   year: number;
+  /** 劇場版かTVシリーズか。省略時は劇場版として扱う */
+  kind?: 'film' | 'tv';
+  /** TVシリーズの話数。kind が 'tv' のときだけ意味を持つ */
+  episodes?: number;
   /** 作中の設定年代。公式に確定していない場合は undefined */
   setting?: string;
   /** その作品固有の注記（矛盾・異説など） */

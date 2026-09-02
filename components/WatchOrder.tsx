@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import type { Film, OrderKey, Series } from '@/lib/types';
 import { descriptionOf, labelOf } from '@/lib/series';
-import { formatRuntime, posterOf, totalRuntime, tmdbOf } from '@/lib/tmdb';
+import { formatRuntime, posterOf, totalRuntime, watchMinutes } from '@/lib/tmdb';
 import Poster from './Poster';
 import ShareProgress from './ShareProgress';
 
@@ -63,18 +63,20 @@ export default function WatchOrder({ series, orders, entriesByOrder }: Props) {
   const { watched, toggle, reset, loaded } = useWatched(series.slug);
 
   const entries = entriesByOrder[order] ?? [];
-  const watchedSlugs = useMemo(
-    () => entries.filter((e) => watched.has(e.film.slug)).map((e) => e.film.slug),
+  // TVと劇場版が混ざるシリーズだけ、行に種別を出す（映画だけのシリーズでは邪魔になる）
+  const mixesTv = series.films.some((f) => f.kind === 'tv');
+  const watchedFilms = useMemo(
+    () => entries.filter((e) => watched.has(e.film.slug)).map((e) => e.film),
     [entries, watched]
   );
-  const watchedCount = watchedSlugs.length;
+  const watchedCount = watchedFilms.length;
   const next = entries.find((e) => !watched.has(e.film.slug));
   const percent = entries.length === 0 ? 0 : Math.round((watchedCount / entries.length) * 100);
 
   // 上映時間は TMDb から取り込んだときだけ出す（未取得なら本数だけ表示）
   const minutes = useMemo(
-    () => totalRuntime(series.slug, watchedSlugs),
-    [series.slug, watchedSlugs]
+    () => totalRuntime(series.slug, watchedFilms),
+    [series.slug, watchedFilms]
   );
 
   return (
@@ -163,7 +165,8 @@ export default function WatchOrder({ series, orders, entriesByOrder }: Props) {
         {entries.map((entry, index) => {
           const isWatched = watched.has(entry.film.slug);
           const isNext = next?.film.slug === entry.film.slug;
-          const runtime = tmdbOf(series.slug, entry.film.slug)?.runtime;
+          const isTv = entry.film.kind === 'tv';
+          const minutesOfFilm = watchMinutes(series.slug, entry.film);
 
           return (
             <li key={entry.film.slug}>
@@ -210,8 +213,24 @@ export default function WatchOrder({ series, orders, entriesByOrder }: Props) {
                   </h3>
 
                   <p className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-0.5 text-[11px] text-[var(--color-ink-faint)]">
+                    {mixesTv && (
+                      <span
+                        className={`rounded px-1.5 py-px font-bold ${
+                          isTv
+                            ? 'bg-[#f0e6f5] text-[#6b3f8a]'
+                            : 'bg-[var(--color-accent-soft)] text-[var(--color-accent)]'
+                        }`}
+                      >
+                        {isTv ? 'TV' : '劇場版'}
+                      </span>
+                    )}
                     <span className="tabular-nums">{entry.film.year}年</span>
-                    {runtime ? <span className="tabular-nums">{formatRuntime(runtime)}</span> : null}
+                    {isTv && entry.film.episodes ? (
+                      <span className="tabular-nums">全{entry.film.episodes}話</span>
+                    ) : null}
+                    {minutesOfFilm ? (
+                      <span className="tabular-nums">{formatRuntime(minutesOfFilm)}</span>
+                    ) : null}
                     {entry.film.setting && <span>設定 {entry.film.setting}</span>}
                   </p>
 

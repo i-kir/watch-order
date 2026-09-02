@@ -63,6 +63,8 @@ async function readFilms(file) {
     const year = block.match(/year:\s*(\d{4})/)?.[1];
     // 検索では取り違える作品は、定義側で ID を直接指定できる
     const tmdbId = block.match(/tmdbId:\s*(\d+)/)?.[1];
+    // TVシリーズは /search/tv を引く必要がある
+    const kind = block.match(/kind:\s*'(film|tv)'/)?.[1] ?? 'film';
 
     if (!title || !originalTitle || !year) continue;
     films.push({
@@ -70,6 +72,7 @@ async function readFilms(file) {
       title,
       originalTitle,
       year: Number(year),
+      kind,
       tmdbId: tmdbId ? Number(tmdbId) : null,
     });
   }
@@ -77,8 +80,10 @@ async function readFilms(file) {
   return { seriesSlug, films };
 }
 
-async function search(originalTitle, year) {
-  const url = `${API}/search/movie?api_key=${KEY}&language=ja-JP&query=${encodeURIComponent(originalTitle)}&year=${year}`;
+async function search(originalTitle, year, kind) {
+  const path = kind === 'tv' ? 'search/tv' : 'search/movie';
+  const yearParam = kind === 'tv' ? `first_air_date_year=${year}` : `year=${year}`;
+  const url = `${API}/${path}?api_key=${KEY}&language=ja-JP&query=${encodeURIComponent(originalTitle)}&${yearParam}`;
   const res = await fetch(url);
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
   const json = await res.json();
@@ -86,10 +91,16 @@ async function search(originalTitle, year) {
 }
 
 /** 上映時間は検索結果に含まれないため、詳細を1件ずつ引く */
-async function detail(id) {
-  const res = await fetch(`${API}/movie/${id}?api_key=${KEY}&language=ja-JP`);
+async function detail(id, kind) {
+  const res = await fetch(`${API}/${kind === 'tv' ? 'tv' : 'movie'}/${id}?api_key=${KEY}&language=ja-JP`);
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
   return res.json();
+}
+
+/** TVは1話あたりの分数。作品ごとに配列で返ってくるので先頭を使う */
+function runtimeOf(info, kind) {
+  if (kind === 'tv') return info.episode_run_time?.[0] ?? null;
+  return info.runtime ?? null;
 }
 
 async function main() {
@@ -120,21 +131,23 @@ async function main() {
         // ID が指定されていれば検索を飛ばす（同名・続編の取り違えを防ぐ）
         const hit = film.tmdbId
           ? { id: film.tmdbId, poster_path: null, overview: '' }
-          : await search(film.originalTitle, film.year);
+          : await search(film.originalTitle, film.year, film.kind);
         if (!hit) {
           console.log(`  ✗ ${film.title}（見つからず）`);
           missed++;
         } else {
           await sleep(250);
-          const info = await detail(hit.id);
+          const info = await detail(hit.id, film.kind);
+          const runtime = runtimeOf(info, film.kind);
           existing[key] = {
             tmdbId: hit.id,
             // ID 指定のときは検索結果がないので、詳細から埋める
             posterPath: hit.poster_path ?? info.poster_path ?? null,
             overview: hit.overview || info.overview || '',
-            runtime: info.runtime ?? null,
+            runtime,
           };
-          const runtimeLabel = info.runtime ? `${info.runtime}分` : '上映時間不明';
+          const unit = film.kind === 'tv' ? '分/話' : '分';
+          const runtimeLabel = runtime ? `${runtime}${unit}` : '尺不明';
           console.log(`  ✓ ${film.title} → TMDb #${hit.id}（${runtimeLabel}）`);
           found++;
         }

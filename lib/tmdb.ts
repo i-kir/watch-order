@@ -16,15 +16,31 @@ export function tmdbOf(seriesSlug: string, filmSlug: string): TmdbEntry | undefi
   return entries[key(seriesSlug, filmSlug)];
 }
 
-/** 視聴済み作品の合計上映時間（分）。1本でも取得できていなければ null を返す */
-export function totalRuntime(seriesSlug: string, filmSlugs: string[]): number | null {
+/**
+ * 視聴済み作品の合計視聴時間（分）。1本でも取得できていなければ null を返す。
+ * TVシリーズは runtime が1話あたりなので、話数を掛ける。
+ */
+export function totalRuntime(
+  seriesSlug: string,
+  films: { slug: string; kind?: 'film' | 'tv'; episodes?: number }[]
+): number | null {
   let total = 0;
-  for (const slug of filmSlugs) {
-    const runtime = tmdbOf(seriesSlug, slug)?.runtime;
+  for (const film of films) {
+    const runtime = tmdbOf(seriesSlug, film.slug)?.runtime;
     if (!runtime) return null;
-    total += runtime;
+    total += film.kind === 'tv' ? runtime * (film.episodes ?? 1) : runtime;
   }
   return total;
+}
+
+/** 1作ぶんの視聴時間（分）。TVシリーズは全話の合計を返す */
+export function watchMinutes(
+  seriesSlug: string,
+  film: { slug: string; kind?: 'film' | 'tv'; episodes?: number }
+): number | null {
+  const runtime = tmdbOf(seriesSlug, film.slug)?.runtime;
+  if (!runtime) return null;
+  return film.kind === 'tv' ? runtime * (film.episodes ?? 1) : runtime;
 }
 
 export function formatRuntime(minutes: number): string {

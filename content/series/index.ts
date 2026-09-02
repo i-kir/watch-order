@@ -9,6 +9,8 @@ import { alien } from './alien';
 import { planetOfTheApes } from './planet-of-the-apes';
 import { terminator } from './terminator';
 import { conan } from './conan';
+import { evangelion } from './evangelion';
+import { kimetsu } from './kimetsu';
 
 export const seriesList: Series[] = [
   mcu,
@@ -21,4 +23,6 @@ export const seriesList: Series[] = [
   planetOfTheApes,
   terminator,
   conan,
+  evangelion,
+  kimetsu,
 ];
