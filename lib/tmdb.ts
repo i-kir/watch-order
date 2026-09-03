@@ -78,3 +78,13 @@ export function seriesPosters(seriesSlug: string, filmSlugs: string[], count: nu
   }
   return urls;
 }
+
+/** 全シリーズからポスターを集める。トップの背景用 */
+export function allPosters(size: 'w92' | 'w185' = 'w185'): string[] {
+  const urls: string[] = [];
+  for (const entry of Object.values(entries)) {
+    const url = posterUrl(entry.posterPath, size);
+    if (url) urls.push(url);
+  }
+  return urls;
+}

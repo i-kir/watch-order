@@ -27,3 +27,25 @@ body {
 .balance {
   text-wrap: balance;
 }
+
+/* トップ背景のポスターを流す。同じ列を2回並べているので -50% で1周する */
+@keyframes wall-scroll {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(-50%, 0, 0); }
+}
+
+.wall-row {
+  animation: wall-scroll 90s linear infinite;
+}
+
+.wall-row-rev {
+  animation: wall-scroll 120s linear infinite reverse;
+}
+
+/* 動きが苦手な人の設定を尊重する */
+@media (prefers-reduced-motion: reduce) {
+  .wall-row,
+  .wall-row-rev {
+    animation: none;
+  }
+}

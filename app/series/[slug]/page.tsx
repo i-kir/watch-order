@@ -4,7 +4,7 @@ import Link from 'next/link';
 import WatchOrder from '@/components/WatchOrder';
 import { availableOrders, getAllSeries, getSeries, orderedFilms } from '@/lib/series';
 import { seriesPosters } from '@/lib/tmdb';
-import Poster from '@/components/Poster';
+import PosterWall from '@/components/PosterWall';
 import type { OrderKey } from '@/lib/types';
 
 type Params = { slug: string };
@@ -39,7 +39,7 @@ export default async function SeriesPage({ params }: { params: Promise<Params> }
   if (!series) notFound();
 
   const orders = availableOrders(series);
-  const posters = seriesPosters(series.slug, series.releaseOrder, 12);
+  const posters = seriesPosters(series.slug, series.releaseOrder, 20);
   const entriesByOrder = Object.fromEntries(
     orders.map((key) => [key, orderedFilms(series, key as OrderKey)])
   );
@@ -58,44 +58,44 @@ export default async function SeriesPage({ params }: { params: Promise<Params> }
   };
 
   return (
-    <div className="mx-auto max-w-3xl px-4 pb-10 pt-5">
-      <nav className="text-xs text-[var(--color-ink-faint)]">
-        <Link href="/" className="hover:underline">
-          ホーム
-        </Link>
-        <span className="mx-1">/</span>
-        <span>{series.name}</span>
-      </nav>
+    <div className="pb-10">
+      {/* 検索から来た人が最初に見る場所。作品の顔を先に見せる */}
+      <section className="relative isolate overflow-hidden bg-[var(--color-night)] text-white">
+        <PosterWall posters={posters} rows={1} />
+        <div className="absolute inset-0 bg-[var(--color-night)]/70" aria-hidden />
+        <div
+          className="absolute inset-0 bg-gradient-to-r from-[var(--color-night)] from-45% via-[var(--color-night)]/80 via-75% to-[var(--color-night)]/25"
+          aria-hidden
+        />
 
-      <h1 className="balance mt-2 text-[1.5rem] font-bold leading-tight tracking-tight sm:text-3xl">
-        {series.name}を観る順番
-      </h1>
+        <div className="relative mx-auto max-w-3xl px-4 pb-7 pt-4 sm:pb-9 sm:pt-5">
+          <nav className="text-xs text-white/55">
+            <Link href="/" className="hover:underline">
+              ホーム
+            </Link>
+            <span className="mx-1">/</span>
+            <span>{series.name}</span>
+          </nav>
 
-      <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-[var(--color-ink-soft)]">
-        <span className="rounded-full bg-[var(--color-accent-soft)] px-2.5 py-1 font-bold tabular-nums text-[var(--color-accent)]">
-          全{series.films.length}作
-        </span>
-        <span>{orders.length}通りの順番で比較</span>
-      </div>
+          <h1 className="balance mt-2 text-[1.5rem] font-bold leading-tight tracking-tight drop-shadow sm:text-3xl">
+            {series.name}を観る順番
+          </h1>
 
-      {/* スマホでは3行までに抑えて、リストまでの距離を縮める */}
-      <p className="mt-3 line-clamp-3 text-sm leading-relaxed text-[var(--color-ink-soft)] sm:line-clamp-none">
-        {series.description}
-      </p>
+          <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-white/70">
+            <span className="rounded-full bg-white/15 px-2.5 py-1 font-bold tabular-nums">
+              全{series.films.length}作
+            </span>
+            <span>{orders.length}通りの順番で比較</span>
+          </div>
 
-      {posters.length > 0 && (
-        <div className="-mx-4 mt-4 flex gap-2 overflow-x-auto px-4 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-          {posters.map((url) => (
-            <Poster
-              key={url}
-              src={url}
-              alt=""
-              size="md"
-              className="h-[78px] w-auto rounded-md ring-1 ring-black/5 sm:h-[132px]"
-            />
-          ))}
+          {/* スマホでは3行までに抑えて、リストまでの距離を縮める */}
+          <p className="mt-3 line-clamp-3 text-sm leading-relaxed text-white/75 sm:line-clamp-none">
+            {series.description}
+          </p>
         </div>
-      )}
+      </section>
+
+      <div className="mx-auto max-w-3xl px-4">
 
       <div className="mt-5">
         <WatchOrder series={series} orders={orders} entriesByOrder={entriesByOrder} />
@@ -139,6 +139,7 @@ export default async function SeriesPage({ params }: { params: Promise<Params> }
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      </div>
     </div>
   );
 }
