@@ -9,6 +9,11 @@ export type Film = {
   kind?: 'film' | 'tv';
   /** TVシリーズの話数。kind が 'tv' のときだけ意味を持つ */
   episodes?: number;
+  /**
+   * TMDb でこの編が「別番組」ではなく親番組のシーズンとして登録されている場合の
+   * シーズン番号。tmdbId に親番組の ID を入れて一緒に指定する。
+   */
+  season?: number;
   /** 作中の設定年代。公式に確定していない場合は undefined */
   setting?: string;
   /** その作品固有の注記（矛盾・異説など） */

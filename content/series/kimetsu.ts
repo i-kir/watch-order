@@ -19,6 +19,7 @@ export const kimetsu: Series = {
       kind: 'tv',
       episodes: 26,
       tmdbId: 85937,
+      season: 1,
       note: 'シリーズの最初。ここから観る',
     },
     {
@@ -35,6 +36,8 @@ export const kimetsu: Series = {
       year: 2021,
       kind: 'tv',
       episodes: 7,
+      tmdbId: 85937,
+      season: 2,
       note: '第2話以降は劇場版の再構成。第1話「炎柱・煉獄杏寿郎」だけが完全新作で、劇場版には入っていない',
     },
     {
@@ -44,6 +47,8 @@ export const kimetsu: Series = {
       year: 2021,
       kind: 'tv',
       episodes: 11,
+      tmdbId: 85937,
+      season: 3,
       note: '無限列車編の続き。TV版無限列車編に続けて同じ枠で放送された',
     },
     {
@@ -53,6 +58,8 @@ export const kimetsu: Series = {
       year: 2023,
       kind: 'tv',
       episodes: 11,
+      tmdbId: 85937,
+      season: 4,
     },
     {
       slug: 'hashira',
@@ -61,6 +68,8 @@ export const kimetsu: Series = {
       year: 2024,
       kind: 'tv',
       episodes: 8,
+      tmdbId: 85937,
+      season: 5,
       note: '最終決戦の前段にあたる。第8話が最終話',
     },
     {

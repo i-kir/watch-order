@@ -25,6 +25,8 @@ const KEY = await loadKey();
 
 const args = process.argv.slice(2);
 const only = args.includes('--series') ? args[args.indexOf('--series') + 1] : null;
+/** 取得済みでも取り直す。ポスターの差し替えなどに使う */
+const force = args.includes('--force');
 
 if (!KEY) {
   console.error('TMDB_API_KEY を設定してください。');
@@ -65,6 +67,8 @@ async function readFilms(file) {
     const tmdbId = block.match(/tmdbId:\s*(\d+)/)?.[1];
     // TVシリーズは /search/tv を引く必要がある
     const kind = block.match(/kind:\s*'(film|tv)'/)?.[1] ?? 'film';
+    // 親番組のシーズンとして登録されている編は、シーズンを直接引く
+    const season = block.match(/season:\s*(\d+)/)?.[1];
 
     if (!title || !originalTitle || !year) continue;
     films.push({
@@ -73,6 +77,7 @@ async function readFilms(file) {
       originalTitle,
       year: Number(year),
       kind,
+      season: season != null ? Number(season) : null,
       tmdbId: tmdbId ? Number(tmdbId) : null,
     });
   }
@@ -103,6 +108,22 @@ function runtimeOf(info, kind) {
   return info.runtime ?? null;
 }
 
+/** シーズン単位の情報。編ごとにポスターが違うので、こちらを使う */
+async function seasonDetail(showId, seasonNumber) {
+  const res = await fetch(
+    `${API}/tv/${showId}/season/${seasonNumber}?api_key=${KEY}&language=ja-JP`
+  );
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  return res.json();
+}
+
+/** 番組全体の episode_run_time が空のことがあるので、各話の実測から平均を出す */
+function averageEpisodeRuntime(season) {
+  const values = (season.episodes ?? []).map((e) => e.runtime).filter((n) => typeof n === 'number' && n > 0);
+  if (values.length === 0) return null;
+  return Math.round(values.reduce((a, b) => a + b, 0) / values.length);
+}
+
 async function main() {
   // シリーズを足したときに書き足し忘れないよう、フォルダから拾う
   const dir = new URL('../content/series/', import.meta.url);
@@ -122,12 +143,29 @@ async function main() {
     for (const film of films) {
       const key = `${seriesSlug}:${film.slug}`;
       // 上映時間が入っていない古い形式は取り直す
-      if (existing[key] && existing[key].runtime !== undefined) {
+      if (!force && existing[key] && existing[key].runtime !== undefined) {
         console.log(`  = ${film.title}（取得済み）`);
         continue;
       }
 
       try {
+        // シーズンとして登録されている編は、検索せずにシーズンを直接引く
+        if (film.kind === 'tv' && film.season != null && film.tmdbId) {
+          const season = await seasonDetail(film.tmdbId, film.season);
+          const runtime = averageEpisodeRuntime(season);
+          existing[key] = {
+            tmdbId: film.tmdbId,
+            posterPath: season.poster_path ?? null,
+            overview: season.overview ?? '',
+            runtime,
+          };
+          const label = runtime ? `${runtime}分/話` : '尺不明';
+          console.log(`  ✓ ${film.title} → #${film.tmdbId} season ${film.season}（${label}）`);
+          found++;
+          await sleep(250);
+          continue;
+        }
+
         // ID が指定されていれば検索を飛ばす（同名・続編の取り違えを防ぐ）
         const hit = film.tmdbId
           ? { id: film.tmdbId, poster_path: null, overview: '' }
