@@ -11,6 +11,8 @@ import { terminator } from './terminator';
 import { conan } from './conan';
 import { evangelion } from './evangelion';
 import { kimetsu } from './kimetsu';
+import { gundam } from './gundam';
+import { fate } from './fate';
 
 export const seriesList: Series[] = [
   mcu,
@@ -25,4 +27,6 @@ export const seriesList: Series[] = [
   conan,
   evangelion,
   kimetsu,
+  gundam,
+  fate,
 ];

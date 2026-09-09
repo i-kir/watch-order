@@ -6,6 +6,7 @@ import { availableOrders, getAllSeries, getSeries, orderedFilms } from '@/lib/se
 import { seriesPosters } from '@/lib/tmdb';
 import PosterWall from '@/components/PosterWall';
 import type { OrderKey } from '@/lib/types';
+import { SITE_URL } from '@/lib/site';
 
 type Params = { slug: string };
 
@@ -44,18 +45,34 @@ export default async function SeriesPage({ params }: { params: Promise<Params> }
     orders.map((key) => [key, orderedFilms(series, key as OrderKey)])
   );
 
-  // 検索エンジンに構造を伝える。ページ自体は静的生成される
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'ItemList',
-    name: `${series.name}を観る順番（公開順）`,
-    numberOfItems: series.releaseOrder.length,
-    itemListElement: entriesByOrder.release?.map((entry, index) => ({
-      '@type': 'ListItem',
-      position: index + 1,
-      name: entry.film.title,
-    })),
-  };
+  // 検索エンジンに構造を伝える。ページ自体は静的生成される。
+  // パンくずは画面にも出しているが、マークアップしないと検索結果には反映されない
+  const jsonLd = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'ItemList',
+      name: `${series.name}を観る順番（公開順）`,
+      numberOfItems: series.releaseOrder.length,
+      itemListElement: entriesByOrder.release?.map((entry, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        name: entry.film.title,
+      })),
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'ホーム', item: SITE_URL },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: `${series.name}を観る順番`,
+          item: `${SITE_URL}/series/${series.slug}`,
+        },
+      ],
+    },
+  ];
 
   return (
     <div className="pb-10">

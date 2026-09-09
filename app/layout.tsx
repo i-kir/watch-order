@@ -19,6 +19,10 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     locale: 'ja_JP',
   },
+  // これがないと X は小さい正方形カードで出す。1200x630 を活かすために必要
+  twitter: {
+    card: 'summary_large_image',
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
