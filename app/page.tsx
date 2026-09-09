@@ -30,7 +30,7 @@ export default function Home() {
 
         <div className="relative mx-auto max-w-4xl px-4 pb-12 pt-10 sm:pb-16 sm:pt-14">
           <h1 className="balance text-2xl font-bold leading-tight tracking-tight drop-shadow sm:text-4xl">
-            映画シリーズを、どの順番で観る？
+            映画とアニメ、どの順番で観る？
           </h1>
           <p className="mt-3 max-w-2xl text-sm leading-relaxed text-white/75 sm:text-base">
             公開順・時系列順・おすすめ順を切り替えて比較。観たものにチェックを入れると、次に観る作品と

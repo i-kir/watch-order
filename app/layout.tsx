@@ -5,12 +5,12 @@ import './globals.css';
 
 const SITE_NAME = '観る順ナビ';
 const SITE_DESCRIPTION =
-  '映画シリーズを観る順番を、公開順・時系列順・おすすめ順で比較できます。順番をめぐる論点や、公式設定の矛盾も出典つきで示します。';
+  '映画・アニメシリーズを観る順番を、公開順・時系列順・おすすめ順で比較できます。順番をめぐる論点や、公式設定の矛盾も出典つきで示します。';
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: `${SITE_NAME} | 映画シリーズを観る順番`,
+    default: `${SITE_NAME} | 映画・アニメシリーズを観る順番`,
     template: `%s | ${SITE_NAME}`,
   },
   description: SITE_DESCRIPTION,
@@ -35,7 +35,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <span aria-hidden className="text-lg leading-none">🎬</span>
               観る順ナビ
             </Link>
-            <span className="text-[11px] text-white/60">映画シリーズの観る順番</span>
+            <span className="text-[11px] text-white/60">映画・アニメの観る順番</span>
           </div>
         </header>
 
