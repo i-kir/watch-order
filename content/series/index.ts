@@ -13,6 +13,7 @@ import { evangelion } from './evangelion';
 import { kimetsu } from './kimetsu';
 import { gundam } from './gundam';
 import { fate } from './fate';
+import { onePiece } from './one-piece';
 
 export const seriesList: Series[] = [
   mcu,
@@ -29,4 +30,5 @@ export const seriesList: Series[] = [
   kimetsu,
   gundam,
   fate,
+  onePiece,
 ];
