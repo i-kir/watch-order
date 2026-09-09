@@ -7,7 +7,7 @@ import type { Series } from '@/lib/types';
 export const mcu: Series = {
   slug: 'mcu',
   name: 'マーベル・シネマティック・ユニバース',
-  tagline: 'MCU 全37作を、公開順・時系列順で',
+  tagline: 'MCU 全40作を、公開順・時系列順で',
   description:
     'アイアンマンから始まる MCU の劇場公開長編を、公開順と公式タイムライン順の両方で並べています。公式順は設定年代の厳密な昇順ではなく、いくつか順序が入れ替わる箇所があります。',
   films: [
@@ -48,6 +48,9 @@ export const mcu: Series = {
     { slug: 'brave-new-world', title: 'キャプテン・アメリカ：ブレイブ・ニュー・ワールド', originalTitle: 'Captain America: Brave New World', year: 2025, setting: '2027年' },
     { slug: 'thunderbolts', title: 'サンダーボルツ*', originalTitle: 'Thunderbolts*', year: 2025, setting: '2027年' },
     { slug: 'fantastic-four-first-steps', title: 'ファンタスティック4：ファースト・ステップ', originalTitle: 'The Fantastic Four: First Steps', year: 2025, note: '別宇宙（アース828）が舞台。作中年代は公式に明示されていない' },
+    { slug: 'brand-new-day', title: 'スパイダーマン：ブランド・ニュー・デイ', originalTitle: 'Spider-Man: Brand New Day', year: 2026, note: '2026年7月31日に日米同時公開' },
+    { slug: 'doomsday', title: 'アベンジャーズ／ドゥームズデイ', originalTitle: 'Avengers: Doomsday', year: 2026, note: '2026年12月18日に日米同時公開。『シークレット・ウォーズ』と合わせて2部構成として作られている' },
+    { slug: 'secret-wars', title: 'アベンジャーズ／シークレット・ウォーズ', originalTitle: 'Avengers: Secret Wars', year: 2027, note: '『ドゥームズデイ』の後編にあたる。2027年公開予定' },
   ],
   releaseOrder: [
     'iron-man', 'incredible-hulk', 'iron-man-2', 'thor', 'captain-america-tfa', 'avengers',
@@ -57,6 +60,7 @@ export const mcu: Series = {
     'shang-chi', 'eternals', 'no-way-home', 'multiverse-of-madness', 'love-and-thunder',
     'wakanda-forever', 'quantumania', 'gotg-3', 'the-marvels', 'deadpool-wolverine',
     'brave-new-world', 'thunderbolts', 'fantastic-four-first-steps',
+    'brand-new-day', 'doomsday', 'secret-wars',
   ],
   chronoOrder: [
     'captain-america-tfa', 'captain-marvel', 'iron-man', 'iron-man-2', 'incredible-hulk', 'thor',
@@ -66,6 +70,7 @@ export const mcu: Series = {
     'far-from-home', 'eternals', 'no-way-home', 'multiverse-of-madness', 'wakanda-forever',
     'love-and-thunder', 'quantumania', 'gotg-3', 'the-marvels', 'deadpool-wolverine',
     'brave-new-world', 'thunderbolts', 'fantastic-four-first-steps',
+    'brand-new-day', 'doomsday', 'secret-wars',
   ],
   recommendedOrder: [
     { slug: 'iron-man', reason: 'すべての始まり。ここから観るのが最も自然です' },
@@ -86,6 +91,9 @@ export const mcu: Series = {
     '『ガーディアンズ・オブ・ギャラクシー：リミックス』は公開こそ3年後ですが、作中では前作の数か月後です。時系列順で観ると連続して並びます。',
     '初見なら公開順をおすすめします。時系列順は、後の作品で明かされる事実を先に知ってしまう箇所があります。',
     'ドラマシリーズ（『ロキ』『ワンダヴィジョン』など）は含めていません。劇場公開の長編のみです。',
+    '『ドゥームズデイ』と『シークレット・ウォーズ』は、2部構成のひとつの物語として作られています。前編と後編にあたるため、『ドゥームズデイ』だけでは話が閉じません。',
+    '『ドゥームズデイ』は未公開のため、何を観ておけば足りるのかは確定していません。公式が公開している映像では、ワカンダ、ファンタスティック4、X-MEN、ソー、スティーブ・ロジャースが合流することが示されています。そこから逆算するなら、『インフィニティ・ウォー』『エンドゲーム』『ノー・ウェイ・ホーム』『マルチバース・オブ・マッドネス』『ソー：ラブ&サンダー』『ワカンダ・フォーエバー』『デッドプール&ウルヴァリン』『サンダーボルツ*』『ファンタスティック4：ファースト・ステップ』『ブランド・ニュー・デイ』の10作が近道になります。40作すべてを観直す必要はありません。',
+    'X-MENが合流するため、20世紀フォックスが製作したX-MEN映画シリーズも関わってきます。ただしMCUとは別系列で、当サイトでも別のシリーズとして扱っています。両者をつなぐ位置にあるのが『デッドプール&ウルヴァリン』です。',
   ],
   sources: [
     { label: 'See the Complete MCU Timeline on Disney+ | Marvel', url: 'https://www.marvel.com/articles/movies/mcu-timeline-order-disney-plus' },
