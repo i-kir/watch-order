@@ -1324,5 +1324,23 @@
     "posterPath": "/xGcPlcZ3fx3DlEGYB7ybky3V6Rh.jpg",
     "overview": "原作第1話目から再アニメ化する完全新作シリーズ。",
     "runtime": null
+  },
+  "mcu:brand-new-day": {
+    "tmdbId": 969681,
+    "posterPath": "/hvbs76wGMZYqJSvaRps5jDzHUhN.jpg",
+    "overview": "愛する人たちを守るために、彼らの記憶から自らの存在を消すという決断をした『スパイダーマン：ノー・ウェイ・ホーム』の出来事から４年。大人になったピーター・パーカーはスパイダーマンとして、ニューヨークの人々を守り、彼らを脅かす犯罪と戦う日々に全力を尽くしていた。そんななか、人々の期待を背負う彼の体に驚くべき身体的変異が起こり始める。同時に、街では姿なき不可解な犯罪が頻発。“親愛なる隣人”に、かつて直面したことのない大きな脅威が迫る──。",
+    "runtime": 145
+  },
+  "mcu:doomsday": {
+    "tmdbId": 1003596,
+    "posterPath": "/axD1jIfE2Is83vDKyTb1CnZ2EBt.jpg",
+    "overview": "",
+    "runtime": 165
+  },
+  "mcu:secret-wars": {
+    "tmdbId": 1003598,
+    "posterPath": "/f0YBuh4hyiAheXhh4JnJWoKi9g5.jpg",
+    "overview": "",
+    "runtime": 0
   }
 }
