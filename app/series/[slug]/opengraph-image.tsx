@@ -23,7 +23,7 @@ export default async function Image({ params }: { params: Promise<{ slug: string
   const { slug } = await params;
   const series = getSeries(slug);
   const posters = series
-    ? await loadPosters(seriesPosters(series.slug, series.releaseOrder, 6), 6)
+    ? await loadPosters(seriesPosters(series.slug, series.releaseOrder, 5), 5)
     : [];
 
   return new ImageResponse(
@@ -44,39 +44,25 @@ export default async function Image({ params }: { params: Promise<{ slug: string
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            gap: 4,
-            paddingLeft: 40,
-            paddingRight: 40,
           }}
         >
           {posters.map((src, i) => (
             <img
               key={i}
               src={src}
-              width={186}
-              height={279}
+              width={250}
+              height={375}
               style={{
                 objectFit: 'cover',
-                borderRadius: 10,
+                borderRadius: 12,
+                // 少し重ねて扇状にする。トップのポスター壁と同じ見え方に寄せる
+                marginLeft: i === 0 ? 0 : -28,
                 transform: `rotate(${i % 2 === 0 ? -2.5 : 2.5}deg)`,
-                boxShadow: '0 18px 40px rgba(0,0,0,0.55)',
+                boxShadow: '0 22px 50px rgba(0,0,0,0.6)',
               }}
             />
           ))}
         </div>
-
-        {/* 下half を暗く落として、ロゴの帯を読ませる */}
-        <div
-          style={{
-            position: 'absolute',
-            left: 0,
-            right: 0,
-            bottom: 0,
-            height: 220,
-            display: 'flex',
-            background: `linear-gradient(to top, ${OG_BG} 35%, rgba(20,22,31,0))`,
-          }}
-        />
 
         <div
           style={{

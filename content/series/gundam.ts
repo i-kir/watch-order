@@ -23,6 +23,9 @@ export const gundam: Series = {
       year: 2015,
       kind: 'tv',
       episodes: 6,
+      // 邦題の検索では引けなかったので ID を直接指定する
+      // https://www.themoviedb.org/tv/297572-mobile-suit-gundam-the-origin
+      tmdbId: 297572,
       setting: 'U.C.0068〜0079',
       note: 'シャアとセイラの過去を描く前日譚のOVA。1stガンダムの登場人物を知っている前提で作られているため、最初に観ると人物関係が分かりにくい',
     },

@@ -52,13 +52,31 @@ export default async function Image() {
           </div>
         ))}
 
+        {/*
+          Satori は inset のショートハンドを解釈しないので、四辺を個別に指定する。
+          さらに、linear-gradient が効かなくても文字が読めるよう、
+          まず単色の暗幕をかけてから下側だけ濃くする二層にしている。
+        */}
         <div
           style={{
             position: 'absolute',
-            inset: 0,
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
             display: 'flex',
-            background:
-              'linear-gradient(to top, rgba(20,22,31,0.97) 22%, rgba(20,22,31,0.55) 55%, rgba(20,22,31,0.85))',
+            backgroundColor: 'rgba(20,22,31,0.55)',
+          }}
+        />
+        <div
+          style={{
+            position: 'absolute',
+            left: 0,
+            right: 0,
+            bottom: 0,
+            height: 280,
+            display: 'flex',
+            background: 'linear-gradient(to top, rgba(20,22,31,0.98), rgba(20,22,31,0))',
           }}
         />
 
