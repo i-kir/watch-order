@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 // 既存エントリに予告編だけを後から足す。対象は劇場版のみ。
 //
-//   node scripts/fetch-trailers.mjs            すべてのシリーズ
-//   node scripts/fetch-trailers.mjs mcu        1シリーズだけ
+//   node scripts/fetch-trailers.mjs                 すべてのシリーズ
+//   node scripts/fetch-trailers.mjs --series mcu    1シリーズだけ
+//   node scripts/fetch-trailers.mjs mcu             同上（位置引数でも可）
 //
 // fetch-tmdb.mjs を流用しないのは、あちらが「未取得なら検索する」作りだから。
 // 予告編のために全件を流すと再検索が走り、曖昧なタイトルで別の作品を
@@ -32,8 +33,14 @@ if (!KEY) {
   process.exit(1);
 }
 
-const only = process.argv[2] ?? null;
-const force = process.argv.includes('--force');
+// fetch-tmdb.mjs は --series 形式、こちらは元々位置引数だった。
+// 取り違えると「--series という名前のシリーズ」を探して0件で静かに終わるので、
+// 両方を受け付けたうえで、下で該当なしなら止めるようにしている。
+const args = process.argv.slice(2);
+const force = args.includes('--force');
+const only = args.includes('--series')
+  ? args[args.indexOf('--series') + 1] ?? null
+  : args.find((a) => !a.startsWith('--')) ?? null;
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 /** 定義ファイルから slug ごとの kind と season を拾う */
@@ -90,10 +97,12 @@ const dir = new URL('../content/series/', import.meta.url);
 const files = (await readdir(dir)).filter((f) => f.endsWith('.ts') && f !== 'index.ts').sort();
 
 let added = 0, none = 0, skipped = 0, tvSkipped = 0;
+let matched = 0;
 
 for (const file of files) {
   const { seriesSlug, meta } = await metaOf(file);
   if (only && seriesSlug !== only) continue;
+  matched++;
 
   const keys = Object.keys(tmdb).filter((k) => k.startsWith(`${seriesSlug}:`));
   if (keys.length === 0) continue;
@@ -131,6 +140,13 @@ for (const file of files) {
     }
     await sleep(220);
   }
+}
+
+// 綴り間違いを黙って成功扱いにしない
+if (only && matched === 0) {
+  console.error(`\nシリーズ '${only}' が見つかりません。content/series/ の slug を確認してください。`);
+  console.error('何も書き込んでいません。');
+  process.exit(1);
 }
 
 await writeFile(outPath, JSON.stringify(tmdb, null, 2) + '\n');

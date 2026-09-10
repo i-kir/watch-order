@@ -166,10 +166,12 @@ async function main() {
 
   let found = 0;
   let missed = 0;
+  let matched = 0;
 
   for (const file of files) {
     const { seriesSlug, films } = await readFilms(file);
     if (only && seriesSlug !== only) continue;
+    matched++;
 
     console.log(`\n── ${seriesSlug}（${films.length}作）`);
 
@@ -235,6 +237,19 @@ async function main() {
       await sleep(250);
     }
   }
+
+  // 綴り間違いを黙って成功扱いにしない
+
+  if (only && matched === 0) {
+
+    console.error(`\nシリーズ '${only}' が見つかりません。content/series/ の slug を確認してください。`);
+
+    console.error('何も書き込んでいません。');
+
+    process.exit(1);
+
+  }
+
 
   await writeFile(outPath, JSON.stringify(existing, null, 2) + '\n');
   console.log(`\n取得 ${found}件 / 失敗 ${missed}件`);
