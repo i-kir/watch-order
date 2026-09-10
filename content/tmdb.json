@@ -991,7 +991,7 @@
     "posterPath": "/AhtWPHqIT1cWdrKTZVDMZD4Ca4F.jpg",
     "overview": "西暦2015年。第3新東京市に、さまざまな特殊能力を持つ“使徒”が襲来した。主人公・碇シンジは、人類が“使徒”に対抗する唯一の手段であるヒト型決戦兵器エヴァンゲリオンの操縦者に抜擢されてしまう。今、人類の命運を掛けた戦いの火蓋が切って落とされる。果たして“使徒”の正体とは何なのか。また、少年たちと人類の運命はどうなるのか。",
     "runtime": 25,
-    "trailerKey": "Ni8kEQi1BwA"
+    "trailerKey": null
   },
   "evangelion:shito-shinsei": {
     "tmdbId": 21832,
@@ -1040,7 +1040,7 @@
     "posterPath": "/8a1XJJijOhH0SuDHslaCWZjxVNM.jpg",
     "overview": "時は大正、日本。炭を売る心優しき少年・炭治郎は、ある日鬼に家族を皆殺しにされてしまう。さらに唯一生き残った妹の禰豆子は鬼に変貌してしまった。絶望的な現実に打ちのめされる炭治郎だったが妹を人間に戻し、家族を殺した鬼を討つため、“鬼狩り”の道を進む決意をする。人と鬼とが織りなす哀しき兄妹の物語が、今、始まる――！",
     "runtime": 23,
-    "trailerKey": "evAOrdt-0M4"
+    "trailerKey": null
   },
   "kimetsu:mugen-movie": {
     "tmdbId": 635302,
@@ -1061,35 +1061,35 @@
     "posterPath": "/vJnV4NpKZWewtxOrUVU2S0wUPRx.jpg",
     "overview": "アニメ『鬼滅の刃』を多くの方にご覧いただく為、今後に向け、竈門炭治郎 立志編、遊郭編、それぞれと繋がるエピソードである無限列車編を、テレビアニメという形で繋ぎます。",
     "runtime": 24,
-    "trailerKey": "Qww9MVecg6o"
+    "trailerKey": null
   },
   "kimetsu:yukaku": {
     "tmdbId": 85937,
     "posterPath": "/aAjU9lDHMKYt0uq4CTmDhal7IMu.jpg",
     "overview": "無限列車での任務を終えた炭治郎たちの次なる任務を描く遊郭編。鬼殺隊最高位の剣士《柱》の一人、音柱の宇髄天元とともに炭治郎たちが向かうのは、鬼の棲む遊郭。新たな戦いが幕を開ける。",
     "runtime": 27,
-    "trailerKey": "HCEZIskHi_Q"
+    "trailerKey": null
   },
   "kimetsu:katanakaji": {
     "tmdbId": 85937,
     "posterPath": "/x3CN47K0GiFdmQqhipIWmTqSJGN.jpg",
     "overview": "物語は新たなる地へ―――― 炭治郎が向かう先は「刀鍛冶の里」。鬼殺隊最強の剣士《柱》である、霞柱・時透無一郎と恋柱・甘露寺蜜璃との再会、忍びよる鬼の影。炭治郎たちの新たな戦いが始まる。",
     "runtime": 29,
-    "trailerKey": "GnjserPtgyI"
+    "trailerKey": null
   },
   "kimetsu:hashira": {
     "tmdbId": 85937,
     "posterPath": "/pBw3fbxBwtM6GPwgGqdkpbkzhNS.jpg",
     "overview": "柱稽古へ――鬼殺隊最強の剣士《柱》と鬼殺隊士たち。来たる鬼舞辻󠄀無惨との決戦に向け、《柱稽古》開幕。それぞれの想いを胸に、炭治郎と柱たちの新たなる物語が幕を開ける。",
     "runtime": 30,
-    "trailerKey": "Tf31dGdlWxE"
+    "trailerKey": null
   },
   "gundam:tv-1979": {
     "tmdbId": 21731,
     "posterPath": "/11XJ0CUYn06Mht3qeGKJfVuWnYP.jpg",
     "overview": "　宇宙世紀0079年、地球から最も遠くに位置するサイド3は「ジオン公国」を名乗り、地球連邦に宣戦を布告した。ジオン独立戦争――後に一年戦争と呼ばれる戦乱の幕開けであった。その戦禍は史上類を見ないほどであり、戦争が始まってからわずか一ヶ月で全人口の約半数が失われた。しかし、戦線は膠着状態と なったまま、約8ヶ月が経過した。\n\n　その間、地球連邦軍は戦局を打開するために、サイド7においてモビルスーツの開発を進めていた。しかし、それがジオン公国軍のシャア・アズナブルに察知され、彼が偵察に派遣したザクによって、サイド7は戦場と化してしまう。そうした中、民間人の少年アムロ・レイは避難途中に地球連邦軍のモビルスーツ――ガンダムに搭乗し、ジオン公国軍のザクを撃破する。その後、コロニーからの脱出を余儀なくされたアムロと他の民間人は地球連邦軍の新造艦ホワイトベースに乗り込み、連邦軍本部ジャブローを目指し、長い旅路に着くこととなった。",
     "runtime": 25,
-    "trailerKey": "JCajy6B0aJw"
+    "trailerKey": null
   },
   "gundam:movie-1": {
     "tmdbId": 39228,
@@ -1117,21 +1117,21 @@
     "posterPath": "/5AzsnD4spu3oVN8Va8VK6ZOAQUt.jpg",
     "overview": "地球連邦軍の新米士官であるシロー・アマダ少尉は、東南アジア戦線の第08MS小隊長として配属されることになったが、地球へ向かうシャトルの窓から、敵機と交戦して危機に陥る先行量産型ジムを発見する。シローは急遽、シャトルに積んであった先行試作型ボールで出撃、敵機を行動不能にするも、ジオン軍パイロットともども遭難してしまう。そのパイロット、 アイナ・サハリンと生還のために一時協力して危機を脱したシローは、アイナとお互いの名前を名乗りあって別れる。",
     "runtime": 25,
-    "trailerKey": "gOY3-dCeN8o"
+    "trailerKey": null
   },
   "gundam:0080": {
     "tmdbId": 46512,
     "posterPath": "/3eHNjpxvKa9cjvdhf14pG4s8V4n.jpg",
     "overview": "地球連邦軍とジオン公国軍による戦いが熾烈を極める宇宙世紀0079年末期。連邦軍の開発したニュータイプ専用モビルスーツ・ガンダムNT-1 アレックスを巡る戦いが、宇宙に浮かぶコロニー・サイド6で展開する。惹かれあいながらも、お互いの素性を知らぬまま戦うアレックスの女性テストパイロット・クリス、アレックスを狙うジオン軍の青年パイロット・バーニィ……。少年アルは彼らの戦いの目撃者となる。",
     "runtime": 27,
-    "trailerKey": "N8pEEAF3eAc"
+    "trailerKey": null
   },
   "gundam:0083": {
     "tmdbId": 72677,
     "posterPath": "/zd36MmPUJtAeL7dUXyVagFAx4sS.jpg",
     "overview": "宇宙世紀0083年。地球連邦軍トリントン基地のテストパイロット、コウ・ウラキと、アナハイムエレクトロニクス社のエンジニア、ニナ・パープルトンの目の前で、核弾頭を搭載したガンダム試作２号機がジオン軍残党のアナベル・ガトーに強奪される。ガンダム試作１号機のパイロットとなったコウは、戦艦アルビオンに搭乗し２号機を追撃する。だが、宇宙へと脱出したガトーを追うアルビオンを待っていたのは、新たな敵シーマ・ガラハウと、デラーズ・フリートの決起だった。",
     "runtime": 27,
-    "trailerKey": "GkbXUxseuU0"
+    "trailerKey": null
   },
   "gundam:zeta": {
     "tmdbId": 13674,
@@ -1159,7 +1159,7 @@
     "posterPath": "/nfeFXnerb1sacTqTFeYDpgjhpU6.jpg",
     "overview": "U.C.0001―。宇宙移民の開始が宣言され、新たな時代が始まろうとしていた。そんな折、改暦セレモニーが行われていた地球連邦政府首相官邸、宇宙ステーション“ラプラス”が爆破テロにより粉々に砕け散る。貧困からテロに加わった青年サイアムは、“ラプラス”の爆発に巻き込まれ、残骸の中である物を発見する。それは後に『ラプラスの箱』と呼ばれることになる禁忌の箱だった。『ラプラスの箱』を開けてはならない。それが何であるのか、知る者はほとんどいない。『箱』の秘密は、サイアムの元で眠り続けた―。U.C.0096―。ラグランジュ・ポイント1に浮かぶ、建設中の工業コロニー“インダストリアル7”。父を知らずに育った少年バナージ・リンクスと、“インダストリアル7”行きの船に密航した謎の少女が出会い、そして、稼動試験を繰り返す白いモビルスーツ“ユニコーン”と様々な思惑が絡み出した時、歴史（とき）の針が動き出した。『ラプラスの箱』を巡る争いに巻き込まれることを、バナージはまだ知らない。『ラプラスの箱』とは何か―。『箱』の抱く秘密とは何か―。今、宇宙世紀 百年の呪いが解かれようとしていた。",
     "runtime": null,
-    "trailerKey": "kK4Njn_Tdtg"
+    "trailerKey": null
   },
   "gundam:narrative": {
     "tmdbId": 553610,
@@ -1187,14 +1187,14 @@
     "posterPath": "/hfTEDISVpFMqmp6uOGylsSakyXZ.jpg",
     "overview": "日本の地方都市・冬木市では、七組の魔術師（マスター）と使い魔（サーヴァント）による「聖杯戦争」が繰り返されている。1990年代の初秋、四度目の聖杯戦争が始まる。主人公・衛宮切嗣は、名家アインツベルンの委嘱を受け、セイバーのサーヴァントを召喚し聖杯戦争に身を投じる。彼の目的は聖杯による世界平和の実現であった。 英国からは二人の魔術師ケイネス・アーチボルトとウェイバー・ベルベットがランサーとライダーを、冬木からは遠坂時臣とその弟子・言峰綺礼がアーチャーとアサシンを、間桐雁夜がバーサーカーを、それぞれ召喚して参戦する。最後のサーヴァントであるキャスターは一般人・雨生龍之介によって召喚される。",
     "runtime": 25,
-    "trailerKey": "0hHLBioyUaA"
+    "trailerKey": null
   },
   "fate:stay-night-2006": {
     "tmdbId": 37858,
     "posterPath": "/mLTo9o8q970F4fyvRUMVkTIYxBm.jpg",
     "overview": "街を焼き尽くす大災害で孤児となった士郎は、魔術師・衛宮切嗣に助けられ養子となる。そして十年後、平穏に暮らす士郎はふとしたきっかけから、あらゆる願いを叶えると言われる聖杯を巡る戦い｢聖杯戦争｣に巻き込まれ、魔術師として最強の使い魔(サーヴァント)セイバーと共に戦いに身を投じることとなった。",
     "runtime": 25,
-    "trailerKey": "aFyxNcwl3U0"
+    "trailerKey": null
   },
   "fate:ubw-movie-2010": {
     "tmdbId": 46304,
@@ -1208,7 +1208,7 @@
     "posterPath": "/jyqi5BkDoKKIA2WAoz3HBtRHld3.jpg",
     "overview": "舞台は海と山に囲まれた都市・冬木市。そこで行われる、ある一つの儀式。手にした者の願いを叶えるという聖杯を実現させる為、聖杯に選ばれた七人の魔術師に、聖杯が選んだ七騎の使い魔を与える。　　騎士“セイバー”　　槍兵“ランサー”　　弓兵“アーチャー”　　騎兵“ライダー”　　魔術師 “キャスター”　　暗殺者 “アサシン”　　狂戦士 “バーサーカー”　　マスターは七つの役割を被った使い魔一人と契約し、七組は、聖杯を求め、最後の一組となるまで殺し合いを繰り広げる。その名は「聖杯戦争」。2014年 秋、開戦 ――。",
     "runtime": 24,
-    "trailerKey": "61RuoLIlCUM"
+    "trailerKey": null
   },
   "fate:hf-1": {
     "tmdbId": 283984,
@@ -1278,28 +1278,28 @@
     "posterPath": "/9AQahUajb8C4d6cJl39NG9RSK9N.jpg",
     "overview": "ルフィは、たった１人の海賊として大海原へと旅立つ。海軍基地の町・シェルズタウンで戦闘員・ゾロ、オレンジの町で航海士・ナミ、シロップ村で狙撃手・ウソップと海賊船・ゴーイングメリー号、海上レストラン・バラティエでコック・サンジを仲間に加え、麦わらの一味は“ひとつなぎの大秘宝”を手に入れるべく、“偉大なる航路”を目指す！",
     "runtime": 25,
-    "trailerKey": "BzIIlx9qisw"
+    "trailerKey": null
   },
   "one-piece:grand-line": {
     "tmdbId": 37854,
     "posterPath": "/n1PfebcGe13P8r4l8UEY858yuJL.jpg",
     "overview": "麦わらの一味はついに“偉大なる航路(グランドライン)”に入る。双子岬でクジラのラブーンと出会い、ウイスキーピークでバロックワークスのワナにかかるもこれを撃退。アラバスタの王女・ビビを護衛して、リトルガーデンに上陸する。そこで100年戦い続ける巨人に出会い、再びアラバスタへ向けて帆を上げた！",
     "runtime": 24,
-    "trailerKey": "hcItlqrKL-U"
+    "trailerKey": null
   },
   "one-piece:drum": {
     "tmdbId": 37854,
     "posterPath": "/5nTogoomhMJXjmlLUt4ChkuE81X.jpg",
     "overview": "麦わらの一味は、高熱を発したナミのために医者を探して冬島に上陸。さまざまな障害を乗り越え、ようやくDr.くれはにナミを診察してもらう。ルフィはそこでヒトヒトの実を食べたトナカイのチョッパーと出会い、悪政で知られたドラム王国の再建を目論むワポルを撃退。そして出航の日、船医としてチョッパーが仲間に加わった！",
     "runtime": 24,
-    "trailerKey": "Le54PDKWCFQ"
+    "trailerKey": null
   },
   "one-piece:alabasta": {
     "tmdbId": 37854,
     "posterPath": "/mq9TGSSkpenq0ZvMSPWDKwZjSj2.jpg",
     "overview": "アラバスタ王女ビビとともに王国へと上陸した麦わらの一味。反乱を止めるべく奔走するが、王下七武海クロコダイルの王国乗っ取り作戦が本格始動する。周到な計画と圧倒的な戦力の前に、何度も苦境に陥る一味だったが、ルフィがクロコダイルを倒し、アラバスタに雨を取り戻した！",
     "runtime": 24,
-    "trailerKey": "zCLvjg-bgc8"
+    "trailerKey": null
   },
   "one-piece:tv-original": {
     "tmdbId": 37854,
@@ -1313,7 +1313,7 @@
     "posterPath": "/u7Jcs61Ut5AOW6kjM31TJIMCMqf.jpg",
     "overview": "空から降ってきた船で、空島の地図を手に入れたルフィ。しかし、空島に行く方法がわからず、ひとまず近くのジャヤに上陸する。空島の伝説を辿って冒険家のモンブラン・クリケットと出会い、ついにスカイピアに到着！　原住民のシャンディアや神・エネルも姿を現し、全面対決に突入する！\n\n三つ巴のサバイバル戦を画策し、生き残りを自ら排除したエネル。完成したばかりの方舟マクシムを出航させ、スカイピア全土を攻撃し始める。復活したルフィがマクシム甲板でエネルを捉え、最終決戦に突入。何度も危機に陥るも、ついにルフィはエネルを倒し、黄金の鐘の音を響かせた！",
     "runtime": 24,
-    "trailerKey": "KBdNiqFTCpQ"
+    "trailerKey": null
   },
   "one-piece:g8-foxy": {
     "tmdbId": 37854,
@@ -1327,7 +1327,7 @@
     "posterPath": "/rXATOXG3H7apF6EpWynncl6eVwN.jpg",
     "overview": "損傷の激しいゴーイングメリー号を修理するため、ウォーターセブンに立ち寄る麦わらの一味。しかし修理不可能という判定を受け、廃船を受け入れるルフィと、それを許せないウソップが激突してしまう。２人は決闘の末、ウソップは麦わらの一味を離脱。その一方で、CP9と接触していたロビンも一味を離れて海列車でエニエス・ロビーへ。残された麦わらの一味はロビンを追う！",
     "runtime": 24,
-    "trailerKey": "EvBRYOpVwT0"
+    "trailerKey": null
   },
   "one-piece:enies-lobby": {
     "tmdbId": 37854,
@@ -1418,21 +1418,21 @@
     "posterPath": "/4N7pdqaI0a5aT0kbCZxJ9ahI908.jpg",
     "overview": "ワノ国。それは侍が闊歩し、忍者が暗躍する謎多き鎖国国家。四皇カイドウが支配するこの国へやってきたルフィ達。やっと手に入れた僅かな米を炊きごちそうしてくれたお玉へのお礼に、腹いっぱいに飯が食える国にしてやると約束するルフィ。立ちはだかるカイドウ。仁義、団結、裏切り、陰謀。様々な想いを胸に、つわもの達が集結する！",
     "runtime": 24,
-    "trailerKey": "vqD2t4GAbuI"
+    "trailerKey": null
   },
   "one-piece:egghead": {
     "tmdbId": 37854,
     "posterPath": "/acKdAHRH4ypzQ4jnkjCDC7Ac9jH.jpg",
     "overview": "",
     "runtime": 24,
-    "trailerKey": "WOrxjUDX0UA"
+    "trailerKey": null
   },
   "one-piece:elbaf": {
     "tmdbId": 37854,
     "posterPath": "/cG6u0kzGdKPFKYJPz4MbsxekYVZ.jpg",
     "overview": "",
     "runtime": 24,
-    "trailerKey": "YnczpEoeaDM"
+    "trailerKey": null
   },
   "one-piece:movie-1": {
     "tmdbId": 476958,
@@ -1544,7 +1544,7 @@
     "posterPath": "/xGcPlcZ3fx3DlEGYB7ybky3V6Rh.jpg",
     "overview": "原作第1話目から再アニメ化する完全新作シリーズ。",
     "runtime": null,
-    "trailerKey": "Zl4igAf4Yhc"
+    "trailerKey": null
   },
   "mcu:brand-new-day": {
     "tmdbId": 969681,
