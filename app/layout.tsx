@@ -48,6 +48,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               endorsed or certified by TMDB.
             </p>
             <p className="mt-2">
+              配信状況のデータは JustWatch を出典としています（TMDB API 経由）。配信の開始・終了は
+              随時変わるため、実際に視聴できるかは各サービスでご確認ください。
+            </p>
+            <p className="mt-2">
               各シリーズの順番は、ページ内に記載した出典に基づいています。公式設定に矛盾がある場合は、その旨を明記しています。
             </p>
           </div>

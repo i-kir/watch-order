@@ -4,6 +4,7 @@ import Link from 'next/link';
 import WatchOrder from '@/components/WatchOrder';
 import { availableOrders, getAllSeries, getSeries, orderedFilms } from '@/lib/series';
 import { seriesPosters } from '@/lib/tmdb';
+import { hasAnyProviders, providersUpdatedAt } from '@/lib/providers';
 import PosterWall from '@/components/PosterWall';
 import type { OrderKey } from '@/lib/types';
 import { SITE_URL } from '@/lib/site';
@@ -131,6 +132,22 @@ export default async function SeriesPage({ params }: { params: Promise<Params> }
               </li>
             ))}
           </ul>
+        </section>
+      )}
+
+      {hasAnyProviders(series.slug) && (
+        /*
+         * 配信情報は動くので、いつ時点のものかを必ず添える。
+         * 日付を書かずに出すと、古い情報を断定で示すことになる。
+         */
+        <section className="mt-10 rounded-xl border border-[var(--color-line)] bg-white p-4 text-xs leading-relaxed text-[var(--color-ink-soft)]">
+          <p>
+            各作品に付いている「見放題」は、日本で定額見放題として配信されているサービスです。
+            レンタル・購入のみの場合は表示していません。
+            <b className="font-bold text-[var(--color-ink)]">{providersUpdatedAt()}時点</b>
+            のデータで、出典は JustWatch です（TMDB API 経由）。配信の開始・終了は随時変わるため、
+            実際に視聴できるかは各サービスでご確認ください。
+          </p>
         </section>
       )}
 

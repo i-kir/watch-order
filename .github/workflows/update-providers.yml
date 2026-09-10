@@ -1,0 +1,48 @@
+# 配信状況を毎週取り直す。
+#
+# 配信の開始・終了は月単位で動くのに対し、このサイトは静的生成なので
+# ビルドした時点のデータが固定される。放っておくと差し情報が古くなり続けるため、
+# 週に一度だけ取り直して、変化があったときだけコミットする。
+#
+# 必要な設定（1回だけ）:
+#   リポジトリの Settings → Secrets and variables → Actions → New repository secret
+#   Name: TMDB_API_KEY  /  Secret: TMDb の API キー
+name: 配信状況の更新
+
+on:
+  schedule:
+    # 毎週月曜 04:00 JST（UTC では日曜 19:00）
+    - cron: '0 19 * * 0'
+  # 手動でも回せるようにしておく
+  workflow_dispatch:
+
+# providers.json をコミットするために書き込み権限が要る
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 配信状況を取得
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+        run: node scripts/fetch-providers.mjs
+
+      - name: 変化があればコミット
+        run: |
+          if git diff --quiet -- content/providers.json; then
+            echo "配信状況に変化はありませんでした。コミットしません。"
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/providers.json
+          git commit -m "配信状況を更新（$(date -u +%Y-%m-%d)）"
+          git push

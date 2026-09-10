@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from 'react';
 import type { Film, OrderKey, Series } from '@/lib/types';
 import { descriptionOf, labelOf } from '@/lib/series';
 import { formatRuntime, posterOf, totalRuntime, trailerUrl, watchMinutes } from '@/lib/tmdb';
+import { providersOf } from '@/lib/providers';
 import Poster from './Poster';
 import ShareProgress from './ShareProgress';
 
@@ -168,6 +169,7 @@ export default function WatchOrder({ series, orders, entriesByOrder }: Props) {
           const isTv = entry.film.kind === 'tv';
           const minutesOfFilm = watchMinutes(series.slug, entry.film);
           const trailer = trailerUrl(series.slug, entry.film.slug);
+          const streams = providersOf(series.slug, entry.film.slug);
 
           return (
             <li key={entry.film.slug}>
@@ -251,6 +253,24 @@ export default function WatchOrder({ series, orders, entriesByOrder }: Props) {
                       </a>
                     )}
                   </p>
+
+                  {streams.length > 0 && (
+                    /*
+                     * 配信状況は月単位で変わるので、断定を避けて「見放題」とだけ書く。
+                     * いつ時点のデータかはページ下部にまとめて出している。
+                     */
+                    <p className="mt-1.5 flex flex-wrap items-center gap-1 text-[11px]">
+                      <span className="text-[var(--color-ink-faint)]">見放題</span>
+                      {streams.map((name) => (
+                        <span
+                          key={name}
+                          className="rounded bg-[var(--color-paper)] px-1.5 py-px font-bold text-[var(--color-ink-soft)] ring-1 ring-[var(--color-line)]"
+                        >
+                          {name}
+                        </span>
+                      ))}
+                    </p>
+                  )}
 
                   {entry.reason && (
                     <p className="mt-1.5 text-xs leading-relaxed text-[var(--color-ink-soft)]">

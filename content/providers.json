@@ -1,0 +1,2284 @@
+{
+  "updatedAt": "2026-09-10",
+  "source": "JustWatch (via TMDB)",
+  "items": {
+    "alien:alien": {
+      "names": [
+        "Prime Video",
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/348-alien/watch?locale=JP"
+    },
+    "alien:alien3": {
+      "names": [
+        "Prime Video",
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/8077-alien/watch?locale=JP"
+    },
+    "alien:alien4": {
+      "names": [
+        "Prime Video",
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/8078-alien-resurrection/watch?locale=JP"
+    },
+    "alien:aliens": {
+      "names": [
+        "Prime Video",
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/679-aliens/watch?locale=JP"
+    },
+    "alien:covenant": {
+      "names": [
+        "Prime Video",
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/126889-alien-covenant/watch?locale=JP"
+    },
+    "alien:prometheus": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/70981-prometheus/watch?locale=JP"
+    },
+    "alien:romulus": {
+      "names": [
+        "Prime Video",
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/945961-alien-romulus/watch?locale=JP"
+    },
+    "conan:m01": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/21422/watch?locale=JP"
+    },
+    "conan:m02": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/21452-14/watch?locale=JP"
+    },
+    "conan:m03": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/28808/watch?locale=JP"
+    },
+    "conan:m04": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/20677/watch?locale=JP"
+    },
+    "conan:m05": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/32022/watch?locale=JP"
+    },
+    "conan:m06": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/26662/watch?locale=JP"
+    },
+    "conan:m07": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/39202/watch?locale=JP"
+    },
+    "conan:m08": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/39203/watch?locale=JP"
+    },
+    "conan:m09": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/39204/watch?locale=JP"
+    },
+    "conan:m10": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/39205/watch?locale=JP"
+    },
+    "conan:m11": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/39206/watch?locale=JP"
+    },
+    "conan:m12": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/39207/watch?locale=JP"
+    },
+    "conan:m13": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/28764/watch?locale=JP"
+    },
+    "conan:m14": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/97375/watch?locale=JP"
+    },
+    "conan:m15": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/77617-15/watch?locale=JP"
+    },
+    "conan:m16": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/122583/watch?locale=JP"
+    },
+    "conan:m17": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/228805/watch?locale=JP"
+    },
+    "conan:m18": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/257512/watch?locale=JP"
+    },
+    "conan:m19": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/316873/watch?locale=JP"
+    },
+    "conan:m20": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/374856/watch?locale=JP"
+    },
+    "conan:m21": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/438058/watch?locale=JP"
+    },
+    "conan:m22": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/493006/watch?locale=JP"
+    },
+    "conan:m23": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/566555/watch?locale=JP"
+    },
+    "conan:m24": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/662638/watch?locale=JP"
+    },
+    "conan:m25": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/903939/watch?locale=JP"
+    },
+    "conan:m26": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/1047041/watch?locale=JP"
+    },
+    "conan:m27": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/1209217-100/watch?locale=JP"
+    },
+    "dc:aquaman": {
+      "names": [
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/297802-aquaman/watch?locale=JP"
+    },
+    "dc:aquaman-2": {
+      "names": [
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/572802-aquaman-and-the-lost-kingdom/watch?locale=JP"
+    },
+    "dc:birds-of-prey": {
+      "names": [
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/495764-birds-of-prey-and-the-fantabulous-emancipation-of-one-harley-quinn/watch?locale=JP"
+    },
+    "dc:black-adam": {
+      "names": [
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/436270-black-adam/watch?locale=JP"
+    },
+    "dc:blue-beetle": {
+      "names": [
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/565770-blue-beetle/watch?locale=JP"
+    },
+    "dc:bvs": {
+      "names": [
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/209112-batman-v-superman-dawn-of-justice/watch?locale=JP"
+    },
+    "dc:joker": {
+      "names": [
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/475557-joker/watch?locale=JP"
+    },
+    "dc:joker-2": {
+      "names": [
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/889737-joker-folie-a-deux/watch?locale=JP"
+    },
+    "dc:justice-league": {
+      "names": [
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/141052-justice-league/watch?locale=JP"
+    },
+    "dc:man-of-steel": {
+      "names": [
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/49521-man-of-steel/watch?locale=JP"
+    },
+    "dc:shazam": {
+      "names": [
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/287947-shazam/watch?locale=JP"
+    },
+    "dc:shazam-2": {
+      "names": [
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/594767-shazam-fury-of-the-gods/watch?locale=JP"
+    },
+    "dc:snyder-cut": {
+      "names": [
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/791373-zack-snyder-s-justice-league/watch?locale=JP"
+    },
+    "dc:suicide-squad": {
+      "names": [
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/297761-suicide-squad/watch?locale=JP"
+    },
+    "dc:superman": {
+      "names": [
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/1061474-superman/watch?locale=JP"
+    },
+    "dc:the-batman": {
+      "names": [
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/414906-the-batman/watch?locale=JP"
+    },
+    "dc:the-flash": {
+      "names": [
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/298618-the-flash/watch?locale=JP"
+    },
+    "dc:the-suicide-squad": {
+      "names": [
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/436969-the-suicide-squad/watch?locale=JP"
+    },
+    "dc:wonder-woman": {
+      "names": [
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/297762-wonder-woman/watch?locale=JP"
+    },
+    "dc:ww1984": {
+      "names": [
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/464052-wonder-woman-1984/watch?locale=JP"
+    },
+    "evangelion:air-magokoro": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu",
+        "FOD",
+        "dアニメストア（Amazon）",
+        "アニメタイムズ（Amazon）",
+        "東映アニメーション（Amazon）"
+      ],
+      "link": "https://www.themoviedb.org/movie/18491-air/watch?locale=JP"
+    },
+    "evangelion:ha": {
+      "names": [
+        "Prime Video"
+      ],
+      "link": "https://www.themoviedb.org/movie/22843/watch?locale=JP"
+    },
+    "evangelion:jo": {
+      "names": [
+        "Prime Video"
+      ],
+      "link": "https://www.themoviedb.org/movie/15137/watch?locale=JP"
+    },
+    "evangelion:q": {
+      "names": [
+        "Prime Video"
+      ],
+      "link": "https://www.themoviedb.org/movie/75629-q/watch?locale=JP"
+    },
+    "evangelion:shin": {
+      "names": [
+        "Prime Video"
+      ],
+      "link": "https://www.themoviedb.org/movie/283566/watch?locale=JP"
+    },
+    "evangelion:shito-shinsei": {
+      "names": [
+        "Netflix",
+        "U-NEXT",
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/21832/watch?locale=JP"
+    },
+    "evangelion:tv": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu",
+        "FOD",
+        "dアニメストア（Amazon）",
+        "アニメタイムズ（Amazon）",
+        "東映アニメーション（Amazon）"
+      ],
+      "link": "https://www.themoviedb.org/tv/890/watch?locale=JP"
+    },
+    "fast-furious:f9": {
+      "names": [
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/385128-f9/watch?locale=JP"
+    },
+    "fast-furious:fast-x": {
+      "names": [
+        "Prime Video"
+      ],
+      "link": "https://www.themoviedb.org/movie/385687-fast-x/watch?locale=JP"
+    },
+    "fast-furious:ff1": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/9799-the-fast-and-the-furious/watch?locale=JP"
+    },
+    "fast-furious:ff2": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/584-2-fast-2-furious/watch?locale=JP"
+    },
+    "fast-furious:ff4": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/13804-fast-furious/watch?locale=JP"
+    },
+    "fast-furious:ff5": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/51497-fast-five/watch?locale=JP"
+    },
+    "fast-furious:ff6": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/82992-fast-furious-6/watch?locale=JP"
+    },
+    "fast-furious:ff7": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/168259-furious-7/watch?locale=JP"
+    },
+    "fast-furious:ff8": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/337339-the-fate-of-the-furious/watch?locale=JP"
+    },
+    "fast-furious:hobbs-shaw": {
+      "names": [
+        "Netflix",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/384018-fast-furious-presents-hobbs-shaw/watch?locale=JP"
+    },
+    "fast-furious:tokyo-drift": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/9615-the-fast-and-the-furious-tokyo-drift/watch?locale=JP"
+    },
+    "fate:stay-night-2006": {
+      "names": [
+        "Hulu",
+        "dアニメストア（Amazon）",
+        "アニメタイムズ（Amazon）"
+      ],
+      "link": "https://www.themoviedb.org/tv/37858-fate-stay-night/watch?locale=JP"
+    },
+    "fate:ubw-2014": {
+      "names": [
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/tv/61415-fate-stay-night-unlimited-blade-works/watch?locale=JP"
+    },
+    "fate:ubw-movie-2010": {
+      "names": [
+        "U-NEXT",
+        "FOD",
+        "dアニメストア（Amazon）"
+      ],
+      "link": "https://www.themoviedb.org/movie/46304-fate-stay-night-unlimited-blade-works/watch?locale=JP"
+    },
+    "fate:zero": {
+      "names": [
+        "U-NEXT",
+        "dアニメストア（Amazon）",
+        "アニメタイムズ（Amazon）"
+      ],
+      "link": "https://www.themoviedb.org/tv/45845-fate-zero/watch?locale=JP"
+    },
+    "godzilla:all-monsters-attack": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/39462/watch?locale=JP"
+    },
+    "godzilla:anime-2": {
+      "names": [
+        "Netflix"
+      ],
+      "link": "https://www.themoviedb.org/movie/492719-godzilla/watch?locale=JP"
+    },
+    "godzilla:anime-3": {
+      "names": [
+        "Netflix"
+      ],
+      "link": "https://www.themoviedb.org/movie/536115-godzilla/watch?locale=JP"
+    },
+    "godzilla:biollante": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/18289-vs/watch?locale=JP"
+    },
+    "godzilla:destoroyah": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/12561-vs/watch?locale=JP"
+    },
+    "godzilla:ebirah": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/3115/watch?locale=JP"
+    },
+    "godzilla:final-wars": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/15767/watch?locale=JP"
+    },
+    "godzilla:gigan": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/19336/watch?locale=JP"
+    },
+    "godzilla:gmk": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/36243/watch?locale=JP"
+    },
+    "godzilla:godzilla-2000": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/10643-2000/watch?locale=JP"
+    },
+    "godzilla:gojira-1954": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/1678/watch?locale=JP"
+    },
+    "godzilla:gojira-1984": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/421467/watch?locale=JP"
+    },
+    "godzilla:gvk": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/399566-godzilla-vs-kong/watch?locale=JP"
+    },
+    "godzilla:gyakushu": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/1679/watch?locale=JP"
+    },
+    "godzilla:hedorah": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/39464/watch?locale=JP"
+    },
+    "godzilla:kaiju-daisenso": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/19545/watch?locale=JP"
+    },
+    "godzilla:king-ghidorah": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/36679-vs/watch?locale=JP"
+    },
+    "godzilla:king-kong-tai": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/1680/watch?locale=JP"
+    },
+    "godzilla:kiryu": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/12636-x/watch?locale=JP"
+    },
+    "godzilla:kotm": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/373571-godzilla-king-of-the-monsters/watch?locale=JP"
+    },
+    "godzilla:legendary-2014": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/124905-godzilla/watch?locale=JP"
+    },
+    "godzilla:mechagodzilla-gyakushu": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/19333/watch?locale=JP"
+    },
+    "godzilla:megaguirus": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/39468-x-g/watch?locale=JP"
+    },
+    "godzilla:megalo": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/39264/watch?locale=JP"
+    },
+    "godzilla:minus-one": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/940721-1-0/watch?locale=JP"
+    },
+    "godzilla:mothra-tai": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/1682/watch?locale=JP"
+    },
+    "godzilla:new-empire": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/823464-godzilla-x-kong-the-new-empire/watch?locale=JP"
+    },
+    "godzilla:san-daikaiju": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/15766/watch?locale=JP"
+    },
+    "godzilla:shin-godzilla": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/315011/watch?locale=JP"
+    },
+    "godzilla:skull-island": {
+      "names": [
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/293167-kong-skull-island/watch?locale=JP"
+    },
+    "godzilla:son-of-godzilla": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/18627/watch?locale=JP"
+    },
+    "godzilla:soshingeki": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/3107/watch?locale=JP"
+    },
+    "godzilla:space-godzilla": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/39466-vs/watch?locale=JP"
+    },
+    "godzilla:tai-mechagodzilla": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/38582/watch?locale=JP"
+    },
+    "godzilla:tokyo-sos": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/39469-x-x-sos/watch?locale=JP"
+    },
+    "godzilla:tristar-1998": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/929-godzilla/watch?locale=JP"
+    },
+    "godzilla:vs-mechagodzilla": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/6593-vs/watch?locale=JP"
+    },
+    "godzilla:vs-mothra": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/39465-vs/watch?locale=JP"
+    },
+    "gundam:0080": {
+      "names": [
+        "Netflix",
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/tv/46512-0080/watch?locale=JP"
+    },
+    "gundam:0083": {
+      "names": [
+        "Netflix",
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/tv/72677-0083-stardust-memory/watch?locale=JP"
+    },
+    "gundam:08th-ms-team": {
+      "names": [
+        "Netflix",
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/tv/43887-08ms/watch?locale=JP"
+    },
+    "gundam:char-counterattack": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/16157/watch?locale=JP"
+    },
+    "gundam:hathaway": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/685274/watch?locale=JP"
+    },
+    "gundam:hathaway-2": {
+      "names": [
+        "Prime Video"
+      ],
+      "link": "https://www.themoviedb.org/movie/910850/watch?locale=JP"
+    },
+    "gundam:movie-1": {
+      "names": [
+        "Netflix"
+      ],
+      "link": "https://www.themoviedb.org/movie/39228/watch?locale=JP"
+    },
+    "gundam:movie-2": {
+      "names": [
+        "Netflix",
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/39229-ii/watch?locale=JP"
+    },
+    "gundam:movie-3": {
+      "names": [
+        "Netflix",
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/39230-iii/watch?locale=JP"
+    },
+    "gundam:narrative": {
+      "names": [
+        "Netflix",
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/553610-nt/watch?locale=JP"
+    },
+    "gundam:origin-1": {
+      "names": [
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/329365-the-origin-i/watch?locale=JP"
+    },
+    "gundam:origin-2": {
+      "names": [
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/368708-the-origin-ii/watch?locale=JP"
+    },
+    "gundam:origin-3": {
+      "names": [
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/397366-the-origin-iii/watch?locale=JP"
+    },
+    "gundam:origin-4": {
+      "names": [
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/403850-the-origin-iv/watch?locale=JP"
+    },
+    "gundam:origin-5": {
+      "names": [
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/428862-the-origin-v/watch?locale=JP"
+    },
+    "gundam:origin-6": {
+      "names": [
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/475935-the-origin-vi/watch?locale=JP"
+    },
+    "gundam:tv-1979": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/tv/21731/watch?locale=JP"
+    },
+    "gundam:zeta": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/tv/13674-z/watch?locale=JP"
+    },
+    "gundam:zz": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/tv/5660-zz/watch?locale=JP"
+    },
+    "kimetsu:hashira": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu",
+        "FOD",
+        "dアニメストア（Amazon）",
+        "アニメタイムズ（Amazon）"
+      ],
+      "link": "https://www.themoviedb.org/tv/85937/watch?locale=JP"
+    },
+    "kimetsu:katanakaji": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu",
+        "FOD",
+        "dアニメストア（Amazon）",
+        "アニメタイムズ（Amazon）"
+      ],
+      "link": "https://www.themoviedb.org/tv/85937/watch?locale=JP"
+    },
+    "kimetsu:mugen-movie": {
+      "names": [
+        "Netflix",
+        "U-NEXT",
+        "Disney+",
+        "Hulu",
+        "FOD",
+        "dアニメストア（Amazon）",
+        "アニメタイムズ（Amazon）"
+      ],
+      "link": "https://www.themoviedb.org/movie/635302/watch?locale=JP"
+    },
+    "kimetsu:mugen-tv": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu",
+        "FOD",
+        "dアニメストア（Amazon）",
+        "アニメタイムズ（Amazon）"
+      ],
+      "link": "https://www.themoviedb.org/tv/85937/watch?locale=JP"
+    },
+    "kimetsu:risshi": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu",
+        "FOD",
+        "dアニメストア（Amazon）",
+        "アニメタイムズ（Amazon）"
+      ],
+      "link": "https://www.themoviedb.org/tv/85937/watch?locale=JP"
+    },
+    "kimetsu:yukaku": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu",
+        "FOD",
+        "dアニメストア（Amazon）",
+        "アニメタイムズ（Amazon）"
+      ],
+      "link": "https://www.themoviedb.org/tv/85937/watch?locale=JP"
+    },
+    "mcu:age-of-ultron": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/99861-avengers-age-of-ultron/watch?locale=JP"
+    },
+    "mcu:ant-man": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/102899-ant-man/watch?locale=JP"
+    },
+    "mcu:ant-man-wasp": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/363088-ant-man-and-the-wasp/watch?locale=JP"
+    },
+    "mcu:avengers": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/24428-the-avengers/watch?locale=JP"
+    },
+    "mcu:black-panther": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/284054-black-panther/watch?locale=JP"
+    },
+    "mcu:black-widow": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/497698-black-widow/watch?locale=JP"
+    },
+    "mcu:brave-new-world": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/822119-captain-america-brave-new-world/watch?locale=JP"
+    },
+    "mcu:captain-america-tfa": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/1771-captain-america-the-first-avenger/watch?locale=JP"
+    },
+    "mcu:captain-marvel": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/299537-captain-marvel/watch?locale=JP"
+    },
+    "mcu:civil-war": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/271110-captain-america-civil-war/watch?locale=JP"
+    },
+    "mcu:deadpool-wolverine": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/533535-deadpool-wolverine/watch?locale=JP"
+    },
+    "mcu:doctor-strange": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/284052-doctor-strange/watch?locale=JP"
+    },
+    "mcu:endgame": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/299534-avengers-endgame/watch?locale=JP"
+    },
+    "mcu:eternals": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/524434-eternals/watch?locale=JP"
+    },
+    "mcu:fantastic-four-first-steps": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/617126-the-fantastic-4-first-steps/watch?locale=JP"
+    },
+    "mcu:far-from-home": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Sony Pictures Core（Amazon）"
+      ],
+      "link": "https://www.themoviedb.org/movie/429617-spider-man-far-from-home/watch?locale=JP"
+    },
+    "mcu:gotg": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/118340-guardians-of-the-galaxy/watch?locale=JP"
+    },
+    "mcu:gotg-2": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/283995-guardians-of-the-galaxy-vol-2/watch?locale=JP"
+    },
+    "mcu:gotg-3": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/447365-guardians-of-the-galaxy-vol-3/watch?locale=JP"
+    },
+    "mcu:homecoming": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu",
+        "Sony Pictures Core（Amazon）"
+      ],
+      "link": "https://www.themoviedb.org/movie/315635-spider-man-homecoming/watch?locale=JP"
+    },
+    "mcu:incredible-hulk": {
+      "names": [
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/1724-the-incredible-hulk/watch?locale=JP"
+    },
+    "mcu:infinity-war": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/299536-avengers-infinity-war/watch?locale=JP"
+    },
+    "mcu:iron-man": {
+      "names": [
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/1726-iron-man/watch?locale=JP"
+    },
+    "mcu:iron-man-2": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/10138-iron-man-2/watch?locale=JP"
+    },
+    "mcu:iron-man-3": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/68721-iron-man-3/watch?locale=JP"
+    },
+    "mcu:love-and-thunder": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/616037-thor-love-and-thunder/watch?locale=JP"
+    },
+    "mcu:multiverse-of-madness": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/453395-doctor-strange-in-the-multiverse-of-madness/watch?locale=JP"
+    },
+    "mcu:no-way-home": {
+      "names": [
+        "Prime Video",
+        "Disney+",
+        "Sony Pictures Core（Amazon）"
+      ],
+      "link": "https://www.themoviedb.org/movie/634649-spider-man-no-way-home/watch?locale=JP"
+    },
+    "mcu:quantumania": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/640146-ant-man-and-the-wasp-quantumania/watch?locale=JP"
+    },
+    "mcu:shang-chi": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/566525-shang-chi-and-the-legend-of-the-ten-rings/watch?locale=JP"
+    },
+    "mcu:the-marvels": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/609681-the-marvels/watch?locale=JP"
+    },
+    "mcu:thor": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/10195-thor/watch?locale=JP"
+    },
+    "mcu:thor-dark-world": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/76338-thor-the-dark-world/watch?locale=JP"
+    },
+    "mcu:thor-ragnarok": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/284053-thor-ragnarok/watch?locale=JP"
+    },
+    "mcu:thunderbolts": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/986056-thunderbolts/watch?locale=JP"
+    },
+    "mcu:wakanda-forever": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=JP"
+    },
+    "mcu:winter-soldier": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/100402-captain-america-the-winter-soldier/watch?locale=JP"
+    },
+    "middle-earth:fotr": {
+      "names": [
+        "Netflix",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/120-the-lord-of-the-rings-the-fellowship-of-the-ring/watch?locale=JP"
+    },
+    "middle-earth:hobbit1": {
+      "names": [
+        "U-NEXT",
+        "Hulu",
+        "MGM（Amazon）"
+      ],
+      "link": "https://www.themoviedb.org/movie/49051-the-hobbit-an-unexpected-journey/watch?locale=JP"
+    },
+    "middle-earth:hobbit2": {
+      "names": [
+        "U-NEXT",
+        "MGM（Amazon）"
+      ],
+      "link": "https://www.themoviedb.org/movie/57158-the-hobbit-the-desolation-of-smaug/watch?locale=JP"
+    },
+    "middle-earth:hobbit3": {
+      "names": [
+        "U-NEXT",
+        "MGM（Amazon）"
+      ],
+      "link": "https://www.themoviedb.org/movie/122917-the-hobbit-the-battle-of-the-five-armies/watch?locale=JP"
+    },
+    "middle-earth:rotk": {
+      "names": [
+        "Netflix",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/122-the-lord-of-the-rings-the-return-of-the-king/watch?locale=JP"
+    },
+    "middle-earth:ttt": {
+      "names": [
+        "Netflix",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/121-the-lord-of-the-rings-the-two-towers/watch?locale=JP"
+    },
+    "one-piece:alabasta": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu",
+        "FOD"
+      ],
+      "link": "https://www.themoviedb.org/tv/37854/watch?locale=JP"
+    },
+    "one-piece:amazon-lily": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu",
+        "FOD"
+      ],
+      "link": "https://www.themoviedb.org/tv/37854/watch?locale=JP"
+    },
+    "one-piece:dressrosa": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu",
+        "FOD"
+      ],
+      "link": "https://www.themoviedb.org/tv/37854/watch?locale=JP"
+    },
+    "one-piece:drum": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu",
+        "FOD"
+      ],
+      "link": "https://www.themoviedb.org/tv/37854/watch?locale=JP"
+    },
+    "one-piece:east-blue": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu",
+        "FOD"
+      ],
+      "link": "https://www.themoviedb.org/tv/37854/watch?locale=JP"
+    },
+    "one-piece:egghead": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu",
+        "FOD"
+      ],
+      "link": "https://www.themoviedb.org/tv/37854/watch?locale=JP"
+    },
+    "one-piece:elbaf": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu",
+        "FOD"
+      ],
+      "link": "https://www.themoviedb.org/tv/37854/watch?locale=JP"
+    },
+    "one-piece:enies-lobby": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu",
+        "FOD"
+      ],
+      "link": "https://www.themoviedb.org/tv/37854/watch?locale=JP"
+    },
+    "one-piece:episode-of-alabasta": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/25278/watch?locale=JP"
+    },
+    "one-piece:episode-of-chopper": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/44731/watch?locale=JP"
+    },
+    "one-piece:film-gold": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/374205-one-piece-film-gold/watch?locale=JP"
+    },
+    "one-piece:film-red": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/900667-one-piece-film-red/watch?locale=JP"
+    },
+    "one-piece:film-z": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/176983-one-piece-film-z/watch?locale=JP"
+    },
+    "one-piece:fishman-island": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu",
+        "FOD"
+      ],
+      "link": "https://www.themoviedb.org/tv/37854/watch?locale=JP"
+    },
+    "one-piece:g8-foxy": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu",
+        "FOD"
+      ],
+      "link": "https://www.themoviedb.org/tv/37854/watch?locale=JP"
+    },
+    "one-piece:grand-line": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu",
+        "FOD"
+      ],
+      "link": "https://www.themoviedb.org/tv/37854/watch?locale=JP"
+    },
+    "one-piece:impel-down": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu",
+        "FOD"
+      ],
+      "link": "https://www.themoviedb.org/tv/37854/watch?locale=JP"
+    },
+    "one-piece:marineford": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu",
+        "FOD"
+      ],
+      "link": "https://www.themoviedb.org/tv/37854/watch?locale=JP"
+    },
+    "one-piece:movie-2": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/23446/watch?locale=JP"
+    },
+    "one-piece:movie-3": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/44725/watch?locale=JP"
+    },
+    "one-piece:movie-3d": {
+      "names": [
+        "Netflix",
+        "U-NEXT",
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/79082-one-piece-3d/watch?locale=JP"
+    },
+    "one-piece:movie-4": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/44727/watch?locale=JP"
+    },
+    "one-piece:movie-5": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/44728-one-piece/watch?locale=JP"
+    },
+    "one-piece:movie-6": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/44729-the-movie/watch?locale=JP"
+    },
+    "one-piece:movie-7": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/44730/watch?locale=JP"
+    },
+    "one-piece:punk-hazard": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu",
+        "FOD"
+      ],
+      "link": "https://www.themoviedb.org/tv/37854/watch?locale=JP"
+    },
+    "one-piece:reverie": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu",
+        "FOD"
+      ],
+      "link": "https://www.themoviedb.org/tv/37854/watch?locale=JP"
+    },
+    "one-piece:sabaody": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu",
+        "FOD"
+      ],
+      "link": "https://www.themoviedb.org/tv/37854/watch?locale=JP"
+    },
+    "one-piece:skypiea": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu",
+        "FOD"
+      ],
+      "link": "https://www.themoviedb.org/tv/37854/watch?locale=JP"
+    },
+    "one-piece:stampede": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/568012-one-piece-stampede/watch?locale=JP"
+    },
+    "one-piece:strong-world": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/41498-one-piece-film-strong-world/watch?locale=JP"
+    },
+    "one-piece:thriller-bark": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu",
+        "FOD"
+      ],
+      "link": "https://www.themoviedb.org/tv/37854/watch?locale=JP"
+    },
+    "one-piece:tv-original": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu",
+        "FOD"
+      ],
+      "link": "https://www.themoviedb.org/tv/37854/watch?locale=JP"
+    },
+    "one-piece:wano": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu",
+        "FOD"
+      ],
+      "link": "https://www.themoviedb.org/tv/37854/watch?locale=JP"
+    },
+    "one-piece:water-seven": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu",
+        "FOD"
+      ],
+      "link": "https://www.themoviedb.org/tv/37854/watch?locale=JP"
+    },
+    "one-piece:whole-cake": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu",
+        "FOD"
+      ],
+      "link": "https://www.themoviedb.org/tv/37854/watch?locale=JP"
+    },
+    "one-piece:zou": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu",
+        "FOD"
+      ],
+      "link": "https://www.themoviedb.org/tv/37854/watch?locale=JP"
+    },
+    "planet-of-the-apes:apes1968": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/871-planet-of-the-apes/watch?locale=JP"
+    },
+    "planet-of-the-apes:battle": {
+      "names": [
+        "Prime Video",
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/1705-battle-for-the-planet-of-the-apes/watch?locale=JP"
+    },
+    "planet-of-the-apes:beneath": {
+      "names": [
+        "Prime Video",
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/1685-beneath-the-planet-of-the-apes/watch?locale=JP"
+    },
+    "planet-of-the-apes:burton": {
+      "names": [
+        "Prime Video",
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/869-planet-of-the-apes/watch?locale=JP"
+    },
+    "planet-of-the-apes:conquest": {
+      "names": [
+        "Prime Video",
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/1688-conquest-of-the-planet-of-the-apes/watch?locale=JP"
+    },
+    "planet-of-the-apes:dawn": {
+      "names": [
+        "Prime Video",
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/119450-dawn-of-the-planet-of-the-apes/watch?locale=JP"
+    },
+    "planet-of-the-apes:escape": {
+      "names": [
+        "Prime Video",
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/1687-escape-from-the-planet-of-the-apes/watch?locale=JP"
+    },
+    "planet-of-the-apes:kingdom": {
+      "names": [
+        "Prime Video",
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/653346-kingdom-of-the-planet-of-the-apes/watch?locale=JP"
+    },
+    "planet-of-the-apes:rise": {
+      "names": [
+        "Prime Video",
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/61791-rise-of-the-planet-of-the-apes/watch?locale=JP"
+    },
+    "planet-of-the-apes:war": {
+      "names": [
+        "Prime Video",
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/281338-war-for-the-planet-of-the-apes/watch?locale=JP"
+    },
+    "predator:avp": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/395-avp-alien-vs-predator/watch?locale=JP"
+    },
+    "predator:avp-r": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/440-aliens-vs-predator-requiem/watch?locale=JP"
+    },
+    "predator:badlands": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/1242898-predator-badlands/watch?locale=JP"
+    },
+    "predator:killer-of-killers": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/1376434-predator-killer-of-killers/watch?locale=JP"
+    },
+    "predator:predator-1987": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/106-predator/watch?locale=JP"
+    },
+    "predator:predator-2": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/169-predator-2/watch?locale=JP"
+    },
+    "predator:predators": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/34851-predators/watch?locale=JP"
+    },
+    "predator:prey": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/766507-prey/watch?locale=JP"
+    },
+    "predator:the-predator": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/346910-the-predator/watch?locale=JP"
+    },
+    "spider-man:amazing-1": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu",
+        "Sony Pictures Core（Amazon）"
+      ],
+      "link": "https://www.themoviedb.org/movie/1930-the-amazing-spider-man/watch?locale=JP"
+    },
+    "spider-man:amazing-2": {
+      "names": [
+        "Prime Video",
+        "Disney+",
+        "Hulu",
+        "Sony Pictures Core（Amazon）"
+      ],
+      "link": "https://www.themoviedb.org/movie/102382-the-amazing-spider-man-2/watch?locale=JP"
+    },
+    "spider-man:far-from-home": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Sony Pictures Core（Amazon）"
+      ],
+      "link": "https://www.themoviedb.org/movie/429617-spider-man-far-from-home/watch?locale=JP"
+    },
+    "spider-man:homecoming": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu",
+        "Sony Pictures Core（Amazon）"
+      ],
+      "link": "https://www.themoviedb.org/movie/315635-spider-man-homecoming/watch?locale=JP"
+    },
+    "spider-man:kraven": {
+      "names": [
+        "Netflix",
+        "Prime Video"
+      ],
+      "link": "https://www.themoviedb.org/movie/539972-kraven-the-hunter/watch?locale=JP"
+    },
+    "spider-man:morbius": {
+      "names": [
+        "Prime Video",
+        "U-NEXT",
+        "Hulu",
+        "Sony Pictures Core（Amazon）"
+      ],
+      "link": "https://www.themoviedb.org/movie/526896-morbius/watch?locale=JP"
+    },
+    "spider-man:no-way-home": {
+      "names": [
+        "Prime Video",
+        "Disney+",
+        "Sony Pictures Core（Amazon）"
+      ],
+      "link": "https://www.themoviedb.org/movie/634649-spider-man-no-way-home/watch?locale=JP"
+    },
+    "spider-man:raimi-1": {
+      "names": [
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu",
+        "Sony Pictures Core（Amazon）"
+      ],
+      "link": "https://www.themoviedb.org/movie/557-spider-man/watch?locale=JP"
+    },
+    "spider-man:raimi-2": {
+      "names": [
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu",
+        "Sony Pictures Core（Amazon）"
+      ],
+      "link": "https://www.themoviedb.org/movie/558-spider-man-2/watch?locale=JP"
+    },
+    "spider-man:raimi-3": {
+      "names": [
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu",
+        "Sony Pictures Core（Amazon）"
+      ],
+      "link": "https://www.themoviedb.org/movie/559-spider-man-3/watch?locale=JP"
+    },
+    "spider-man:spider-verse-1": {
+      "names": [
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "dアニメストア（Amazon）"
+      ],
+      "link": "https://www.themoviedb.org/movie/324857-spider-man-into-the-spider-verse/watch?locale=JP"
+    },
+    "spider-man:spider-verse-2": {
+      "names": [
+        "Prime Video",
+        "Disney+",
+        "アニメタイムズ（Amazon）"
+      ],
+      "link": "https://www.themoviedb.org/movie/569094-spider-man-across-the-spider-verse/watch?locale=JP"
+    },
+    "spider-man:venom": {
+      "names": [
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Hulu",
+        "Sony Pictures Core（Amazon）"
+      ],
+      "link": "https://www.themoviedb.org/movie/335983-venom/watch?locale=JP"
+    },
+    "spider-man:venom-2": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Disney+",
+        "Sony Pictures Core（Amazon）"
+      ],
+      "link": "https://www.themoviedb.org/movie/580489-venom-let-there-be-carnage/watch?locale=JP"
+    },
+    "spider-man:venom-3": {
+      "names": [
+        "Netflix"
+      ],
+      "link": "https://www.themoviedb.org/movie/912649-venom-the-last-dance/watch?locale=JP"
+    },
+    "star-wars:ep1": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/1893-star-wars-episode-i-the-phantom-menace/watch?locale=JP"
+    },
+    "star-wars:ep2": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/1894-star-wars-episode-ii-attack-of-the-clones/watch?locale=JP"
+    },
+    "star-wars:ep3": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/1895-star-wars-episode-iii-revenge-of-the-sith/watch?locale=JP"
+    },
+    "star-wars:ep4": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/11-star-wars/watch?locale=JP"
+    },
+    "star-wars:ep5": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/1891-the-empire-strikes-back/watch?locale=JP"
+    },
+    "star-wars:ep6": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/1892-return-of-the-jedi/watch?locale=JP"
+    },
+    "star-wars:ep7": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/140607-star-wars-the-force-awakens/watch?locale=JP"
+    },
+    "star-wars:ep8": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/181808-star-wars-the-last-jedi/watch?locale=JP"
+    },
+    "star-wars:ep9": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/181812-star-wars-the-rise-of-skywalker/watch?locale=JP"
+    },
+    "star-wars:rogue-one": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/330459-rogue-one-a-star-wars-story/watch?locale=JP"
+    },
+    "star-wars:solo": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/348350-solo-a-star-wars-story/watch?locale=JP"
+    },
+    "terminator:dark-fate": {
+      "names": [
+        "Prime Video",
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/290859-terminator-dark-fate/watch?locale=JP"
+    },
+    "terminator:genisys": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/87101-terminator-genisys/watch?locale=JP"
+    },
+    "terminator:t1": {
+      "names": [
+        "Netflix",
+        "U-NEXT",
+        "Hulu",
+        "MGM（Amazon）"
+      ],
+      "link": "https://www.themoviedb.org/movie/218-the-terminator/watch?locale=JP"
+    },
+    "terminator:t2": {
+      "names": [
+        "U-NEXT",
+        "シネフィルWOWOW（Amazon）"
+      ],
+      "link": "https://www.themoviedb.org/movie/280-terminator-2-judgment-day/watch?locale=JP"
+    },
+    "terminator:t3": {
+      "names": [
+        "Hulu",
+        "FOD",
+        "シネフィルWOWOW（Amazon）"
+      ],
+      "link": "https://www.themoviedb.org/movie/296-terminator-3-rise-of-the-machines/watch?locale=JP"
+    },
+    "terminator:t4": {
+      "names": [
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/534-terminator-salvation/watch?locale=JP"
+    },
+    "wizarding-world:fb1": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/259316-fantastic-beasts-and-where-to-find-them/watch?locale=JP"
+    },
+    "wizarding-world:fb2": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/338952-fantastic-beasts-the-crimes-of-grindelwald/watch?locale=JP"
+    },
+    "wizarding-world:fb3": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/338953-fantastic-beasts-the-secrets-of-dumbledore/watch?locale=JP"
+    },
+    "wizarding-world:hp1": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/671-harry-potter-and-the-philosopher-s-stone/watch?locale=JP"
+    },
+    "wizarding-world:hp2": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/672-harry-potter-and-the-chamber-of-secrets/watch?locale=JP"
+    },
+    "wizarding-world:hp3": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/673-harry-potter-and-the-prisoner-of-azkaban/watch?locale=JP"
+    },
+    "wizarding-world:hp4": {
+      "names": [
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/674-harry-potter-and-the-goblet-of-fire/watch?locale=JP"
+    },
+    "wizarding-world:hp5": {
+      "names": [
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/675-harry-potter-and-the-order-of-the-phoenix/watch?locale=JP"
+    },
+    "wizarding-world:hp6": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/767-harry-potter-and-the-half-blood-prince/watch?locale=JP"
+    },
+    "wizarding-world:hp7a": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/12444-harry-potter-and-the-deathly-hallows-part-1/watch?locale=JP"
+    },
+    "wizarding-world:hp7b": {
+      "names": [
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/12445-harry-potter-and-the-deathly-hallows-part-2/watch?locale=JP"
+    },
+    "x-men:apocalypse": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/246655-x-men-apocalypse/watch?locale=JP"
+    },
+    "x-men:dark-phoenix": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/320288-dark-phoenix/watch?locale=JP"
+    },
+    "x-men:days-of-future-past": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/127585-x-men-days-of-future-past/watch?locale=JP"
+    },
+    "x-men:deadpool": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/293660-deadpool/watch?locale=JP"
+    },
+    "x-men:deadpool-2": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/383498-deadpool-2/watch?locale=JP"
+    },
+    "x-men:first-class": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/49538-x-men-first-class/watch?locale=JP"
+    },
+    "x-men:last-stand": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/36668-x-men-the-last-stand/watch?locale=JP"
+    },
+    "x-men:logan": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/263115-logan/watch?locale=JP"
+    },
+    "x-men:new-mutants": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/340102-the-new-mutants/watch?locale=JP"
+    },
+    "x-men:origins-wolverine": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/2080-x-men-origins-wolverine/watch?locale=JP"
+    },
+    "x-men:the-wolverine": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/76170-the-wolverine/watch?locale=JP"
+    },
+    "x-men:x-men": {
+      "names": [
+        "U-NEXT",
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/36657-x-men/watch?locale=JP"
+    },
+    "x-men:x2": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/36658-x2/watch?locale=JP"
+    }
+  }
+}
