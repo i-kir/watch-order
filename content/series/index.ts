@@ -20,6 +20,9 @@ import { predator } from './predator';
 import { spiderMan } from './spider-man';
 import { halloween } from './halloween';
 import { bond } from './bond';
+import { conjuring } from './conjuring';
+import { transformers } from './transformers';
+import { jurassic } from './jurassic';
 
 export const seriesList: Series[] = [
   mcu,
@@ -43,4 +46,7 @@ export const seriesList: Series[] = [
   spiderMan,
   halloween,
   bond,
+  conjuring,
+  transformers,
+  jurassic,
 ];

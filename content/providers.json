@@ -243,6 +243,73 @@
       ],
       "link": "https://www.themoviedb.org/movie/1209217-100/watch?locale=JP"
     },
+    "conjuring:annabelle": {
+      "names": [
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/250546-annabelle/watch?locale=JP"
+    },
+    "conjuring:annabelle-comes-home": {
+      "names": [
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/521029-annabelle-comes-home/watch?locale=JP"
+    },
+    "conjuring:annabelle-creation": {
+      "names": [
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/396422-annabelle-creation/watch?locale=JP"
+    },
+    "conjuring:conjuring": {
+      "names": [
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/138843-the-conjuring/watch?locale=JP"
+    },
+    "conjuring:conjuring-2": {
+      "names": [
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/259693-the-conjuring-2/watch?locale=JP"
+    },
+    "conjuring:devil-made-me": {
+      "names": [
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/423108-the-conjuring-the-devil-made-me-do-it/watch?locale=JP"
+    },
+    "conjuring:last-rites": {
+      "names": [
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/1038392-the-conjuring-last-rites/watch?locale=JP"
+    },
+    "conjuring:llorona": {
+      "names": [
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/480414-the-curse-of-la-llorona/watch?locale=JP"
+    },
+    "conjuring:nun": {
+      "names": [
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/439079-the-nun/watch?locale=JP"
+    },
+    "conjuring:nun-2": {
+      "names": [
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/968051-the-nun-ii/watch?locale=JP"
+    },
     "dc:aquaman": {
       "names": [
         "U-NEXT"
@@ -1027,6 +1094,61 @@
         "Prime Video"
       ],
       "link": "https://www.themoviedb.org/movie/610253-halloween-kills/watch?locale=JP"
+    },
+    "jurassic:dominion": {
+      "names": [
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/507086-jurassic-world-dominion/watch?locale=JP"
+    },
+    "jurassic:fallen-kingdom": {
+      "names": [
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/351286-jurassic-world-fallen-kingdom/watch?locale=JP"
+    },
+    "jurassic:jp1": {
+      "names": [
+        "Prime Video",
+        "U-NEXT",
+        "Hulu",
+        "Apple TV",
+        "Apple TV Amazon Channel"
+      ],
+      "link": "https://www.themoviedb.org/movie/329-jurassic-park/watch?locale=JP"
+    },
+    "jurassic:jp3": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/331-jurassic-park-iii/watch?locale=JP"
+    },
+    "jurassic:jw1": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/135397-jurassic-world/watch?locale=JP"
+    },
+    "jurassic:lost-world": {
+      "names": [
+        "Prime Video",
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/330-the-lost-world-jurassic-park/watch?locale=JP"
+    },
+    "jurassic:rebirth": {
+      "names": [
+        "Prime Video"
+      ],
+      "link": "https://www.themoviedb.org/movie/1234821-jurassic-world-rebirth/watch?locale=JP"
     },
     "kimetsu:hashira": {
       "names": [
@@ -2155,6 +2277,66 @@
         "Hulu"
       ],
       "link": "https://www.themoviedb.org/movie/534-terminator-salvation/watch?locale=JP"
+    },
+    "transformers:age-of-extinction": {
+      "names": [
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/91314-transformers-age-of-extinction/watch?locale=JP"
+    },
+    "transformers:bumblebee": {
+      "names": [
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/424783-bumblebee/watch?locale=JP"
+    },
+    "transformers:dotm": {
+      "names": [
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/38356-transformers-dark-of-the-moon/watch?locale=JP"
+    },
+    "transformers:last-knight": {
+      "names": [
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/335988-transformers-the-last-knight/watch?locale=JP"
+    },
+    "transformers:revenge": {
+      "names": [
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/8373-transformers-revenge-of-the-fallen/watch?locale=JP"
+    },
+    "transformers:rise-of-the-beasts": {
+      "names": [
+        "Prime Video"
+      ],
+      "link": "https://www.themoviedb.org/movie/667538-transformers-rise-of-the-beasts/watch?locale=JP"
+    },
+    "transformers:tf-one": {
+      "names": [
+        "Netflix"
+      ],
+      "link": "https://www.themoviedb.org/movie/698687-transformers-one/watch?locale=JP"
+    },
+    "transformers:tf1": {
+      "names": [
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/1858-transformers/watch?locale=JP"
     },
     "wizarding-world:fb1": {
       "names": [
