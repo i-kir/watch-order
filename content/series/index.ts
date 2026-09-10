@@ -18,6 +18,8 @@ import { dc } from './dc';
 import { godzilla } from './godzilla';
 import { predator } from './predator';
 import { spiderMan } from './spider-man';
+import { halloween } from './halloween';
+import { bond } from './bond';
 
 export const seriesList: Series[] = [
   mcu,
@@ -39,4 +41,6 @@ export const seriesList: Series[] = [
   godzilla,
   predator,
   spiderMan,
+  halloween,
+  bond,
 ];

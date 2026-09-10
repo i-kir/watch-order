@@ -50,6 +50,37 @@
       ],
       "link": "https://www.themoviedb.org/movie/945961-alien-romulus/watch?locale=JP"
     },
+    "bond:casino-royale": {
+      "names": [
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/36557-casino-royale/watch?locale=JP"
+    },
+    "bond:no-time-to-die": {
+      "names": [
+        "Netflix"
+      ],
+      "link": "https://www.themoviedb.org/movie/370172-no-time-to-die/watch?locale=JP"
+    },
+    "bond:quantum": {
+      "names": [
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/10764-quantum-of-solace/watch?locale=JP"
+    },
+    "bond:skyfall": {
+      "names": [
+        "Netflix",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/37724-skyfall/watch?locale=JP"
+    },
+    "bond:spectre": {
+      "names": [
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/206647-spectre/watch?locale=JP"
+    },
     "conan:m01": {
       "names": [
         "Disney+"
@@ -977,6 +1008,25 @@
         "U-NEXT"
       ],
       "link": "https://www.themoviedb.org/tv/5660-zz/watch?locale=JP"
+    },
+    "halloween:h1978": {
+      "names": [
+        "U-NEXT",
+        "Cultpix"
+      ],
+      "link": "https://www.themoviedb.org/movie/948-halloween/watch?locale=JP"
+    },
+    "halloween:h2018": {
+      "names": [
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/424139-halloween/watch?locale=JP"
+    },
+    "halloween:kills": {
+      "names": [
+        "Prime Video"
+      ],
+      "link": "https://www.themoviedb.org/movie/610253-halloween-kills/watch?locale=JP"
     },
     "kimetsu:hashira": {
       "names": [

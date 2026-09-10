@@ -251,6 +251,39 @@ async function main() {
   }
 
 
+  // 同名作が複数あるシリーズでは、年で絞っても知名度の高い側が返ることがある
+  // （『ハロウィン』は1978・2007・2018の3本があり、2018年版に1978年版が入った）。
+  // 取り違えは黙って通るので、シリーズ内での ID 重複をここで検査する。
+  //
+  // ただし TVシリーズの各編は、親番組の ID を共有するのが正しい形
+  // （ONE PIECE の各編、鬼滅の各シーズンなど）。これらは検査から外す。
+  {
+    const seasonKeys = new Set();
+    for (const file of files) {
+      const { seriesSlug, films: defined } = await readFilms(file);
+      for (const f of defined) {
+        if (f.kind === 'tv' || f.season != null) seasonKeys.add(`${seriesSlug}:${f.slug}`);
+      }
+    }
+
+    const seen = new Map();
+    const dups = [];
+    for (const [k, v] of Object.entries(existing)) {
+      if (!v?.tmdbId || seasonKeys.has(k)) continue;
+      const seriesOf = k.slice(0, k.indexOf(':'));
+      const idKey = `${seriesOf}#${v.tmdbId}`;
+      if (seen.has(idKey)) dups.push([seen.get(idKey), k, v.tmdbId]);
+      else seen.set(idKey, k);
+    }
+    if (dups.length > 0) {
+      console.error('\n⚠ 同じシリーズ内で TMDb ID が重複しています。取り違えの疑いがあります:');
+      for (const [a, b, id] of dups) console.error(`   #${id}  ${a}  と  ${b}`);
+      console.error('   scripts/tmdb-find.mjs で正しい ID を調べ、定義に tmdbId を直接書いてください。');
+      console.error('   何も書き込んでいません。');
+      process.exit(1);
+    }
+  }
+
   await writeFile(outPath, JSON.stringify(existing, null, 2) + '\n');
   console.log(`\n取得 ${found}件 / 失敗 ${missed}件`);
   console.log('content/tmdb.json を更新しました。差分を確認してコミットしてください。');
