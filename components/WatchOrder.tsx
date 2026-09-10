@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import type { Film, OrderKey, Series } from '@/lib/types';
 import { descriptionOf, labelOf } from '@/lib/series';
-import { formatRuntime, posterOf, totalRuntime, watchMinutes } from '@/lib/tmdb';
+import { formatRuntime, posterOf, totalRuntime, trailerUrl, watchMinutes } from '@/lib/tmdb';
 import Poster from './Poster';
 import ShareProgress from './ShareProgress';
 
@@ -167,6 +167,7 @@ export default function WatchOrder({ series, orders, entriesByOrder }: Props) {
           const isNext = next?.film.slug === entry.film.slug;
           const isTv = entry.film.kind === 'tv';
           const minutesOfFilm = watchMinutes(series.slug, entry.film);
+          const trailer = trailerUrl(series.slug, entry.film.slug);
 
           return (
             <li key={entry.film.slug}>
@@ -232,6 +233,23 @@ export default function WatchOrder({ series, orders, entriesByOrder }: Props) {
                       <span className="tabular-nums">{formatRuntime(minutesOfFilm)}</span>
                     ) : null}
                     {entry.film.setting && <span>設定 {entry.film.setting}</span>}
+                    {trailer && (
+                      /*
+                       * カード全体が label なので、リンクを押したときに
+                       * チェックまで入らないよう stopPropagation しておく。
+                       * 仕様上 a 要素は label の活性化から除外されるが、
+                       * 挙動に幅があるため明示的に止める。
+                       */
+                      <a
+                        href={trailer}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                        className="inline-flex items-center gap-0.5 font-bold text-[var(--color-accent)] hover:underline"
+                      >
+                        <span aria-hidden>▶</span>予告編
+                      </a>
+                    )}
                   </p>
 
                   {entry.reason && (

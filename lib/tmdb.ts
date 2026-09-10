@@ -6,6 +6,8 @@ export type TmdbEntry = {
   overview: string;
   /** 上映時間（分）。取得できていない場合は undefined */
   runtime?: number | null;
+  /** 予告編の YouTube 動画ID。日本語版を優先して取得している。無ければ null */
+  trailerKey?: string | null;
 };
 
 const entries = tmdb as Record<string, TmdbEntry>;
@@ -87,4 +89,14 @@ export function allPosters(size: 'w92' | 'w185' = 'w185'): string[] {
     if (url) urls.push(url);
   }
   return urls;
+}
+
+/**
+ * 予告編の URL。埋め込みではなく YouTube へのリンクにしている。
+ * 1ページに数十本の iframe を置くと、ポスターを主役にした表示が
+ * 読み込みの重さで台無しになるため。
+ */
+export function trailerUrl(seriesSlug: string, filmSlug: string): string | null {
+  const key = tmdbOf(seriesSlug, filmSlug)?.trailerKey;
+  return key ? `https://www.youtube.com/watch?v=${key}` : null;
 }

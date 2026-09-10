@@ -117,6 +117,40 @@ async function seasonDetail(showId, seasonNumber) {
   return res.json();
 }
 
+/**
+ * 予告編（YouTube）のキーを1本だけ返す。日本語版を優先し、無ければ英語版に落とす。
+ * 日本語カバー率は MCU で93%あったので、基本は日本語版が付く。
+ * 見つからなければ null。未公開作では普通に起きる。
+ */
+async function trailerKeyOf(id, kind, season) {
+  const base =
+    kind === 'tv' && season != null
+      ? `${API}/tv/${id}/season/${season}/videos`
+      : `${API}/${kind === 'tv' ? 'tv' : 'movie'}/${id}/videos`;
+
+  const pick = (list) => {
+    const yt = (list ?? []).filter((v) => v.site === 'YouTube');
+    const trailers = yt.filter((v) => v.type === 'Trailer');
+    const pool = trailers.length > 0 ? trailers : yt.filter((v) => v.type === 'Teaser');
+    if (pool.length === 0) return null;
+    return (pool.find((v) => v.official) ?? pool[0]).key;
+  };
+
+  for (const lang of ['ja-JP', null]) {
+    try {
+      const url = `${base}?api_key=${KEY}${lang ? `&language=${lang}` : ''}`;
+      const res = await fetch(url);
+      if (!res.ok) continue;
+      const key = pick((await res.json()).results);
+      if (key) return key;
+    } catch {
+      // 予告編は付加情報なので、取れなくても本体の取得は続ける
+    }
+    await sleep(150);
+  }
+  return null;
+}
+
 /** 番組全体の episode_run_time が空のことがあるので、各話の実測から平均を出す */
 function averageEpisodeRuntime(season) {
   const values = (season.episodes ?? []).map((e) => e.runtime).filter((n) => typeof n === 'number' && n > 0);
@@ -158,9 +192,11 @@ async function main() {
             posterPath: season.poster_path ?? null,
             overview: season.overview ?? '',
             runtime,
+            trailerKey: await trailerKeyOf(film.tmdbId, 'tv', film.season),
           };
           const label = runtime ? `${runtime}分/話` : '尺不明';
-          console.log(`  ✓ ${film.title} → #${film.tmdbId} season ${film.season}（${label}）`);
+          const tr = existing[key].trailerKey ? '予告あり' : '予告なし';
+          console.log(`  ✓ ${film.title} → #${film.tmdbId} season ${film.season}（${label}・${tr}）`);
           found++;
           await sleep(250);
           continue;
@@ -183,10 +219,12 @@ async function main() {
             posterPath: hit.poster_path ?? info.poster_path ?? null,
             overview: hit.overview || info.overview || '',
             runtime,
+            trailerKey: await trailerKeyOf(hit.id, film.kind, null),
           };
           const unit = film.kind === 'tv' ? '分/話' : '分';
           const runtimeLabel = runtime ? `${runtime}${unit}` : '尺不明';
-          console.log(`  ✓ ${film.title} → TMDb #${hit.id}（${runtimeLabel}）`);
+          const tr = existing[key].trailerKey ? '予告あり' : '予告なし';
+          console.log(`  ✓ ${film.title} → TMDb #${hit.id}（${runtimeLabel}・${tr}）`);
           found++;
         }
       } catch (error) {
