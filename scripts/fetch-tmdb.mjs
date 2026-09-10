@@ -121,12 +121,11 @@ async function seasonDetail(showId, seasonNumber) {
  * 予告編（YouTube）のキーを1本だけ返す。日本語版を優先し、無ければ英語版に落とす。
  * 日本語カバー率は MCU で93%あったので、基本は日本語版が付く。
  * 見つからなければ null。未公開作では普通に起きる。
+ * 対象は劇場版のみ。TVエントリはシーズン単位の予告が揃わず、
+ * 付いたり付かなかったりでリストが虫食いに見えるため付けない。
  */
-async function trailerKeyOf(id, kind, season) {
-  const base =
-    kind === 'tv' && season != null
-      ? `${API}/tv/${id}/season/${season}/videos`
-      : `${API}/${kind === 'tv' ? 'tv' : 'movie'}/${id}/videos`;
+async function trailerKeyOf(id) {
+  const base = `${API}/movie/${id}/videos`;
 
   const pick = (list) => {
     const yt = (list ?? []).filter((v) => v.site === 'YouTube');
@@ -192,7 +191,7 @@ async function main() {
             posterPath: season.poster_path ?? null,
             overview: season.overview ?? '',
             runtime,
-            trailerKey: await trailerKeyOf(film.tmdbId, 'tv', film.season),
+            trailerKey: null, // TVエントリには予告を付けない
           };
           const label = runtime ? `${runtime}分/話` : '尺不明';
           const tr = existing[key].trailerKey ? '予告あり' : '予告なし';
@@ -219,7 +218,7 @@ async function main() {
             posterPath: hit.poster_path ?? info.poster_path ?? null,
             overview: hit.overview || info.overview || '',
             runtime,
-            trailerKey: await trailerKeyOf(hit.id, film.kind, null),
+            trailerKey: film.kind === 'tv' ? null : await trailerKeyOf(hit.id),
           };
           const unit = film.kind === 'tv' ? '分/話' : '分';
           const runtimeLabel = runtime ? `${runtime}${unit}` : '尺不明';

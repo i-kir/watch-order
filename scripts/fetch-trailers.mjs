@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// 既存エントリに予告編だけを後から足す。
+// 既存エントリに予告編だけを後から足す。対象は劇場版のみ。
 //
 //   node scripts/fetch-trailers.mjs            すべてのシリーズ
 //   node scripts/fetch-trailers.mjs mcu        1シリーズだけ
@@ -8,6 +8,10 @@
 // 予告編のために全件を流すと再検索が走り、曖昧なタイトルで別の作品を
 // 掴んでポスターごと差し替わる危険がある。
 // ここでは tmdb.json に保存済みの ID だけを使い、検索は一切しない。
+//
+// TVエントリ（ONE PIECEの編、鬼滅のシーズンなど）には付けない。
+// シーズン単位の予告は揃っておらず、付いたり付かなかったりで
+// リストが虫食いに見えるため。
 import { readdir, readFile, writeFile } from 'node:fs/promises';
 
 const API = 'https://api.themoviedb.org/3';
@@ -53,11 +57,8 @@ async function metaOf(file) {
 }
 
 /** YouTube の予告編を1本。日本語版を優先し、無ければ英語版に落とす */
-async function trailerKeyOf(id, kind, season) {
-  const base =
-    kind === 'tv' && season != null
-      ? `${API}/tv/${id}/season/${season}/videos`
-      : `${API}/${kind === 'tv' ? 'tv' : 'movie'}/${id}/videos`;
+async function trailerKeyOf(id) {
+  const base = `${API}/movie/${id}/videos`;
 
   const pick = (list) => {
     const yt = (list ?? []).filter((v) => v.site === 'YouTube');
@@ -88,7 +89,7 @@ const tmdb = JSON.parse(await readFile(outPath, 'utf8'));
 const dir = new URL('../content/series/', import.meta.url);
 const files = (await readdir(dir)).filter((f) => f.endsWith('.ts') && f !== 'index.ts').sort();
 
-let added = 0, none = 0, skipped = 0;
+let added = 0, none = 0, skipped = 0, tvSkipped = 0;
 
 for (const file of files) {
   const { seriesSlug, meta } = await metaOf(file);
@@ -113,7 +114,13 @@ for (const file of files) {
     }
 
     const m = meta[filmSlug] ?? { kind: 'movie', season: null };
-    const trailer = await trailerKeyOf(entry.tmdbId, m.kind, m.season);
+    if (m.kind === 'tv') {
+      tmdb[key].trailerKey = null;
+      tvSkipped++;
+      continue;
+    }
+
+    const trailer = await trailerKeyOf(entry.tmdbId);
     tmdb[key].trailerKey = trailer;
     if (trailer) {
       added++;
@@ -127,5 +134,5 @@ for (const file of files) {
 }
 
 await writeFile(outPath, JSON.stringify(tmdb, null, 2) + '\n');
-console.log(`\n予告あり ${added}件 / なし ${none}件 / 取得済みで飛ばした ${skipped}件`);
+console.log(`\n予告あり ${added}件 / なし ${none}件 / TVのため対象外 ${tvSkipped}件 / 取得済み ${skipped}件`);
 console.log('ポスターと上映時間には触っていません。差分を確認してコミットしてください。');

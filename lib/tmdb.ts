@@ -6,7 +6,7 @@ export type TmdbEntry = {
   overview: string;
   /** 上映時間（分）。取得できていない場合は undefined */
   runtime?: number | null;
-  /** 予告編の YouTube 動画ID。日本語版を優先して取得している。無ければ null */
+  /** 予告編の YouTube 動画ID。劇場版のみ、日本語版を優先して取得している。無ければ null */
   trailerKey?: string | null;
 };
 
@@ -92,7 +92,8 @@ export function allPosters(size: 'w92' | 'w185' = 'w185'): string[] {
 }
 
 /**
- * 予告編の URL。埋め込みではなく YouTube へのリンクにしている。
+ * 予告編の URL。劇場版にだけ付く（TVエントリは常に null）。
+ * 埋め込みではなく YouTube へのリンクにしている。
  * 1ページに数十本の iframe を置くと、ポスターを主役にした表示が
  * 読み込みの重さで台無しになるため。
  */
