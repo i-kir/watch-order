@@ -16,6 +16,8 @@ import { fate } from './fate';
 import { onePiece } from './one-piece';
 import { dc } from './dc';
 import { godzilla } from './godzilla';
+import { predator } from './predator';
+import { spiderMan } from './spider-man';
 
 export const seriesList: Series[] = [
   mcu,
@@ -35,4 +37,6 @@ export const seriesList: Series[] = [
   onePiece,
   dc,
   godzilla,
+  predator,
+  spiderMan,
 ];
