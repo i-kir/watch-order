@@ -3,6 +3,7 @@ import type { Series } from '@/lib/types';
 export const wizardingWorld: Series = {
   slug: 'wizarding-world',
   name: 'ウィザーディング・ワールド',
+  category: 'film',
   tagline: 'ハリー・ポッター8作＋ファンタスティック・ビースト3作',
   description:
     '『ハリー・ポッター』シリーズと、その約60年前を描く『ファンタスティック・ビースト』シリーズ。公開順と時系列順が大きく食い違う代表例です。',

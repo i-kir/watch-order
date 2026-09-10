@@ -7,6 +7,7 @@ import type { Series } from '@/lib/types';
 export const fastFurious: Series = {
   slug: 'fast-furious',
   name: 'ワイルド・スピード',
+  category: 'film',
   tagline: '3作目「TOKYO DRIFT」は、実は6作目の後',
   description:
     'シリーズ11作。3作目の『TOKYO DRIFT』だけが、後年の作品によって時系列上の位置を変えられています。公開順に観ると物語の繋がりが分からなくなる箇所があります。',

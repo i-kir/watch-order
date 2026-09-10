@@ -7,6 +7,7 @@ import type { Series } from '@/lib/types';
 export const mcu: Series = {
   slug: 'mcu',
   name: 'マーベル・シネマティック・ユニバース',
+  category: 'film',
   tagline: 'MCU 全40作を、公開順・時系列順で',
   description:
     'アイアンマンから始まる MCU の劇場公開長編を、公開順と公式タイムライン順の両方で並べています。公式順は設定年代の厳密な昇順ではなく、いくつか順序が入れ替わる箇所があります。',

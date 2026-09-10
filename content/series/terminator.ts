@@ -7,6 +7,7 @@ import type { Series } from '@/lib/types';
 export const terminator: Series = {
   slug: 'terminator',
   name: 'ターミネーター',
+  category: 'film',
   tagline: 'リブートのたびに時間軸が分岐し、正解が3つある',
   description:
     '実写映画6作。『2』のあとが3つの時間軸に分かれており、どれを正史とみなすかで観る順番が変わります。『ニュー・フェイト』は『3』『4』『ジェニシス』を明確に別時間軸として扱っています。',

@@ -7,6 +7,7 @@ import type { Series } from '@/lib/types';
 export const kimetsu: Series = {
   slug: 'kimetsu',
   name: '鬼滅の刃',
+  category: 'anime',
   tagline: '無限列車編が劇場版とTV版で2回ある。どちらを観るか',
   description:
     'アニメは公開された順に観れば物語がそのまま繋がります。ただし「無限列車編」だけは劇場版とTVアニメ版の両方が存在し、内容が重複します。どちらか一方でよいのか、両方観る意味があるのかが分かりにくい部分なので、その違いを明記しました。',

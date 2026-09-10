@@ -3,6 +3,7 @@ import type { Series } from '@/lib/types';
 export const alien: Series = {
   slug: 'alien',
   name: 'エイリアン',
+  category: 'film',
   tagline: '前日譚が後から作られ、時系列が入れ子になったシリーズ',
   description:
     '1979年の『エイリアン』から始まる本編4作に、後年に作られた前日譚『プロメテウス』『コヴェナント』、そして『1』と『2』の間を描く『ロムルス』を加えた7作。',

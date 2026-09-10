@@ -7,6 +7,7 @@ import type { Series } from '@/lib/types';
 export const planetOfTheApes: Series = {
   slug: 'planet-of-the-apes',
   name: '猿の惑星',
+  category: 'film',
   tagline: '3つの別シリーズが同じ名前で存在する',
   description:
     '1968年からの旧シリーズ5作、2001年のティム・バートン版、2011年からの新シリーズ4作。この3つは互いに接続しない別の物語です。どれを観たいのかで、観る順番が変わります。',

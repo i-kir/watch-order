@@ -7,6 +7,7 @@ import type { Series } from '@/lib/types';
 export const conan: Series = {
   slug: 'conan',
   name: '名探偵コナン 劇場版',
+  category: 'anime',
   tagline: '29作もあるので「どれを観れば話が繋がるか」を出します',
   description:
     '劇場版は基本的に1作で完結し、公開順に観れば問題ありません。ただし29作あり全部を観るのは大変です。黒ずくめの組織が本筋に関わる作品だけを抜き出した順も用意しました。',

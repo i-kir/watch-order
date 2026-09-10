@@ -9,6 +9,7 @@ import type { Series } from '@/lib/types';
 export const fate: Series = {
   slug: 'fate',
   name: 'Fate（ステイナイト系）',
+  category: 'anime',
   tagline: '前日譚のZeroを先に観ると、本編の仕掛けが壊れる',
   description:
     'Fate/stay night には Fate・Unlimited Blade Works・Heaven’s Feel という3つのルートがあり、これらは続き物ではなく、同じ2週間を別の結末までたどる並行世界です。さらに『Fate/Zero』が10年前を描く前日譚として存在します。Zero は前の時代の話なので年代順では最初に来ますが、本編の重要な正体を先に明かしてしまうため、最初に観るべきかどうかが最大の論点になります。',

@@ -8,6 +8,7 @@ import type { Series } from '@/lib/types';
 export const evangelion: Series = {
   slug: 'evangelion',
   name: 'エヴァンゲリオン',
+  category: 'anime',
   tagline: '旧シリーズと新劇場版は別物。どちらから観るか',
   description:
     'エヴァンゲリオンには、1995年のTVアニメから続く旧シリーズと、2007年から始まった新劇場版の2つの系統があります。新劇場版は旧シリーズの続編ではなく、同じ物語を作り直したものです。そのため「時系列順」は存在せず、実際の悩みは「どちらの系統を観るか」になります。',

@@ -6,7 +6,7 @@ export type Film = {
   /** 公開年（米国基準。並べ替えの基準にする） */
   year: number;
   /** 劇場版かTVシリーズか。省略時は劇場版として扱う */
-  kind?: 'film' | 'tv';
+  kind?: "film" | "tv";
   /** TVシリーズの話数。kind が 'tv' のときだけ意味を持つ */
   episodes?: number;
   /**
@@ -22,7 +22,7 @@ export type Film = {
   tmdbId?: number;
 };
 
-export type OrderKey = 'release' | 'chrono' | 'recommended';
+export type OrderKey = "release" | "chrono" | "recommended";
 
 export type RecommendedStep = {
   slug: string;
@@ -33,6 +33,12 @@ export type RecommendedStep = {
 export type Series = {
   slug: string;
   name: string;
+  /**
+   * 実写映画のシリーズか、アニメのシリーズか。トップページの見出しを分けるのに使う。
+   * 任意にすると付け忘れが黙って「映画」に混ざるため、必須にしている。
+   * 判定はシリーズ全体の性格で決める（ゴジラはアニメ3部作を含むが映画シリーズ）。
+   */
+  category: "film" | "anime";
   /** 一覧と検索結果に出る短い説明 */
   tagline: string;
   description: string;

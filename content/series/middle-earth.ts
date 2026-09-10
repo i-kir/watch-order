@@ -3,6 +3,7 @@ import type { Series } from '@/lib/types';
 export const middleEarth: Series = {
   slug: 'middle-earth',
   name: '中つ国（ロード・オブ・ザ・リング／ホビット）',
+  category: 'film',
   tagline: '公開順と時系列順が、まるごと逆になるシリーズ',
   description:
     'ピーター・ジャクソン監督による中つ国の実写映画6作。『ホビット』3部作は『ロード・オブ・ザ・リング』の約60年前を描くため、公開順と時系列順が前半と後半で入れ替わります。',

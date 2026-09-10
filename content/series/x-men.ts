@@ -7,6 +7,7 @@ import type { Series } from '@/lib/types';
 export const xMen: Series = {
   slug: 'x-men',
   name: 'X-MEN 映画シリーズ',
+  category: 'film',
   tagline: '時系列が分岐する、最も順番の難しいシリーズ',
   description:
     '20世紀フォックス版の X-MEN 映画13作。『フューチャー&パスト』の歴史改変で時系列が分岐しており、単純な一直線には並びません。',

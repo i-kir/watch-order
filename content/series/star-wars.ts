@@ -3,6 +3,7 @@ import type { Series } from '@/lib/types';
 export const starWars: Series = {
   slug: 'star-wars',
   name: 'スター・ウォーズ',
+  category: 'film',
   tagline: 'エピソード1から観るべきか、4から観るべきか',
   description:
     'スカイウォーカー・サーガ9作に『ローグ・ワン』『ハン・ソロ』を加えた11作。作中年代は BBY（ヤヴィンの戦い前）/ ABY（同後）で数えます。',
