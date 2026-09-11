@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-10",
+  "updatedAt": "2026-09-11",
   "source": "JustWatch (via TMDB)",
   "items": {
     "alien:alien": {
@@ -52,6 +52,7 @@
     },
     "bond:casino-royale": {
       "names": [
+        "Netflix",
         "Hulu"
       ],
       "link": "https://www.themoviedb.org/movie/36557-casino-royale/watch?locale=JP"
@@ -64,6 +65,7 @@
     },
     "bond:quantum": {
       "names": [
+        "Netflix",
         "Hulu"
       ],
       "link": "https://www.themoviedb.org/movie/10764-quantum-of-solace/watch?locale=JP"
@@ -1095,6 +1097,117 @@
       ],
       "link": "https://www.themoviedb.org/movie/610253-halloween-kills/watch?locale=JP"
     },
+    "hannibal:hannibal": {
+      "names": [
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/9740-hannibal/watch?locale=JP"
+    },
+    "hannibal:red-dragon": {
+      "names": [
+        "Prime Video"
+      ],
+      "link": "https://www.themoviedb.org/movie/9533-red-dragon/watch?locale=JP"
+    },
+    "hannibal:rising": {
+      "names": [
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/1248-hannibal-rising/watch?locale=JP"
+    },
+    "hannibal:silence": {
+      "names": [
+        "Prime Video",
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/274-the-silence-of-the-lambs/watch?locale=JP"
+    },
+    "indiana-jones:crusade": {
+      "names": [
+        "Netflix",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/89-indiana-jones-and-the-last-crusade/watch?locale=JP"
+    },
+    "indiana-jones:crystal-skull": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/217-indiana-jones-and-the-kingdom-of-the-crystal-skull/watch?locale=JP"
+    },
+    "indiana-jones:dial": {
+      "names": [
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/335977-indiana-jones-and-the-dial-of-destiny/watch?locale=JP"
+    },
+    "indiana-jones:raiders": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/85-raiders-of-the-lost-ark/watch?locale=JP"
+    },
+    "indiana-jones:temple": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/87-indiana-jones-and-the-temple-of-doom/watch?locale=JP"
+    },
+    "john-wick:ballerina": {
+      "names": [
+        "Prime Video"
+      ],
+      "link": "https://www.themoviedb.org/movie/541671-ballerina/watch?locale=JP"
+    },
+    "john-wick:jw1": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Hulu",
+        "FOD",
+        "シネフィルWOWOW（Amazon）"
+      ],
+      "link": "https://www.themoviedb.org/movie/245891-john-wick/watch?locale=JP"
+    },
+    "john-wick:jw2": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "Hulu",
+        "FOD"
+      ],
+      "link": "https://www.themoviedb.org/movie/324552-john-wick-chapter-2/watch?locale=JP"
+    },
+    "john-wick:jw3": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "Hulu",
+        "FOD"
+      ],
+      "link": "https://www.themoviedb.org/movie/458156-john-wick-chapter-3-parabellum/watch?locale=JP"
+    },
+    "john-wick:jw4": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT",
+        "Hulu",
+        "FOD"
+      ],
+      "link": "https://www.themoviedb.org/movie/603692-john-wick-chapter-4/watch?locale=JP"
+    },
     "jurassic:dominion": {
       "names": [
         "Hulu"
@@ -1103,6 +1216,7 @@
     },
     "jurassic:fallen-kingdom": {
       "names": [
+        "Netflix",
         "Prime Video",
         "U-NEXT",
         "Hulu"
@@ -1111,6 +1225,7 @@
     },
     "jurassic:jp1": {
       "names": [
+        "Netflix",
         "Prime Video",
         "U-NEXT",
         "Hulu",
@@ -1139,6 +1254,7 @@
     },
     "jurassic:lost-world": {
       "names": [
+        "Netflix",
         "Prime Video",
         "U-NEXT"
       ],
@@ -1226,6 +1342,65 @@
         "アニメタイムズ（Amazon）"
       ],
       "link": "https://www.themoviedb.org/tv/85937/watch?locale=JP"
+    },
+    "mad-max:furiosa": {
+      "names": [
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/786892-furiosa-a-mad-max-saga/watch?locale=JP"
+    },
+    "mad-max:fury-road": {
+      "names": [
+        "Netflix",
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/76341-mad-max-fury-road/watch?locale=JP"
+    },
+    "mad-max:mm1": {
+      "names": [
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/9659-mad-max/watch?locale=JP"
+    },
+    "mad-max:mm2": {
+      "names": [
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/8810-mad-max-2/watch?locale=JP"
+    },
+    "mad-max:thunderdome": {
+      "names": [
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/9355-mad-max-beyond-thunderdome/watch?locale=JP"
+    },
+    "matrix:matrix": {
+      "names": [
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/603-the-matrix/watch?locale=JP"
+    },
+    "matrix:reloaded": {
+      "names": [
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/604-the-matrix-reloaded/watch?locale=JP"
+    },
+    "matrix:resurrections": {
+      "names": [
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/624860-the-matrix-resurrections/watch?locale=JP"
+    },
+    "matrix:revolutions": {
+      "names": [
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/605-the-matrix-revolutions/watch?locale=JP"
     },
     "mcu:age-of-ultron": {
       "names": [
@@ -1727,7 +1902,6 @@
     },
     "one-piece:movie-3d": {
       "names": [
-        "Netflix",
         "U-NEXT",
         "Disney+"
       ],
@@ -2026,6 +2200,272 @@
       ],
       "link": "https://www.themoviedb.org/movie/346910-the-predator/watch?locale=JP"
     },
+    "resident-evil:afterlife": {
+      "names": [
+        "Prime Video",
+        "U-NEXT",
+        "Hulu",
+        "Sony Pictures Core（Amazon）"
+      ],
+      "link": "https://www.themoviedb.org/movie/35791-resident-evil-afterlife/watch?locale=JP"
+    },
+    "resident-evil:apocalypse": {
+      "names": [
+        "Prime Video",
+        "U-NEXT",
+        "Hulu",
+        "Sony Pictures Core（Amazon）"
+      ],
+      "link": "https://www.themoviedb.org/movie/1577-resident-evil-apocalypse/watch?locale=JP"
+    },
+    "resident-evil:damnation": {
+      "names": [
+        "Prime Video",
+        "U-NEXT",
+        "Hulu",
+        "dアニメストア（Amazon）"
+      ],
+      "link": "https://www.themoviedb.org/movie/133121/watch?locale=JP"
+    },
+    "resident-evil:death-island": {
+      "names": [
+        "Prime Video",
+        "U-NEXT",
+        "Hulu",
+        "FOD",
+        "dアニメストア（Amazon）",
+        "FOD Channel Amazon Channel"
+      ],
+      "link": "https://www.themoviedb.org/movie/1083862/watch?locale=JP"
+    },
+    "resident-evil:extinction": {
+      "names": [
+        "Prime Video",
+        "U-NEXT",
+        "Hulu",
+        "Sony Pictures Core（Amazon）"
+      ],
+      "link": "https://www.themoviedb.org/movie/7737-resident-evil-extinction/watch?locale=JP"
+    },
+    "resident-evil:final-chapter": {
+      "names": [
+        "Prime Video",
+        "U-NEXT",
+        "Hulu",
+        "Sony Pictures Core（Amazon）"
+      ],
+      "link": "https://www.themoviedb.org/movie/173897-resident-evil-the-final-chapter/watch?locale=JP"
+    },
+    "resident-evil:raccoon-city": {
+      "names": [
+        "Prime Video",
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/460458-resident-evil-welcome-to-raccoon-city/watch?locale=JP"
+    },
+    "resident-evil:re1": {
+      "names": [
+        "Prime Video",
+        "U-NEXT",
+        "Hulu",
+        "Sony Pictures Core（Amazon）"
+      ],
+      "link": "https://www.themoviedb.org/movie/1576-resident-evil/watch?locale=JP"
+    },
+    "resident-evil:retribution": {
+      "names": [
+        "Prime Video",
+        "U-NEXT",
+        "Hulu",
+        "Sony Pictures Core（Amazon）"
+      ],
+      "link": "https://www.themoviedb.org/movie/71679-resident-evil-retribution/watch?locale=JP"
+    },
+    "resident-evil:vendetta": {
+      "names": [
+        "Prime Video",
+        "U-NEXT",
+        "Hulu",
+        "dアニメストア（Amazon）"
+      ],
+      "link": "https://www.themoviedb.org/movie/400136/watch?locale=JP"
+    },
+    "rocky:balboa": {
+      "names": [
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/1246-rocky-balboa/watch?locale=JP"
+    },
+    "rocky:creed": {
+      "names": [
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/312221-creed/watch?locale=JP"
+    },
+    "rocky:creed2": {
+      "names": [
+        "U-NEXT",
+        "Hulu",
+        "FilmBox+"
+      ],
+      "link": "https://www.themoviedb.org/movie/480530-creed-ii/watch?locale=JP"
+    },
+    "rocky:creed3": {
+      "names": [
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/677179-creed-iii/watch?locale=JP"
+    },
+    "rocky:rocky": {
+      "names": [
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/1366-rocky/watch?locale=JP"
+    },
+    "rocky:rocky2": {
+      "names": [
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/1367-rocky-ii/watch?locale=JP"
+    },
+    "rocky:rocky3": {
+      "names": [
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/1371-rocky-iii/watch?locale=JP"
+    },
+    "rocky:rocky4": {
+      "names": [
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/1374-rocky-iv/watch?locale=JP"
+    },
+    "rocky:rocky5": {
+      "names": [
+        "U-NEXT",
+        "Hulu",
+        "FilmBox+"
+      ],
+      "link": "https://www.themoviedb.org/movie/1375-rocky-v/watch?locale=JP"
+    },
+    "rurouni-kenshin:beginning": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/672322-the-beginning/watch?locale=JP"
+    },
+    "rurouni-kenshin:densetsu": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/221732/watch?locale=JP"
+    },
+    "rurouni-kenshin:final": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/602063-the-final/watch?locale=JP"
+    },
+    "rurouni-kenshin:kyoto": {
+      "names": [
+        "Netflix",
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/221731/watch?locale=JP"
+    },
+    "rurouni-kenshin:rk1": {
+      "names": [
+        "Netflix",
+        "Prime Video",
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/127533/watch?locale=JP"
+    },
+    "saw:jigsaw": {
+      "names": [
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/298250-jigsaw/watch?locale=JP"
+    },
+    "saw:saw1": {
+      "names": [
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/176-saw/watch?locale=JP"
+    },
+    "saw:saw2": {
+      "names": [
+        "Prime Video",
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/215-saw-ii/watch?locale=JP"
+    },
+    "saw:saw3": {
+      "names": [
+        "Prime Video"
+      ],
+      "link": "https://www.themoviedb.org/movie/214-saw-iii/watch?locale=JP"
+    },
+    "saw:saw3d": {
+      "names": [
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/41439-saw-3d/watch?locale=JP"
+    },
+    "saw:saw4": {
+      "names": [
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/663-saw-iv/watch?locale=JP"
+    },
+    "saw:saw5": {
+      "names": [
+        "Prime Video",
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/11917-saw-v/watch?locale=JP"
+    },
+    "saw:saw6": {
+      "names": [
+        "Prime Video",
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/22804-saw-vi/watch?locale=JP"
+    },
+    "saw:sawx": {
+      "names": [
+        "Prime Video",
+        "U-NEXT",
+        "Hulu",
+        "FOD",
+        "FOD Channel Amazon Channel"
+      ],
+      "link": "https://www.themoviedb.org/movie/951491-saw-x/watch?locale=JP"
+    },
+    "saw:spiral": {
+      "names": [
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/602734-spiral-from-the-book-of-saw/watch?locale=JP"
+    },
     "spider-man:amazing-1": {
       "names": [
         "Netflix",
@@ -2039,6 +2479,7 @@
     },
     "spider-man:amazing-2": {
       "names": [
+        "Netflix",
         "Prime Video",
         "Disney+",
         "Hulu",
@@ -2073,6 +2514,12 @@
         "Prime Video"
       ],
       "link": "https://www.themoviedb.org/movie/539972-kraven-the-hunter/watch?locale=JP"
+    },
+    "spider-man:madame-web": {
+      "names": [
+        "Netflix"
+      ],
+      "link": "https://www.themoviedb.org/movie/634492-madame-web/watch?locale=JP"
     },
     "spider-man:morbius": {
       "names": [
@@ -2340,7 +2787,6 @@
     },
     "wizarding-world:fb1": {
       "names": [
-        "Netflix",
         "Prime Video",
         "U-NEXT",
         "Hulu"
@@ -2393,6 +2839,7 @@
     },
     "wizarding-world:hp4": {
       "names": [
+        "Netflix",
         "Prime Video",
         "U-NEXT",
         "Hulu"
@@ -2401,6 +2848,7 @@
     },
     "wizarding-world:hp5": {
       "names": [
+        "Netflix",
         "Prime Video",
         "U-NEXT",
         "Hulu"
@@ -2427,6 +2875,7 @@
     },
     "wizarding-world:hp7b": {
       "names": [
+        "Netflix",
         "Prime Video",
         "U-NEXT",
         "Hulu"

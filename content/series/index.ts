@@ -23,6 +23,15 @@ import { bond } from './bond';
 import { conjuring } from './conjuring';
 import { transformers } from './transformers';
 import { jurassic } from './jurassic';
+import { residentEvil } from './resident-evil';
+import { saw } from './saw';
+import { johnWick } from './john-wick';
+import { madMax } from './mad-max';
+import { indianaJones } from './indiana-jones';
+import { hannibal } from './hannibal';
+import { rurouniKenshin } from './rurouni-kenshin';
+import { rocky } from './rocky';
+import { matrix } from './matrix';
 
 export const seriesList: Series[] = [
   mcu,
@@ -49,4 +58,13 @@ export const seriesList: Series[] = [
   conjuring,
   transformers,
   jurassic,
+  residentEvil,
+  saw,
+  johnWick,
+  madMax,
+  indianaJones,
+  hannibal,
+  rurouniKenshin,
+  rocky,
+  matrix,
 ];
