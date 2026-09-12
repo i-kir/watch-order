@@ -1,0 +1,91 @@
+# main へ push されたら、静的書き出しを S3 に置いて CloudFront のキャッシュを消す。
+#
+# アクセスキーは保存していない。OIDC で一時的な権限だけを受け取る。
+# 引き受けられるロールは infra/lib/site-stack.ts で
+# 「このリポジトリの main ブランチから」に限定してある。
+#
+# 必要な設定（Settings → Secrets and variables → Actions → Variables）:
+#   AWS_DEPLOY_ROLE_ARN   cdk deploy の出力 DeployRoleArn
+#   S3_BUCKET             同 BucketName
+#   CLOUDFRONT_ID         同 DistributionId
+# Secrets 側:
+#   TMDB_API_KEY          配信状況の更新に使っているものと同じ
+name: 本番へデプロイ
+
+on:
+  push:
+    branches: [main]
+  # 週次の配信状況更新が自動コミットしたときにも配信し直す。
+  # GitHub Actions が GITHUB_TOKEN で push しても push イベントは発火しないため、
+  # そのままでは providers.json だけ更新されてサイトに反映されない。
+  workflow_run:
+    workflows: ['配信状況の更新']
+    types: [completed]
+  workflow_dispatch:
+
+# OIDC のトークンを受け取るために必要
+permissions:
+  id-token: write
+  contents: read
+
+# 同時に走らせない。後から来たものを優先する
+concurrency:
+  group: deploy-production
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+
+      - run: npm ci
+
+      - name: ビルド
+        env:
+          # これを忘れると sitemap.xml が http://localhost:3000 で書き出される。
+          # Search Console から見たサイトマップが丸ごと無効になるため、
+          # 移管で最も壊れやすい箇所。
+          NEXT_PUBLIC_SITE_URL: https://miruorder.com
+        run: npm run build
+
+      - name: 書き出し結果を確かめる
+        run: |
+          test -f out/index.html || { echo "out/index.html がありません"; exit 1; }
+          if grep -q "localhost" out/sitemap.xml; then
+            echo "sitemap.xml に localhost が入っています。NEXT_PUBLIC_SITE_URL を確認してください。"
+            exit 1
+          fi
+          echo "HTML $(find out -name '*.html' | wc -l) 本 / 合計 $(du -sh out | cut -f1)"
+
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ vars.AWS_DEPLOY_ROLE_ARN }}
+          aws-region: us-east-1
+
+      - name: S3 へ配置
+        run: |
+          # ハッシュ付きの資産は長期キャッシュしてよい
+          aws s3 sync out/ "s3://${{ vars.S3_BUCKET }}/" \
+            --delete \
+            --exclude "*.html" --exclude "*.xml" --exclude "*.txt" \
+            --cache-control "public,max-age=31536000,immutable"
+          # HTML と sitemap は毎回見に来てほしい
+          aws s3 sync out/ "s3://${{ vars.S3_BUCKET }}/" \
+            --delete \
+            --exclude "*" --include "*.html" --include "*.xml" --include "*.txt" \
+            --cache-control "public,max-age=0,must-revalidate"
+
+      - name: CloudFront のキャッシュを消す
+        run: |
+          id=$(aws cloudfront create-invalidation \
+            --distribution-id "${{ vars.CLOUDFRONT_ID }}" \
+            --paths "/*" --query 'Invalidation.Id' --output text)
+          echo "無効化 $id の完了を待ちます"
+          aws cloudfront wait invalidation-completed \
+            --distribution-id "${{ vars.CLOUDFRONT_ID }}" --id "$id"

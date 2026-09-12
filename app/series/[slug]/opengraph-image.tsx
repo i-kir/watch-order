@@ -3,6 +3,10 @@ import { getAllSeries, getSeries } from '@/lib/series';
 import { seriesPosters } from '@/lib/tmdb';
 import { OG_ACCENT, OG_BG, OG_CONTENT_TYPE, OG_SIZE, loadPosters } from '@/lib/og';
 
+// 静的書き出し（output: 'export'）では、OG画像も生成時に固定する必要がある。
+// 無いとビルドが「dynamic が未設定」で落ちる。
+export const dynamic = 'force-static';
+
 export const size = OG_SIZE;
 export const contentType = OG_CONTENT_TYPE;
 export const alt = '観る順ナビ';
