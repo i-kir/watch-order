@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-11",
+  "updatedAt": "2026-09-12",
   "source": "JustWatch (via TMDB)",
   "items": {
     "alien:alien": {
@@ -79,6 +79,7 @@
     },
     "bond:spectre": {
       "names": [
+        "Netflix",
         "Hulu"
       ],
       "link": "https://www.themoviedb.org/movie/206647-spectre/watch?locale=JP"
@@ -497,6 +498,43 @@
         "東映アニメーション（Amazon）"
       ],
       "link": "https://www.themoviedb.org/tv/890/watch?locale=JP"
+    },
+    "exorcist:beginning": {
+      "names": [
+        "U-NEXT",
+        "Sony Pictures Core（Amazon）"
+      ],
+      "link": "https://www.themoviedb.org/movie/11026-exorcist-the-beginning/watch?locale=JP"
+    },
+    "exorcist:believer": {
+      "names": [
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/807172-the-exorcist-believer/watch?locale=JP"
+    },
+    "exorcist:dominion": {
+      "names": [
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/12700-dominion-prequel-to-the-exorcist/watch?locale=JP"
+    },
+    "exorcist:exorcist": {
+      "names": [
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/9552-the-exorcist/watch?locale=JP"
+    },
+    "exorcist:exorcist2": {
+      "names": [
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/11586-exorcist-ii-the-heretic/watch?locale=JP"
+    },
+    "exorcist:exorcist3": {
+      "names": [
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/11587-the-exorcist-iii/watch?locale=JP"
     },
     "fast-furious:f9": {
       "names": [
@@ -1343,6 +1381,27 @@
       ],
       "link": "https://www.themoviedb.org/tv/85937/watch?locale=JP"
     },
+    "kingsman:first-agent": {
+      "names": [
+        "Prime Video",
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/476669-the-king-s-man/watch?locale=JP"
+    },
+    "kingsman:golden-circle": {
+      "names": [
+        "Prime Video",
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/343668-kingsman-the-golden-circle/watch?locale=JP"
+    },
+    "kingsman:kingsman1": {
+      "names": [
+        "Prime Video",
+        "Disney+"
+      ],
+      "link": "https://www.themoviedb.org/movie/207703-kingsman-the-secret-service/watch?locale=JP"
+    },
     "mad-max:furiosa": {
       "names": [
         "U-NEXT"
@@ -1686,6 +1745,49 @@
         "Hulu"
       ],
       "link": "https://www.themoviedb.org/movie/121-the-lord-of-the-rings-the-two-towers/watch?locale=JP"
+    },
+    "minions:dm1": {
+      "names": [
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/20352-despicable-me/watch?locale=JP"
+    },
+    "minions:dm2": {
+      "names": [
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/93456-despicable-me-2/watch?locale=JP"
+    },
+    "minions:dm3": {
+      "names": [
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/324852-despicable-me-3/watch?locale=JP"
+    },
+    "minions:dm4": {
+      "names": [
+        "Netflix"
+      ],
+      "link": "https://www.themoviedb.org/movie/519182-despicable-me-4/watch?locale=JP"
+    },
+    "minions:fever": {
+      "names": [
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/438148-minions-the-rise-of-gru/watch?locale=JP"
+    },
+    "minions:minions": {
+      "names": [
+        "U-NEXT",
+        "Hulu"
+      ],
+      "link": "https://www.themoviedb.org/movie/211672-minions/watch?locale=JP"
     },
     "one-piece:alabasta": {
       "names": [
@@ -2611,6 +2713,87 @@
       ],
       "link": "https://www.themoviedb.org/movie/912649-venom-the-last-dance/watch?locale=JP"
     },
+    "star-trek:beyond": {
+      "names": [
+        "Prime Video",
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/188927-star-trek-beyond/watch?locale=JP"
+    },
+    "star-trek:first-contact": {
+      "names": [
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/199-star-trek-first-contact/watch?locale=JP"
+    },
+    "star-trek:frontier": {
+      "names": [
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/172-star-trek-v-the-final-frontier/watch?locale=JP"
+    },
+    "star-trek:generations": {
+      "names": [
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/193-star-trek-generations/watch?locale=JP"
+    },
+    "star-trek:insurrection": {
+      "names": [
+        "Prime Video",
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/200-star-trek-insurrection/watch?locale=JP"
+    },
+    "star-trek:into-darkness": {
+      "names": [
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/54138-star-trek-into-darkness/watch?locale=JP"
+    },
+    "star-trek:khan": {
+      "names": [
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/154-star-trek-ii-the-wrath-of-khan/watch?locale=JP"
+    },
+    "star-trek:nemesis": {
+      "names": [
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/201-star-trek-nemesis/watch?locale=JP"
+    },
+    "star-trek:spock": {
+      "names": [
+        "Prime Video",
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/157-star-trek-iii-the-search-for-spock/watch?locale=JP"
+    },
+    "star-trek:st2009": {
+      "names": [
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/13475-star-trek/watch?locale=JP"
+    },
+    "star-trek:tmp": {
+      "names": [
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/152-star-trek-the-motion-picture/watch?locale=JP"
+    },
+    "star-trek:undiscovered": {
+      "names": [
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/174-star-trek-vi-the-undiscovered-country/watch?locale=JP"
+    },
+    "star-trek:voyage": {
+      "names": [
+        "U-NEXT"
+      ],
+      "link": "https://www.themoviedb.org/movie/168-star-trek-iv-the-voyage-home/watch?locale=JP"
+    },
     "star-wars:ep1": {
       "names": [
         "Disney+"
@@ -2787,6 +2970,7 @@
     },
     "wizarding-world:fb1": {
       "names": [
+        "Netflix",
         "Prime Video",
         "U-NEXT",
         "Hulu"

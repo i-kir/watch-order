@@ -32,6 +32,10 @@ import { hannibal } from './hannibal';
 import { rurouniKenshin } from './rurouni-kenshin';
 import { rocky } from './rocky';
 import { matrix } from './matrix';
+import { starTrek } from './star-trek';
+import { exorcist } from './exorcist';
+import { minions } from './minions';
+import { kingsman } from './kingsman';
 
 export const seriesList: Series[] = [
   mcu,
@@ -67,4 +71,8 @@ export const seriesList: Series[] = [
   rurouniKenshin,
   rocky,
   matrix,
+  starTrek,
+  exorcist,
+  minions,
+  kingsman,
 ];
