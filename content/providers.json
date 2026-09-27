@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-20",
+  "updatedAt": "2026-09-27",
   "source": "JustWatch (via TMDB)",
   "items": {
     "alien:alien": {
@@ -874,8 +874,7 @@
     "godzilla:new-empire": {
       "names": [
         "Netflix",
-        "Prime Video",
-        "U-NEXT"
+        "Prime Video"
       ],
       "link": "https://www.themoviedb.org/movie/823464-godzilla-x-kong-the-new-empire/watch?locale=JP"
     },
@@ -1108,7 +1107,6 @@
     },
     "halloween:h1978": {
       "names": [
-        "U-NEXT",
         "Cultpix"
       ],
       "link": "https://www.themoviedb.org/movie/948-halloween/watch?locale=JP"
