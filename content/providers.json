@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27",
+  "updatedAt": "2026-10-04",
   "source": "JustWatch (via TMDB)",
   "items": {
     "alien:alien": {
@@ -52,27 +52,157 @@
     },
     "bond:casino-royale": {
       "names": [
+        "Prime Video",
         "Hulu"
       ],
       "link": "https://www.themoviedb.org/movie/36557-casino-royale/watch?locale=JP"
     },
+    "bond:diamonds": {
+      "names": [
+        "Prime Video"
+      ],
+      "link": "https://www.themoviedb.org/movie/681-diamonds-are-forever/watch?locale=JP"
+    },
+    "bond:die-another-day": {
+      "names": [
+        "Prime Video"
+      ],
+      "link": "https://www.themoviedb.org/movie/36669-die-another-day/watch?locale=JP"
+    },
+    "bond:dr-no": {
+      "names": [
+        "Prime Video"
+      ],
+      "link": "https://www.themoviedb.org/movie/646-dr-no/watch?locale=JP"
+    },
+    "bond:for-your-eyes-only": {
+      "names": [
+        "Prime Video"
+      ],
+      "link": "https://www.themoviedb.org/movie/699-for-your-eyes-only/watch?locale=JP"
+    },
+    "bond:from-russia": {
+      "names": [
+        "Prime Video"
+      ],
+      "link": "https://www.themoviedb.org/movie/657-from-russia-with-love/watch?locale=JP"
+    },
+    "bond:golden-gun": {
+      "names": [
+        "Prime Video"
+      ],
+      "link": "https://www.themoviedb.org/movie/682-the-man-with-the-golden-gun/watch?locale=JP"
+    },
+    "bond:goldeneye": {
+      "names": [
+        "Prime Video"
+      ],
+      "link": "https://www.themoviedb.org/movie/710-goldeneye/watch?locale=JP"
+    },
+    "bond:goldfinger": {
+      "names": [
+        "Prime Video"
+      ],
+      "link": "https://www.themoviedb.org/movie/658-goldfinger/watch?locale=JP"
+    },
+    "bond:licence-to-kill": {
+      "names": [
+        "Prime Video"
+      ],
+      "link": "https://www.themoviedb.org/movie/709-licence-to-kill/watch?locale=JP"
+    },
+    "bond:live-and-let-die": {
+      "names": [
+        "Prime Video"
+      ],
+      "link": "https://www.themoviedb.org/movie/253-live-and-let-die/watch?locale=JP"
+    },
+    "bond:living-daylights": {
+      "names": [
+        "Prime Video"
+      ],
+      "link": "https://www.themoviedb.org/movie/708-the-living-daylights/watch?locale=JP"
+    },
+    "bond:moonraker": {
+      "names": [
+        "Prime Video"
+      ],
+      "link": "https://www.themoviedb.org/movie/698-moonraker/watch?locale=JP"
+    },
+    "bond:no-time-to-die": {
+      "names": [
+        "Prime Video"
+      ],
+      "link": "https://www.themoviedb.org/movie/370172-no-time-to-die/watch?locale=JP"
+    },
+    "bond:octopussy": {
+      "names": [
+        "Prime Video"
+      ],
+      "link": "https://www.themoviedb.org/movie/700-octopussy/watch?locale=JP"
+    },
+    "bond:ohmss": {
+      "names": [
+        "Prime Video"
+      ],
+      "link": "https://www.themoviedb.org/movie/668-on-her-majesty-s-secret-service/watch?locale=JP"
+    },
     "bond:quantum": {
       "names": [
+        "Prime Video",
         "Hulu"
       ],
       "link": "https://www.themoviedb.org/movie/10764-quantum-of-solace/watch?locale=JP"
     },
     "bond:skyfall": {
       "names": [
+        "Prime Video",
         "Hulu"
       ],
       "link": "https://www.themoviedb.org/movie/37724-skyfall/watch?locale=JP"
     },
     "bond:spectre": {
       "names": [
+        "Prime Video",
         "Hulu"
       ],
       "link": "https://www.themoviedb.org/movie/206647-spectre/watch?locale=JP"
+    },
+    "bond:spy-who-loved-me": {
+      "names": [
+        "Prime Video"
+      ],
+      "link": "https://www.themoviedb.org/movie/691-the-spy-who-loved-me/watch?locale=JP"
+    },
+    "bond:thunderball": {
+      "names": [
+        "Prime Video"
+      ],
+      "link": "https://www.themoviedb.org/movie/660-thunderball/watch?locale=JP"
+    },
+    "bond:tomorrow-never-dies": {
+      "names": [
+        "Prime Video"
+      ],
+      "link": "https://www.themoviedb.org/movie/714-tomorrow-never-dies/watch?locale=JP"
+    },
+    "bond:view-to-a-kill": {
+      "names": [
+        "Prime Video"
+      ],
+      "link": "https://www.themoviedb.org/movie/707-a-view-to-a-kill/watch?locale=JP"
+    },
+    "bond:world-is-not-enough": {
+      "names": [
+        "Prime Video"
+      ],
+      "link": "https://www.themoviedb.org/movie/36643-the-world-is-not-enough/watch?locale=JP"
+    },
+    "bond:you-only-live-twice": {
+      "names": [
+        "Prime Video"
+      ],
+      "link": "https://www.themoviedb.org/movie/667-you-only-live-twice/watch?locale=JP"
     },
     "conan:m01": {
       "names": [
@@ -238,6 +368,7 @@
     },
     "conjuring:annabelle": {
       "names": [
+        "Prime Video",
         "U-NEXT",
         "Hulu"
       ],
@@ -245,6 +376,7 @@
     },
     "conjuring:annabelle-comes-home": {
       "names": [
+        "Prime Video",
         "U-NEXT",
         "Hulu"
       ],
@@ -252,6 +384,7 @@
     },
     "conjuring:annabelle-creation": {
       "names": [
+        "Prime Video",
         "U-NEXT",
         "Hulu"
       ],
@@ -259,6 +392,7 @@
     },
     "conjuring:conjuring": {
       "names": [
+        "Prime Video",
         "U-NEXT",
         "Hulu"
       ],
@@ -266,6 +400,7 @@
     },
     "conjuring:conjuring-2": {
       "names": [
+        "Prime Video",
         "U-NEXT",
         "Hulu"
       ],
@@ -273,6 +408,7 @@
     },
     "conjuring:devil-made-me": {
       "names": [
+        "Prime Video",
         "U-NEXT",
         "Hulu"
       ],
@@ -280,18 +416,23 @@
     },
     "conjuring:last-rites": {
       "names": [
-        "U-NEXT"
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
       ],
       "link": "https://www.themoviedb.org/movie/1038392-the-conjuring-last-rites/watch?locale=JP"
     },
     "conjuring:llorona": {
       "names": [
-        "U-NEXT"
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
       ],
       "link": "https://www.themoviedb.org/movie/480414-the-curse-of-la-llorona/watch?locale=JP"
     },
     "conjuring:nun": {
       "names": [
+        "Prime Video",
         "U-NEXT",
         "Hulu"
       ],
@@ -299,25 +440,31 @@
     },
     "conjuring:nun-2": {
       "names": [
-        "U-NEXT"
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
       ],
       "link": "https://www.themoviedb.org/movie/968051-the-nun-ii/watch?locale=JP"
     },
     "dc:aquaman": {
       "names": [
-        "U-NEXT"
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
       ],
       "link": "https://www.themoviedb.org/movie/297802-aquaman/watch?locale=JP"
     },
     "dc:aquaman-2": {
       "names": [
+        "Prime Video",
         "U-NEXT"
       ],
       "link": "https://www.themoviedb.org/movie/572802-aquaman-and-the-lost-kingdom/watch?locale=JP"
     },
     "dc:birds-of-prey": {
       "names": [
-        "U-NEXT"
+        "U-NEXT",
+        "Hulu"
       ],
       "link": "https://www.themoviedb.org/movie/495764-birds-of-prey-and-the-fantabulous-emancipation-of-one-harley-quinn/watch?locale=JP"
     },
@@ -330,6 +477,7 @@
     },
     "dc:blue-beetle": {
       "names": [
+        "Prime Video",
         "U-NEXT"
       ],
       "link": "https://www.themoviedb.org/movie/565770-blue-beetle/watch?locale=JP"
@@ -350,7 +498,8 @@
     },
     "dc:joker-2": {
       "names": [
-        "U-NEXT"
+        "U-NEXT",
+        "Hulu"
       ],
       "link": "https://www.themoviedb.org/movie/889737-joker-folie-a-deux/watch?locale=JP"
     },
@@ -370,12 +519,15 @@
     },
     "dc:shazam": {
       "names": [
-        "U-NEXT"
+        "Prime Video",
+        "U-NEXT",
+        "Hulu"
       ],
       "link": "https://www.themoviedb.org/movie/287947-shazam/watch?locale=JP"
     },
     "dc:shazam-2": {
       "names": [
+        "Prime Video",
         "U-NEXT"
       ],
       "link": "https://www.themoviedb.org/movie/594767-shazam-fury-of-the-gods/watch?locale=JP"
@@ -388,13 +540,15 @@
     },
     "dc:suicide-squad": {
       "names": [
-        "U-NEXT"
+        "U-NEXT",
+        "Hulu"
       ],
       "link": "https://www.themoviedb.org/movie/297761-suicide-squad/watch?locale=JP"
     },
     "dc:superman": {
       "names": [
-        "U-NEXT"
+        "U-NEXT",
+        "Hulu"
       ],
       "link": "https://www.themoviedb.org/movie/1061474-superman/watch?locale=JP"
     },
@@ -407,6 +561,7 @@
     },
     "dc:the-flash": {
       "names": [
+        "Prime Video",
         "U-NEXT"
       ],
       "link": "https://www.themoviedb.org/movie/298618-the-flash/watch?locale=JP"
@@ -419,13 +574,15 @@
     },
     "dc:wonder-woman": {
       "names": [
-        "U-NEXT"
+        "U-NEXT",
+        "Hulu"
       ],
       "link": "https://www.themoviedb.org/movie/297762-wonder-woman/watch?locale=JP"
     },
     "dc:ww1984": {
       "names": [
-        "U-NEXT"
+        "U-NEXT",
+        "Hulu"
       ],
       "link": "https://www.themoviedb.org/movie/464052-wonder-woman-1984/watch?locale=JP"
     },
@@ -510,13 +667,15 @@
     },
     "exorcist:exorcist": {
       "names": [
-        "U-NEXT"
+        "U-NEXT",
+        "Hulu"
       ],
       "link": "https://www.themoviedb.org/movie/9552-the-exorcist/watch?locale=JP"
     },
     "exorcist:exorcist2": {
       "names": [
-        "U-NEXT"
+        "U-NEXT",
+        "Hulu"
       ],
       "link": "https://www.themoviedb.org/movie/11586-exorcist-ii-the-heretic/watch?locale=JP"
     },
@@ -898,7 +1057,8 @@
     },
     "godzilla:skull-island": {
       "names": [
-        "U-NEXT"
+        "U-NEXT",
+        "Hulu"
       ],
       "link": "https://www.themoviedb.org/movie/293167-kong-skull-island/watch?locale=JP"
     },
@@ -1143,6 +1303,7 @@
     },
     "hannibal:silence": {
       "names": [
+        "Netflix",
         "Prime Video",
         "U-NEXT"
       ],
@@ -1242,7 +1403,6 @@
     },
     "jurassic:fallen-kingdom": {
       "names": [
-        "Netflix",
         "Prime Video",
         "U-NEXT",
         "Hulu"
@@ -1251,7 +1411,6 @@
     },
     "jurassic:jp1": {
       "names": [
-        "Netflix",
         "Prime Video",
         "U-NEXT",
         "Hulu",
@@ -1262,7 +1421,6 @@
     },
     "jurassic:jp3": {
       "names": [
-        "Netflix",
         "Prime Video",
         "U-NEXT",
         "Hulu"
@@ -1271,7 +1429,6 @@
     },
     "jurassic:jw1": {
       "names": [
-        "Netflix",
         "Prime Video",
         "U-NEXT",
         "Hulu"
@@ -1280,7 +1437,6 @@
     },
     "jurassic:lost-world": {
       "names": [
-        "Netflix",
         "Prime Video",
         "U-NEXT"
       ],
@@ -1392,32 +1548,37 @@
     },
     "mad-max:furiosa": {
       "names": [
-        "U-NEXT"
+        "U-NEXT",
+        "Hulu"
       ],
       "link": "https://www.themoviedb.org/movie/786892-furiosa-a-mad-max-saga/watch?locale=JP"
     },
     "mad-max:fury-road": {
       "names": [
         "Netflix",
-        "U-NEXT"
+        "U-NEXT",
+        "Hulu"
       ],
       "link": "https://www.themoviedb.org/movie/76341-mad-max-fury-road/watch?locale=JP"
     },
     "mad-max:mm1": {
       "names": [
-        "U-NEXT"
+        "U-NEXT",
+        "Hulu"
       ],
       "link": "https://www.themoviedb.org/movie/9659-mad-max/watch?locale=JP"
     },
     "mad-max:mm2": {
       "names": [
-        "U-NEXT"
+        "U-NEXT",
+        "Hulu"
       ],
       "link": "https://www.themoviedb.org/movie/8810-mad-max-2/watch?locale=JP"
     },
     "mad-max:thunderdome": {
       "names": [
-        "U-NEXT"
+        "U-NEXT",
+        "Hulu"
       ],
       "link": "https://www.themoviedb.org/movie/9355-mad-max-beyond-thunderdome/watch?locale=JP"
     },
@@ -1545,6 +1706,8 @@
         "Prime Video",
         "U-NEXT",
         "Disney+",
+        "Apple TV",
+        "Apple TV Amazon Channel",
         "Sony Pictures Core（Amazon）"
       ],
       "link": "https://www.themoviedb.org/movie/429617-spider-man-far-from-home/watch?locale=JP"
@@ -1595,10 +1758,12 @@
     },
     "mcu:iron-man": {
       "names": [
+        "Netflix",
         "Prime Video",
         "U-NEXT",
         "Disney+",
-        "Hulu"
+        "Hulu",
+        "Sony Pictures Core（Amazon）"
       ],
       "link": "https://www.themoviedb.org/movie/1726-iron-man/watch?locale=JP"
     },
@@ -1698,23 +1863,23 @@
     },
     "middle-earth:hobbit1": {
       "names": [
+        "Prime Video",
         "U-NEXT",
-        "Hulu",
-        "MGM（Amazon）"
+        "Hulu"
       ],
       "link": "https://www.themoviedb.org/movie/49051-the-hobbit-an-unexpected-journey/watch?locale=JP"
     },
     "middle-earth:hobbit2": {
       "names": [
-        "U-NEXT",
-        "MGM（Amazon）"
+        "Prime Video",
+        "U-NEXT"
       ],
       "link": "https://www.themoviedb.org/movie/57158-the-hobbit-the-desolation-of-smaug/watch?locale=JP"
     },
     "middle-earth:hobbit3": {
       "names": [
-        "U-NEXT",
-        "MGM（Amazon）"
+        "Prime Video",
+        "U-NEXT"
       ],
       "link": "https://www.themoviedb.org/movie/122917-the-hobbit-the-battle-of-the-five-armies/watch?locale=JP"
     },
@@ -2349,7 +2514,8 @@
     "resident-evil:raccoon-city": {
       "names": [
         "Prime Video",
-        "U-NEXT"
+        "U-NEXT",
+        "Sony Pictures Core（Amazon）"
       ],
       "link": "https://www.themoviedb.org/movie/460458-resident-evil-welcome-to-raccoon-city/watch?locale=JP"
     },
@@ -2382,6 +2548,7 @@
     },
     "rocky:balboa": {
       "names": [
+        "Prime Video",
         "U-NEXT",
         "Hulu"
       ],
@@ -2389,6 +2556,7 @@
     },
     "rocky:creed": {
       "names": [
+        "Prime Video",
         "U-NEXT",
         "Hulu"
       ],
@@ -2396,20 +2564,22 @@
     },
     "rocky:creed2": {
       "names": [
+        "Prime Video",
         "U-NEXT",
-        "Hulu",
-        "FilmBox+"
+        "Hulu"
       ],
       "link": "https://www.themoviedb.org/movie/480530-creed-ii/watch?locale=JP"
     },
     "rocky:creed3": {
       "names": [
+        "Prime Video",
         "Hulu"
       ],
       "link": "https://www.themoviedb.org/movie/677179-creed-iii/watch?locale=JP"
     },
     "rocky:rocky": {
       "names": [
+        "Prime Video",
         "U-NEXT",
         "Hulu"
       ],
@@ -2417,6 +2587,7 @@
     },
     "rocky:rocky2": {
       "names": [
+        "Prime Video",
         "U-NEXT",
         "Hulu"
       ],
@@ -2424,6 +2595,7 @@
     },
     "rocky:rocky3": {
       "names": [
+        "Prime Video",
         "U-NEXT",
         "Hulu"
       ],
@@ -2431,6 +2603,7 @@
     },
     "rocky:rocky4": {
       "names": [
+        "Prime Video",
         "U-NEXT",
         "Hulu"
       ],
@@ -2438,9 +2611,9 @@
     },
     "rocky:rocky5": {
       "names": [
+        "Prime Video",
         "U-NEXT",
-        "Hulu",
-        "FilmBox+"
+        "Hulu"
       ],
       "link": "https://www.themoviedb.org/movie/1375-rocky-v/watch?locale=JP"
     },
@@ -2504,12 +2677,6 @@
       ],
       "link": "https://www.themoviedb.org/movie/215-saw-ii/watch?locale=JP"
     },
-    "saw:saw3": {
-      "names": [
-        "Prime Video"
-      ],
-      "link": "https://www.themoviedb.org/movie/214-saw-iii/watch?locale=JP"
-    },
     "saw:saw3d": {
       "names": [
         "Prime Video",
@@ -2520,7 +2687,6 @@
     },
     "saw:saw4": {
       "names": [
-        "Prime Video",
         "U-NEXT",
         "Hulu"
       ],
@@ -2528,7 +2694,6 @@
     },
     "saw:saw5": {
       "names": [
-        "Prime Video",
         "U-NEXT"
       ],
       "link": "https://www.themoviedb.org/movie/11917-saw-v/watch?locale=JP"
@@ -2558,7 +2723,6 @@
     },
     "spider-man:amazing-1": {
       "names": [
-        "Netflix",
         "Prime Video",
         "U-NEXT",
         "Disney+",
@@ -2569,7 +2733,6 @@
     },
     "spider-man:amazing-2": {
       "names": [
-        "Netflix",
         "Prime Video",
         "Disney+",
         "Hulu",
@@ -2583,6 +2746,8 @@
         "Prime Video",
         "U-NEXT",
         "Disney+",
+        "Apple TV",
+        "Apple TV Amazon Channel",
         "Sony Pictures Core（Amazon）"
       ],
       "link": "https://www.themoviedb.org/movie/429617-spider-man-far-from-home/watch?locale=JP"
@@ -2605,18 +2770,11 @@
       ],
       "link": "https://www.themoviedb.org/movie/539972-kraven-the-hunter/watch?locale=JP"
     },
-    "spider-man:madame-web": {
-      "names": [
-        "Netflix"
-      ],
-      "link": "https://www.themoviedb.org/movie/634492-madame-web/watch?locale=JP"
-    },
     "spider-man:morbius": {
       "names": [
         "Prime Video",
         "U-NEXT",
-        "Hulu",
-        "Sony Pictures Core（Amazon）"
+        "Hulu"
       ],
       "link": "https://www.themoviedb.org/movie/526896-morbius/watch?locale=JP"
     },
@@ -2633,8 +2791,7 @@
         "Prime Video",
         "U-NEXT",
         "Disney+",
-        "Hulu",
-        "Sony Pictures Core（Amazon）"
+        "Hulu"
       ],
       "link": "https://www.themoviedb.org/movie/557-spider-man/watch?locale=JP"
     },
@@ -2643,8 +2800,7 @@
         "Prime Video",
         "U-NEXT",
         "Disney+",
-        "Hulu",
-        "Sony Pictures Core（Amazon）"
+        "Hulu"
       ],
       "link": "https://www.themoviedb.org/movie/558-spider-man-2/watch?locale=JP"
     },
@@ -2663,7 +2819,8 @@
         "Prime Video",
         "U-NEXT",
         "Disney+",
-        "dアニメストア（Amazon）"
+        "dアニメストア（Amazon）",
+        "Sony Pictures Core（Amazon）"
       ],
       "link": "https://www.themoviedb.org/movie/324857-spider-man-into-the-spider-verse/watch?locale=JP"
     },
@@ -2680,8 +2837,7 @@
         "Prime Video",
         "U-NEXT",
         "Disney+",
-        "Hulu",
-        "Sony Pictures Core（Amazon）"
+        "Hulu"
       ],
       "link": "https://www.themoviedb.org/movie/335983-venom/watch?locale=JP"
     },
@@ -2690,8 +2846,7 @@
         "Netflix",
         "Prime Video",
         "U-NEXT",
-        "Disney+",
-        "Sony Pictures Core（Amazon）"
+        "Disney+"
       ],
       "link": "https://www.themoviedb.org/movie/580489-venom-let-there-be-carnage/watch?locale=JP"
     },
@@ -2722,6 +2877,7 @@
     },
     "star-trek:generations": {
       "names": [
+        "Prime Video",
         "U-NEXT"
       ],
       "link": "https://www.themoviedb.org/movie/193-star-trek-generations/watch?locale=JP"
@@ -2867,9 +3023,9 @@
     "terminator:t1": {
       "names": [
         "Netflix",
+        "Prime Video",
         "U-NEXT",
-        "Hulu",
-        "MGM（Amazon）"
+        "Hulu"
       ],
       "link": "https://www.themoviedb.org/movie/218-the-terminator/watch?locale=JP"
     },
@@ -2958,7 +3114,6 @@
     },
     "wizarding-world:fb1": {
       "names": [
-        "Netflix",
         "Prime Video",
         "U-NEXT",
         "Hulu"
@@ -2967,7 +3122,6 @@
     },
     "wizarding-world:fb2": {
       "names": [
-        "Netflix",
         "Prime Video",
         "U-NEXT",
         "Hulu"
@@ -2976,7 +3130,6 @@
     },
     "wizarding-world:fb3": {
       "names": [
-        "Netflix",
         "Prime Video",
         "Hulu"
       ],
@@ -2984,7 +3137,6 @@
     },
     "wizarding-world:hp1": {
       "names": [
-        "Netflix",
         "Prime Video",
         "U-NEXT",
         "Hulu"
@@ -2993,7 +3145,6 @@
     },
     "wizarding-world:hp2": {
       "names": [
-        "Netflix",
         "Prime Video",
         "U-NEXT",
         "Hulu"
@@ -3002,7 +3153,6 @@
     },
     "wizarding-world:hp3": {
       "names": [
-        "Netflix",
         "Prime Video",
         "U-NEXT",
         "Hulu"
@@ -3011,7 +3161,6 @@
     },
     "wizarding-world:hp4": {
       "names": [
-        "Netflix",
         "Prime Video",
         "U-NEXT",
         "Hulu"
@@ -3020,7 +3169,6 @@
     },
     "wizarding-world:hp5": {
       "names": [
-        "Netflix",
         "Prime Video",
         "U-NEXT",
         "Hulu"
@@ -3029,7 +3177,6 @@
     },
     "wizarding-world:hp6": {
       "names": [
-        "Netflix",
         "Prime Video",
         "U-NEXT",
         "Hulu"
@@ -3038,7 +3185,6 @@
     },
     "wizarding-world:hp7a": {
       "names": [
-        "Netflix",
         "Prime Video",
         "U-NEXT",
         "Hulu"
@@ -3047,7 +3193,6 @@
     },
     "wizarding-world:hp7b": {
       "names": [
-        "Netflix",
         "Prime Video",
         "U-NEXT",
         "Hulu"
