@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-04",
+  "updatedAt": "2026-10-11",
   "source": "JustWatch (via TMDB)",
   "items": {
     "alien:alien": {
@@ -592,7 +592,6 @@
         "Prime Video",
         "U-NEXT",
         "Disney+",
-        "Hulu",
         "FOD",
         "dアニメストア（Amazon）",
         "アニメタイムズ（Amazon）",
@@ -638,7 +637,6 @@
         "Prime Video",
         "U-NEXT",
         "Disney+",
-        "Hulu",
         "FOD",
         "dアニメストア（Amazon）",
         "アニメタイムズ（Amazon）",
@@ -1033,7 +1031,8 @@
     "godzilla:new-empire": {
       "names": [
         "Netflix",
-        "Prime Video"
+        "Prime Video",
+        "U-NEXT"
       ],
       "link": "https://www.themoviedb.org/movie/823464-godzilla-x-kong-the-new-empire/watch?locale=JP"
     },
@@ -1279,7 +1278,8 @@
     },
     "halloween:kills": {
       "names": [
-        "Prime Video"
+        "Prime Video",
+        "U-NEXT"
       ],
       "link": "https://www.themoviedb.org/movie/610253-halloween-kills/watch?locale=JP"
     },
@@ -1319,7 +1319,6 @@
     },
     "indiana-jones:crystal-skull": {
       "names": [
-        "Netflix",
         "Prime Video",
         "U-NEXT",
         "Hulu"
@@ -1334,7 +1333,6 @@
     },
     "indiana-jones:raiders": {
       "names": [
-        "Netflix",
         "Prime Video",
         "U-NEXT",
         "Hulu"
@@ -1343,7 +1341,6 @@
     },
     "indiana-jones:temple": {
       "names": [
-        "Netflix",
         "Prime Video",
         "U-NEXT",
         "Hulu"
@@ -1528,21 +1525,24 @@
     "kingsman:first-agent": {
       "names": [
         "Prime Video",
-        "Disney+"
+        "Disney+",
+        "Hulu"
       ],
       "link": "https://www.themoviedb.org/movie/476669-the-king-s-man/watch?locale=JP"
     },
     "kingsman:golden-circle": {
       "names": [
         "Prime Video",
-        "Disney+"
+        "Disney+",
+        "Hulu"
       ],
       "link": "https://www.themoviedb.org/movie/343668-kingsman-the-golden-circle/watch?locale=JP"
     },
     "kingsman:kingsman1": {
       "names": [
         "Prime Video",
-        "Disney+"
+        "Disney+",
+        "Hulu"
       ],
       "link": "https://www.themoviedb.org/movie/207703-kingsman-the-secret-service/watch?locale=JP"
     },
@@ -2858,6 +2858,7 @@
     },
     "star-trek:beyond": {
       "names": [
+        "Netflix",
         "Prime Video",
         "U-NEXT"
       ],
@@ -2891,6 +2892,7 @@
     },
     "star-trek:into-darkness": {
       "names": [
+        "Netflix",
         "U-NEXT"
       ],
       "link": "https://www.themoviedb.org/movie/54138-star-trek-into-darkness/watch?locale=JP"
@@ -2916,6 +2918,7 @@
     },
     "star-trek:st2009": {
       "names": [
+        "Netflix",
         "U-NEXT"
       ],
       "link": "https://www.themoviedb.org/movie/13475-star-trek/watch?locale=JP"
@@ -3022,7 +3025,6 @@
     },
     "terminator:t1": {
       "names": [
-        "Netflix",
         "Prime Video",
         "U-NEXT",
         "Hulu"
