@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-11",
+  "updatedAt": "2026-10-18",
   "source": "JustWatch (via TMDB)",
   "items": {
     "alien:alien": {
@@ -547,6 +547,7 @@
     },
     "dc:superman": {
       "names": [
+        "Prime Video",
         "U-NEXT",
         "Hulu"
       ],
@@ -1031,8 +1032,7 @@
     "godzilla:new-empire": {
       "names": [
         "Netflix",
-        "Prime Video",
-        "U-NEXT"
+        "Prime Video"
       ],
       "link": "https://www.themoviedb.org/movie/823464-godzilla-x-kong-the-new-empire/watch?locale=JP"
     },
@@ -1278,8 +1278,7 @@
     },
     "halloween:kills": {
       "names": [
-        "Prime Video",
-        "U-NEXT"
+        "Prime Video"
       ],
       "link": "https://www.themoviedb.org/movie/610253-halloween-kills/watch?locale=JP"
     },
@@ -1319,6 +1318,7 @@
     },
     "indiana-jones:crystal-skull": {
       "names": [
+        "Netflix",
         "Prime Video",
         "U-NEXT",
         "Hulu"
@@ -1333,6 +1333,7 @@
     },
     "indiana-jones:raiders": {
       "names": [
+        "Netflix",
         "Prime Video",
         "U-NEXT",
         "Hulu"
@@ -1341,6 +1342,7 @@
     },
     "indiana-jones:temple": {
       "names": [
+        "Netflix",
         "Prime Video",
         "U-NEXT",
         "Hulu"
@@ -1706,6 +1708,7 @@
         "Prime Video",
         "U-NEXT",
         "Disney+",
+        "Hulu",
         "Apple TV",
         "Apple TV Amazon Channel",
         "Sony Pictures Core（Amazon）"
@@ -2573,6 +2576,7 @@
     "rocky:creed3": {
       "names": [
         "Prime Video",
+        "U-NEXT",
         "Hulu"
       ],
       "link": "https://www.themoviedb.org/movie/677179-creed-iii/watch?locale=JP"
@@ -2746,6 +2750,7 @@
         "Prime Video",
         "U-NEXT",
         "Disney+",
+        "Hulu",
         "Apple TV",
         "Apple TV Amazon Channel",
         "Sony Pictures Core（Amazon）"
@@ -3040,6 +3045,7 @@
     },
     "terminator:t3": {
       "names": [
+        "U-NEXT",
         "Hulu",
         "FOD",
         "シネフィルWOWOW（Amazon）"
