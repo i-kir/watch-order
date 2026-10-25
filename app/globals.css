@@ -23,6 +23,17 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
 /* 見出しの折り返しを、読みやすい位置で切る */
 .balance {
   text-wrap: balance;

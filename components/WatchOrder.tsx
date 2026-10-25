@@ -7,6 +7,7 @@ import { formatRuntime, posterOf, totalRuntime, trailerUrl, watchMinutes } from 
 import { providersOf } from '@/lib/providers';
 import Poster from './Poster';
 import ShareProgress from './ShareProgress';
+import WatchLinks from './WatchLinks';
 
 type Entry = { film: Film; reason?: string };
 
@@ -148,10 +149,14 @@ export default function WatchOrder({ series, orders, entriesByOrder }: Props) {
           </div>
 
           {next ? (
-            <p className="mt-3 border-t border-[var(--color-line)] pt-3 text-sm">
-              <span className="text-[var(--color-ink-soft)]">次に観るのは</span>{' '}
-              <span className="font-bold">{next.film.title}</span>
-            </p>
+            <div className="mt-3 border-t border-[var(--color-line)] pt-3 text-sm">
+              <p>
+                <span className="text-[var(--color-ink-soft)]">次に観るのは</span>{' '}
+                <span className="font-bold">{next.film.title}</span>
+                <span className="ml-1 text-xs text-[var(--color-ink-soft)]">（{next.film.year}年）</span>
+              </p>
+              <WatchLinks seriesSlug={series.slug} filmSlug={next.film.slug} filmTitle={next.film.title} order={order} placement="next_film" />
+            </div>
           ) : (
             watchedCount > 0 && (
               <p className="mt-3 border-t border-[var(--color-line)] pt-3 text-sm font-bold">
@@ -173,8 +178,8 @@ export default function WatchOrder({ series, orders, entriesByOrder }: Props) {
 
           return (
             <li key={entry.film.slug}>
-              <label
-                className={`relative flex cursor-pointer gap-3 rounded-2xl border bg-white p-3 transition sm:gap-4 sm:p-4 ${
+              <article
+                className={`relative flex gap-3 rounded-2xl border bg-white p-3 transition sm:gap-4 sm:p-4 ${
                   isNext
                     ? 'border-[var(--color-accent)] shadow-[0_0_0_1px_var(--color-accent)]'
                     : 'border-[var(--color-line)]'
@@ -236,12 +241,6 @@ export default function WatchOrder({ series, orders, entriesByOrder }: Props) {
                     ) : null}
                     {entry.film.setting && <span>設定 {entry.film.setting}</span>}
                     {trailer && (
-                      /*
-                       * カード全体が label なので、リンクを押したときに
-                       * チェックまで入らないよう stopPropagation しておく。
-                       * 仕様上 a 要素は label の活性化から除外されるが、
-                       * 挙動に幅があるため明示的に止める。
-                       */
                       <a
                         href={trailer}
                         target="_blank"
@@ -256,8 +255,7 @@ export default function WatchOrder({ series, orders, entriesByOrder }: Props) {
 
                   {streams.length > 0 && (
                     /*
-                     * 配信状況は月単位で変わるので、断定を避けて「見放題」とだけ書く。
-                     * いつ時点のデータかはページ下部にまとめて出している。
+                     * 取得日時点の配信情報。日付はリンク直下とページ下部に表示する。
                      */
                     <p className="mt-1.5 flex flex-wrap items-center gap-1 text-[11px]">
                       <span className="text-[var(--color-ink-faint)]">見放題</span>
@@ -283,16 +281,20 @@ export default function WatchOrder({ series, orders, entriesByOrder }: Props) {
                       {entry.film.note}
                     </p>
                   )}
+                  <WatchLinks seriesSlug={series.slug} filmSlug={entry.film.slug} filmTitle={entry.film.title} order={order} placement="film_card" />
                 </div>
 
-                <input
-                  type="checkbox"
-                  checked={isWatched}
-                  onChange={() => toggle(entry.film.slug)}
-                  className="mt-0.5 size-6 shrink-0 self-center accent-[var(--color-accent)]"
-                  aria-label={`${entry.film.title} を視聴済みにする`}
-                />
-              </label>
+                <label className="flex min-h-11 min-w-11 shrink-0 cursor-pointer flex-col items-center justify-center gap-1 self-center text-[10px] text-[var(--color-ink-soft)]">
+                  <input
+                    type="checkbox"
+                    checked={isWatched}
+                    onChange={() => toggle(entry.film.slug)}
+                    className="size-6 shrink-0 accent-[var(--color-accent)]"
+                    aria-label={`${entry.film.title} を視聴済みにする`}
+                  />
+                  <span>{isWatched ? '視聴済み' : '観た'}</span>
+                </label>
+              </article>
             </li>
           );
         })}
