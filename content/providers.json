@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-18",
+  "updatedAt": "2026-10-25",
   "source": "JustWatch (via TMDB)",
   "items": {
     "alien:alien": {
@@ -1272,6 +1272,7 @@
     },
     "halloween:h2018": {
       "names": [
+        "Netflix",
         "U-NEXT"
       ],
       "link": "https://www.themoviedb.org/movie/424139-halloween/watch?locale=JP"
@@ -1310,7 +1311,6 @@
     },
     "indiana-jones:crusade": {
       "names": [
-        "Netflix",
         "U-NEXT",
         "Hulu"
       ],
@@ -1318,7 +1318,6 @@
     },
     "indiana-jones:crystal-skull": {
       "names": [
-        "Netflix",
         "Prime Video",
         "U-NEXT",
         "Hulu"
@@ -1333,7 +1332,6 @@
     },
     "indiana-jones:raiders": {
       "names": [
-        "Netflix",
         "Prime Video",
         "U-NEXT",
         "Hulu"
@@ -1342,7 +1340,6 @@
     },
     "indiana-jones:temple": {
       "names": [
-        "Netflix",
         "Prime Video",
         "U-NEXT",
         "Hulu"
