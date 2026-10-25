@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { SITE_URL } from '@/lib/site';
+import { hasAffiliate } from '@/lib/affiliate';
 import './globals.css';
 
 const SITE_NAME = '観る順ナビ';
@@ -51,9 +52,23 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               配信状況のデータは JustWatch を出典としています（TMDB API 経由）。配信の開始・終了は
               随時変わるため、実際に視聴できるかは各サービスでご確認ください。
             </p>
+            {hasAffiliate() && (
+              <p className="mt-2">
+                当サイトはアフィリエイトプログラムに参加しており、広告を含むリンクから収益を得ることがあります。
+                広告を含むリンクには「PR」と表記しています。
+              </p>
+            )}
             <p className="mt-2">
               各シリーズの順番は、ページ内に記載した出典に基づいています。公式設定に矛盾がある場合は、その旨を明記しています。
             </p>
+            <nav className="mt-4 flex gap-4" aria-label="サイト情報">
+              <Link href="/about" className="hover:underline">
+                運営者情報・お問い合わせ
+              </Link>
+              <Link href="/privacy" className="hover:underline">
+                プライバシーポリシー
+              </Link>
+            </nav>
           </div>
         </footer>
       </body>
