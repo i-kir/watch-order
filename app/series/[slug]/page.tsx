@@ -8,6 +8,7 @@ import { hasAnyProviders, providersUpdatedAt } from '@/lib/providers';
 import PosterWall from '@/components/PosterWall';
 import type { OrderKey } from '@/lib/types';
 import { SITE_URL } from '@/lib/site';
+import { seriesGuides } from '@/lib/series-guides';
 
 type Params = { slug: string };
 
@@ -24,8 +25,9 @@ export async function generateMetadata({
   const series = getSeries(slug);
   if (!series) return {};
 
-  const title = `${series.name}を観る順番`;
-  const description = `${series.name}全${series.films.length}作の観る順番。公開順・時系列順・おすすめ順で比較できます。${series.tagline}`;
+  const guide = seriesGuides[series.slug];
+  const title = guide?.title ?? `${series.name}を観る順番`;
+  const description = guide?.description ?? `${series.name}全${series.films.length}作の観る順番。公開順・時系列順・おすすめ順で比較できます。${series.tagline}`;
 
   return {
     title,
@@ -41,6 +43,7 @@ export default async function SeriesPage({ params }: { params: Promise<Params> }
   if (!series) notFound();
 
   const orders = availableOrders(series);
+  const guide = seriesGuides[series.slug];
   const posters = seriesPosters(series.slug, series.releaseOrder, 20);
   const entriesByOrder = Object.fromEntries(
     orders.map((key) => [key, orderedFilms(series, key as OrderKey)])
@@ -115,7 +118,15 @@ export default async function SeriesPage({ params }: { params: Promise<Params> }
 
       <div className="mx-auto max-w-3xl px-4">
 
-      <div className="mt-5">
+      {guide && (
+        <section aria-labelledby="quick-answer" className="mt-5 rounded-xl border border-[var(--color-line)] bg-white p-4 sm:p-5">
+          <h2 id="quick-answer" className="text-sm font-bold text-[var(--color-accent)]">どこから観ればいい？</h2>
+          <p className="mt-2 text-sm leading-relaxed">{guide.answer}</p>
+          <a href="#watch-order" className="mt-3 inline-flex min-h-11 items-center text-sm font-bold text-[var(--color-accent)] underline underline-offset-4">順番と配信先を確認する ↓</a>
+        </section>
+      )}
+
+      <div id="watch-order" className="mt-5 scroll-mt-4">
         <WatchOrder series={series} orders={orders} entriesByOrder={entriesByOrder} />
       </div>
 
@@ -142,7 +153,7 @@ export default async function SeriesPage({ params }: { params: Promise<Params> }
          */
         <section className="mt-10 rounded-xl border border-[var(--color-line)] bg-white p-4 text-xs leading-relaxed text-[var(--color-ink-soft)]">
           <p>
-            各作品に付いている「見放題」は、日本で定額見放題として配信されているサービスです。
+            各作品に付いている「見放題」は、下記の取得日時点で日本の定額見放題として掲載されていたサービスです。
             レンタル・購入のみの場合は表示していません。
             <b className="font-bold text-[var(--color-ink)]">{providersUpdatedAt()}時点</b>
             のデータで、出典は JustWatch です（TMDB API 経由）。配信の開始・終了は随時変わるため、
