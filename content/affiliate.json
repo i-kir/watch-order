@@ -1,0 +1,4 @@
+{
+  "note": "アフィリエイトの遷移先URL。null のサービスは何も表示しない。承認された ASP の提携リンクだけを入れる。",
+  "links": { "U-NEXT": null, "Prime Video": null, "Hulu": null, "Disney+": null, "Netflix": null, "FOD": null }
+}

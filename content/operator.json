@@ -1,0 +1,7 @@
+{
+  "note": "運営者情報ページに表示する内容。null のままの項目はページに出ない。公開前に operatorName と、問い合わせ先（contactUrl か contactEmail のどちらか）を入れる。",
+  "operatorName": "ぽん",
+  "contactUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfC5X0coMewIDvee0B98x4N2itDDwq-qyfKFG7qCJDbZ2dnlA/viewform",
+  "contactEmail": null,
+  "startedAt": "2026年9月"
+}

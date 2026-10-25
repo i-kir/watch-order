@@ -6,6 +6,7 @@ import { availableOrders, getAllSeries, getSeries, orderedFilms } from '@/lib/se
 import { seriesPosters } from '@/lib/tmdb';
 import { hasAnyProviders, providersUpdatedAt } from '@/lib/providers';
 import PosterWall from '@/components/PosterWall';
+import WatchServices from '@/components/WatchServices';
 import type { OrderKey } from '@/lib/types';
 import { SITE_URL } from '@/lib/site';
 import { seriesGuides } from '@/lib/series-guides';
@@ -129,6 +130,8 @@ export default async function SeriesPage({ params }: { params: Promise<Params> }
       <div id="watch-order" className="mt-5 scroll-mt-4">
         <WatchOrder series={series} orders={orders} entriesByOrder={entriesByOrder} />
       </div>
+
+      <WatchServices series={series} />
 
       {series.caveats.length > 0 && (
         <section className="mt-10">
