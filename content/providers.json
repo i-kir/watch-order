@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-25",
+  "updatedAt": "2026-11-01",
   "source": "JustWatch (via TMDB)",
   "items": {
     "alien:alien": {
@@ -778,6 +778,32 @@
       ],
       "link": "https://www.themoviedb.org/movie/9615-the-fast-and-the-furious-tokyo-drift/watch?locale=JP"
     },
+    "fate:hf-1": {
+      "names": [
+        "Netflix",
+        "U-NEXT",
+        "Hulu",
+        "dアニメストア（Amazon）"
+      ],
+      "link": "https://www.themoviedb.org/movie/283984-fate-stay-night-heaven-s-feel-presage-flower/watch?locale=JP"
+    },
+    "fate:hf-2": {
+      "names": [
+        "Netflix",
+        "U-NEXT",
+        "Hulu",
+        "dアニメストア（Amazon）"
+      ],
+      "link": "https://www.themoviedb.org/movie/390634-fate-stay-night-heaven-s-feel-lost-butterfly/watch?locale=JP"
+    },
+    "fate:hf-3": {
+      "names": [
+        "Netflix",
+        "U-NEXT",
+        "dアニメストア（Amazon）"
+      ],
+      "link": "https://www.themoviedb.org/movie/390635-fate-stay-night-heaven-s-feel-spring-song/watch?locale=JP"
+    },
     "fate:stay-night-2006": {
       "names": [
         "Hulu",
@@ -788,7 +814,8 @@
     },
     "fate:ubw-2014": {
       "names": [
-        "U-NEXT"
+        "U-NEXT",
+        "Hulu"
       ],
       "link": "https://www.themoviedb.org/tv/61415-fate-stay-night-unlimited-blade-works/watch?locale=JP"
     },
@@ -803,6 +830,7 @@
     "fate:zero": {
       "names": [
         "U-NEXT",
+        "Hulu",
         "dアニメストア（Amazon）",
         "アニメタイムズ（Amazon）"
       ],
@@ -1266,7 +1294,7 @@
     },
     "halloween:h1978": {
       "names": [
-        "Cultpix"
+        "U-NEXT"
       ],
       "link": "https://www.themoviedb.org/movie/948-halloween/watch?locale=JP"
     },
@@ -1304,8 +1332,8 @@
     "hannibal:silence": {
       "names": [
         "Netflix",
-        "Prime Video",
-        "U-NEXT"
+        "U-NEXT",
+        "MGM（Amazon）"
       ],
       "link": "https://www.themoviedb.org/movie/274-the-silence-of-the-lambs/watch?locale=JP"
     },
@@ -1856,6 +1884,7 @@
     "middle-earth:fotr": {
       "names": [
         "Netflix",
+        "Prime Video",
         "U-NEXT",
         "Hulu"
       ],
@@ -1863,6 +1892,7 @@
     },
     "middle-earth:hobbit1": {
       "names": [
+        "Netflix",
         "Prime Video",
         "U-NEXT",
         "Hulu"
@@ -1871,6 +1901,7 @@
     },
     "middle-earth:hobbit2": {
       "names": [
+        "Netflix",
         "Prime Video",
         "U-NEXT"
       ],
@@ -1878,6 +1909,7 @@
     },
     "middle-earth:hobbit3": {
       "names": [
+        "Netflix",
         "Prime Video",
         "U-NEXT"
       ],
@@ -1886,6 +1918,7 @@
     "middle-earth:rotk": {
       "names": [
         "Netflix",
+        "Prime Video",
         "U-NEXT",
         "Hulu"
       ],
@@ -1894,6 +1927,7 @@
     "middle-earth:ttt": {
       "names": [
         "Netflix",
+        "Prime Video",
         "U-NEXT",
         "Hulu"
       ],
@@ -1917,6 +1951,7 @@
     },
     "minions:dm3": {
       "names": [
+        "Prime Video",
         "U-NEXT",
         "Hulu"
       ],
@@ -1937,6 +1972,7 @@
     },
     "minions:minions": {
       "names": [
+        "Prime Video",
         "U-NEXT",
         "Hulu"
       ],
@@ -2036,7 +2072,8 @@
         "Prime Video",
         "U-NEXT",
         "Disney+",
-        "Hulu"
+        "Hulu",
+        "東映アニメーション（Amazon）"
       ],
       "link": "https://www.themoviedb.org/movie/25278/watch?locale=JP"
     },
@@ -2046,7 +2083,8 @@
         "Prime Video",
         "U-NEXT",
         "Disney+",
-        "Hulu"
+        "Hulu",
+        "東映アニメーション（Amazon）"
       ],
       "link": "https://www.themoviedb.org/movie/44731/watch?locale=JP"
     },
@@ -2347,28 +2385,24 @@
     },
     "planet-of-the-apes:beneath": {
       "names": [
-        "Prime Video",
         "Disney+"
       ],
       "link": "https://www.themoviedb.org/movie/1685-beneath-the-planet-of-the-apes/watch?locale=JP"
     },
     "planet-of-the-apes:burton": {
       "names": [
-        "Prime Video",
         "Disney+"
       ],
       "link": "https://www.themoviedb.org/movie/869-planet-of-the-apes/watch?locale=JP"
     },
     "planet-of-the-apes:conquest": {
       "names": [
-        "Prime Video",
         "Disney+"
       ],
       "link": "https://www.themoviedb.org/movie/1688-conquest-of-the-planet-of-the-apes/watch?locale=JP"
     },
     "planet-of-the-apes:dawn": {
       "names": [
-        "Prime Video",
         "Disney+"
       ],
       "link": "https://www.themoviedb.org/movie/119450-dawn-of-the-planet-of-the-apes/watch?locale=JP"
@@ -2396,7 +2430,6 @@
     },
     "planet-of-the-apes:war": {
       "names": [
-        "Prime Video",
         "Disney+"
       ],
       "link": "https://www.themoviedb.org/movie/281338-war-for-the-planet-of-the-apes/watch?locale=JP"
@@ -3042,7 +3075,6 @@
     },
     "terminator:t3": {
       "names": [
-        "U-NEXT",
         "Hulu",
         "FOD",
         "シネフィルWOWOW（Amazon）"
