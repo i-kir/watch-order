@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-08",
   "source": "JustWatch (via TMDB)",
   "items": {
     "alien:alien": {
@@ -52,8 +52,7 @@
     },
     "bond:casino-royale": {
       "names": [
-        "Prime Video",
-        "Hulu"
+        "Prime Video"
       ],
       "link": "https://www.themoviedb.org/movie/36557-casino-royale/watch?locale=JP"
     },
@@ -149,22 +148,19 @@
     },
     "bond:quantum": {
       "names": [
-        "Prime Video",
-        "Hulu"
+        "Prime Video"
       ],
       "link": "https://www.themoviedb.org/movie/10764-quantum-of-solace/watch?locale=JP"
     },
     "bond:skyfall": {
       "names": [
-        "Prime Video",
-        "Hulu"
+        "Prime Video"
       ],
       "link": "https://www.themoviedb.org/movie/37724-skyfall/watch?locale=JP"
     },
     "bond:spectre": {
       "names": [
-        "Prime Video",
-        "Hulu"
+        "Prime Video"
       ],
       "link": "https://www.themoviedb.org/movie/206647-spectre/watch?locale=JP"
     },
@@ -528,7 +524,8 @@
     "dc:shazam-2": {
       "names": [
         "Prime Video",
-        "U-NEXT"
+        "U-NEXT",
+        "Hulu"
       ],
       "link": "https://www.themoviedb.org/movie/594767-shazam-fury-of-the-gods/watch?locale=JP"
     },
@@ -593,7 +590,6 @@
         "Prime Video",
         "U-NEXT",
         "Disney+",
-        "FOD",
         "dアニメストア（Amazon）",
         "アニメタイムズ（Amazon）",
         "東映アニメーション（Amazon）"
@@ -878,7 +874,8 @@
       "names": [
         "Netflix",
         "Prime Video",
-        "U-NEXT"
+        "U-NEXT",
+        "Hulu"
       ],
       "link": "https://www.themoviedb.org/movie/3115/watch?locale=JP"
     },
@@ -1060,7 +1057,8 @@
     "godzilla:new-empire": {
       "names": [
         "Netflix",
-        "Prime Video"
+        "Prime Video",
+        "U-NEXT"
       ],
       "link": "https://www.themoviedb.org/movie/823464-godzilla-x-kong-the-new-empire/watch?locale=JP"
     },
@@ -1339,6 +1337,7 @@
     },
     "indiana-jones:crusade": {
       "names": [
+        "Prime Video",
         "U-NEXT",
         "Hulu"
       ],
@@ -1437,9 +1436,7 @@
       "names": [
         "Prime Video",
         "U-NEXT",
-        "Hulu",
-        "Apple TV",
-        "Apple TV Amazon Channel"
+        "Hulu"
       ],
       "link": "https://www.themoviedb.org/movie/329-jurassic-park/watch?locale=JP"
     },
@@ -1575,6 +1572,7 @@
     },
     "mad-max:furiosa": {
       "names": [
+        "Prime Video",
         "U-NEXT",
         "Hulu"
       ],
@@ -1583,13 +1581,17 @@
     "mad-max:fury-road": {
       "names": [
         "Netflix",
+        "Prime Video",
         "U-NEXT",
-        "Hulu"
+        "Hulu",
+        "Apple TV",
+        "Apple TV Amazon Channel"
       ],
       "link": "https://www.themoviedb.org/movie/76341-mad-max-fury-road/watch?locale=JP"
     },
     "mad-max:mm1": {
       "names": [
+        "Prime Video",
         "U-NEXT",
         "Hulu"
       ],
@@ -1597,6 +1599,7 @@
     },
     "mad-max:mm2": {
       "names": [
+        "Prime Video",
         "U-NEXT",
         "Hulu"
       ],
@@ -1604,6 +1607,7 @@
     },
     "mad-max:thunderdome": {
       "names": [
+        "Prime Video",
         "U-NEXT",
         "Hulu"
       ],
@@ -1894,8 +1898,7 @@
       "names": [
         "Netflix",
         "Prime Video",
-        "U-NEXT",
-        "Hulu"
+        "U-NEXT"
       ],
       "link": "https://www.themoviedb.org/movie/49051-the-hobbit-an-unexpected-journey/watch?locale=JP"
     },
@@ -1910,8 +1913,7 @@
     "middle-earth:hobbit3": {
       "names": [
         "Netflix",
-        "Prime Video",
-        "U-NEXT"
+        "Prime Video"
       ],
       "link": "https://www.themoviedb.org/movie/122917-the-hobbit-the-battle-of-the-five-armies/watch?locale=JP"
     },
@@ -2901,12 +2903,14 @@
     },
     "star-trek:first-contact": {
       "names": [
+        "Prime Video",
         "U-NEXT"
       ],
       "link": "https://www.themoviedb.org/movie/199-star-trek-first-contact/watch?locale=JP"
     },
     "star-trek:frontier": {
       "names": [
+        "Prime Video",
         "U-NEXT"
       ],
       "link": "https://www.themoviedb.org/movie/172-star-trek-v-the-final-frontier/watch?locale=JP"
@@ -2928,6 +2932,7 @@
     "star-trek:into-darkness": {
       "names": [
         "Netflix",
+        "Prime Video",
         "U-NEXT"
       ],
       "link": "https://www.themoviedb.org/movie/54138-star-trek-into-darkness/watch?locale=JP"
@@ -2954,6 +2959,7 @@
     "star-trek:st2009": {
       "names": [
         "Netflix",
+        "Prime Video",
         "U-NEXT"
       ],
       "link": "https://www.themoviedb.org/movie/13475-star-trek/watch?locale=JP"
@@ -2966,6 +2972,7 @@
     },
     "star-trek:undiscovered": {
       "names": [
+        "Prime Video",
         "U-NEXT"
       ],
       "link": "https://www.themoviedb.org/movie/174-star-trek-vi-the-undiscovered-country/watch?locale=JP"
